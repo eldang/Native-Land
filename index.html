@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <style type="text/css">
+      html, body, #map-canvas { height: 100%; margin: 0; padding: 0;}
+    </style>
+    <script type="text/javascript"
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCoajO_ajNZk7DXuY85V-XeaHqao0sw_gc">
+    </script>
+    <script type="text/javascript">
+      function initialize() {
+        var mapOptions = {
+          center: { lat: 49.55, lng: -123.30 },
+          zoom: 10
+        };
+          
+        var map = new google.maps.Map(document.getElementById('map-canvas'),
+            mapOptions);
+          
+          
+        // Defining Popup for marker
+          
+          var contentString = '<div id="content">'+
+              '<div id="siteNotice">'+
+              '</div>'+
+              '<h1 id="firstHeading" class="firstHeading">Skwxwú7mesh Úxwumixw</h1>'+
+              '<div id="bodyContent">'+
+              '<p><b>Skwxwú7mesh Úxwumixw</b>, also known as the <b>Squamish Nation</b>, is comprised of descendants of the Coast Salish Aboriginal peoples who lived in the present day Greater Vancouver area; Gibson’s landing and Squamish River watershed. The Squamish Nation have occupied and governed their territory since beyond recorded history. Total area of Squamish Nation Traditional Territory is 6,921  sq. km. (~692,100 hectares).</p>'+
+          '<p>The Nation consists of 23 villages encompassing 21.2  sq. Km. (2,120 hectares).The percentage of Squamish Nation Traditional Territory allotted to the people is 0.4230%. These parcels of land are scattered from North Vancouver, Gibson’s Landing to the area north of Howe Sound.</p>'+
+              '<ul><li><a href="http://www.squamish.net/about-us/">Skwxwú7mesh Úxwumixw About Us</a></li>'+
+              '<li><a href="">Learn Skwxwú7mesh language</a></li></ul>'+
+              '</div>'+
+              '</div>';
+
+          var infowindow = new google.maps.InfoWindow({
+              content: contentString
+          });
+        
+        // Defining image for marker
+        // Add complex icons for defining shapes (great for geographic features, tribal areas, etc)
+          
+        var image = {
+            size: new google.maps.Size(75, 119),
+            url: 'marker-icons/squamish.png'
+        };
+        
+        // Making a marker
+        // Can make them fall into place, bounce, 
+        
+        var myLatlng = new google.maps.LatLng(49.55,-123.30)
+          
+        var marker = new google.maps.Marker({
+          position: myLatlng,
+          map: map,
+          icon: image,
+          title: 'Skwxwú7mesh Úxwumixw'
+      });
+          
+      google.maps.event.addListener(marker, 'click', function() {
+        infowindow.open(map,marker);
+      });
+          
+      }
+        
+      google.maps.event.addDomListener(window, 'load', initialize);
+        
+    </script>
+  </head>
+  <body>
+<div id="map-canvas"></div>
+  </body>
+</html>
