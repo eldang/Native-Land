@@ -3,6 +3,8 @@ Native-Land
 
 A web app with Google Maps API for mapping Aboriginal nations along with placenames in local languages.
 
+Live test at <a href="http://greatlittlewebsite.com/landlanguage/">http://greatlittlewebsite.com/landlanguage/</a>
+
 <h2>To Do</h2>
 <ul>
 <li>Start gathering icons for bands across BC, size them similarly, save resources below</li>
