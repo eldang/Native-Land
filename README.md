@@ -28,9 +28,20 @@ Live test at <a href="http://greatlittlewebsite.com/landlanguage/">http://greatl
 
 <h5>Resources</h5>
 <ul>
-<li>Nations</li>
-  <li><a href="http://www.squamish.net/">Skwxwú7mesh Úxwumixw (Squamish Nation)</a>
+  <li><a href="http://www.squamish.net/">Skwxwú7mesh Úxwumixw (Squamish Nation)</a></li>
   <ul>
     <li>Language</li>
+    <li>Maps</li>
+    <li>Other</li>
+  </ul>
+  <li><a href="http://www.musqueam.bc.ca/">xʷməθkʷəýəm (Musqueam - note the accent error on the ý, should be y̓   )</a></li>
+  <ul>
+    <li><a href="http://www.musqueam.bc.ca/language">Language</li>
+    <li>Maps</li>
+      <ul>
+        <li><a href="http://www.musqueam.bc.ca/sites/default/files/musqueam_regional_soi_with_reserves.pdf">With reserves</a></li>
+        <li><a href="http://www.musqueam.bc.ca/sites/default/files/musqueam_declaration.pdf">1976 Declaration</a></li>
+      </ul>
+    <li>Other</li>
   </ul>
 </ul>
