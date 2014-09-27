@@ -34,7 +34,7 @@ Live test at <a href="http://greatlittlewebsite.com/landlanguage/">http://greatl
     <li>Maps</li>
     <li>Other</li>
   </ul>
-  <li><a href="http://www.musqueam.bc.ca/">xʷməθkʷəy̓  əm</a> (Musqueam)</li>
+  <li><a href="http://www.musqueam.bc.ca/">xʷməθkʷəy̓  əm</a> (Musqueam - extra space accidental)</li>
   <ul>
     <li><a href="http://www.musqueam.bc.ca/language">Language</li>
     <li>Maps</li>
