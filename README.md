@@ -99,23 +99,24 @@ Band-specific:
       <li><a href="http://pse5-esd5.ainc-inac.gc.ca/fnp/Main/Search/FNMain.aspx?BAND_NUMBER=560&lang=eng">Aboriginal Affairs Kwikwetlem</li>
     </ul>
   </ul>
-  <li><a href=""><strong>Kwantlen</strong></a></li>
-  <li><a href=""><strong>Semyome</strong></a></li>
-  <li><a href=""><strong>Matsqui</strong></a></li>
-  <li><a href=""><strong>Sumas</strong></a></li>
-  <li><a href=""><strong>Leq'á:mel</strong></a></li>
-  <li><a href=""><strong>Leq'á:mel</strong></a></li>
-  <li><a href=""><strong>Aitchelitz</strong></a></li>
-  <li><a href=""><strong>Kwaw-kwaw-apilt</strong></a></li>
-  <li><a href=""><strong>Skwah</strong></a></li>
-  <li><a href=""><strong>Scowlitz</strong></a></li>
-  <li><a href=""><strong>Chehalis</strong></a></li>
-  <li><a href=""><strong>Skowkale</strong></a></li>
-  <li><a href=""><strong>Yakweakwioose</strong></a></li>
-  <li><a href=""><strong>Tzeachten</strong></a></li>
-  <li><a href=""><strong>Soowahlie</strong></a></li>
-  <li><a href=""><strong>Cheam</strong></a></li>
-  <li><a href=""><strong>Popkum</strong></a></li>
-  <li><a href=""><strong>Seabird Island</strong></a></li>
-  <li><a href=""><strong>Peters</strong></a></li>
+</ul>
+<li><a href=""><strong>Kwantlen</strong></a></li>
+<li><a href=""><strong>Semyome</strong></a></li>
+<li><a href=""><strong>Matsqui</strong></a></li>
+<li><a href=""><strong>Sumas</strong></a></li>
+<li><a href=""><strong>Leq'á:mel</strong></a></li>
+<li><a href=""><strong>Leq'á:mel</strong></a></li>
+<li><a href=""><strong>Aitchelitz</strong></a></li>
+<li><a href=""><strong>Kwaw-kwaw-apilt</strong></a></li>
+<li><a href=""><strong>Skwah</strong></a></li>
+<li><a href=""><strong>Scowlitz</strong></a></li>
+<li><a href=""><strong>Chehalis</strong></a></li>
+<li><a href=""><strong>Skowkale</strong></a></li>
+<li><a href=""><strong>Yakweakwioose</strong></a></li>
+<li><a href=""><strong>Tzeachten</strong></a></li>
+<li><a href=""><strong>Soowahlie</strong></a></li>
+<li><a href=""><strong>Cheam</strong></a></li>
+<li><a href=""><strong>Popkum</strong></a></li>
+<li><a href=""><strong>Seabird Island</strong></a></li>
+<li><a href=""><strong>Peters</strong></a></li>
 </ul>
