@@ -33,10 +33,15 @@ Live test at <a href="http://greatlittlewebsite.com/landlanguage/">http://greatl
 <p><strong>I don't want to work on this alone. I know I need to be careful. So I hope to find a lot of help.</strong></p>
 
 <h5>Resources</h5>
-<p>See <a href="http://www.bctreaty.ca/files/first_nations.php">BCtreaty.ca</a> for some information on nations in the treaty process.</p>
-<p><a href="http://maps.fphlcc.ca/">First Peoples' Language Map</a> is a great resource for making sure you catch all the different nations, and has great information on languages.</p>
-<p><a href="http://www.aadnc-aandc.gc.ca/eng/1100100013785/1304467449155">Aboriginal Affairs website, maybe useful somewhere</a>. It has <a href="http://scsim-cirrp.aandc-aadnc.gc.ca/index-eng.asp">a map of settled claims</a>.</p>
-<p>City of Vancouver also has a <a href="http://www.metrovancouver.org/region/aboriginal/Aboriginal%20Affairs%20documents/ProfileOfFirstNationsJanuary2014.pdf">useful map PDF</a> on band claims, reserves, and treaties in the City.</p>
+General:
+  <ul>
+    <li>See <a href="http://www.bctreaty.ca/files/first_nations.php">BCtreaty.ca</a> for some information on nations in the treaty process.</li>
+    <li><a href="http://maps.fphlcc.ca/">First Peoples' Language Map</a> is a great resource for making sure you catch all the different nations, and has great information on languages.</li>
+    <li><a href="http://www.aadnc-aandc.gc.ca/eng/1100100013785/1304467449155">Aboriginal Affairs website, maybe useful somewhere</a>. It has <a href="http://scsim-cirrp.aandc-aadnc.gc.ca/index-eng.asp">a map of settled claims</a>.</li>
+    <li>City of Vancouver also has a <a href="http://www.metrovancouver.org/region/aboriginal/Aboriginal%20Affairs%20documents/ProfileOfFirstNationsJanuary2014.pdf">useful map PDF</a> on band claims, reserves, and treaties in the City.</li>
+  </ul>
+  
+Band-specific:
 <ul>
   <li><a href="http://www.squamish.net/"><strong>Skwxwú7mesh Úxwumixw</strong> (Squamish Nation)</a></li>
   <ul>
@@ -52,6 +57,7 @@ Live test at <a href="http://greatlittlewebsite.com/landlanguage/">http://greatl
     <li><a href="http://www.musqueam.bc.ca/language">hən̓q̓əmin̓əm̓ Language</li>
     <ul>
       <li><a href="http://en.wikipedia.org/wiki/Halkomelem">Wikipedia page on Halkomelem language group</a></li>
+    </ul>
     <li>Lands</li>
       <ul>
         <li><a href="http://www.musqueam.bc.ca/sites/default/files/musqueam_regional_soi_with_reserves.pdf">With reserves PDF</a></li>
