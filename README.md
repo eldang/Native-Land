@@ -88,8 +88,6 @@ Band-specific:
     <li>Lands</li>
     <ul>
       <li><a href="http://www.kwikwetlem.com/history___culture">Place names on right sidebar</a></li>
-      <li><a href="http://www.burrardband.com/Government/Departments/~/media/Files/Stewardship%20January%202009.ashx">Stewardship policy and map PDF</a></li>
-      <li><a href="http://www.bctreaty.ca/nations/soi_maps/Tsleil_Waututh_SOI_Map.pdf">SOI map PDF</a></li>
     </ul>
     <li>Other</li>
     <ul>
