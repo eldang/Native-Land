@@ -28,5 +28,9 @@ Live test at <a href="http://greatlittlewebsite.com/landlanguage/">http://greatl
 
 <h5>Resources</h5>
 <ul>
-<li><a href="http://www.squamish.net/">Skwxwú7mesh Úxwumixw (Squamish Nation)</a></li>
+<li>Nations</li>
+  <li><a href="http://www.squamish.net/">Skwxwú7mesh Úxwumixw (Squamish Nation)</a>
+  <ul>
+    <li>Language</li>
+  </ul>
 </ul>
