@@ -33,7 +33,7 @@ Live test at <a href="http://greatlittlewebsite.com/landlanguage/">http://greatl
 <p><strong>I don't want to work on this alone. I know I need to be careful. So I hope to find a lot of help.</strong></p>
 
 <h5>Resources</h5>
-<p>See <a href="http://www.bctreaty.ca/files/first_nations.php">BCtreaty.ca</a> for some information on nations in the treaty process.</p>
+<p>See <a href="http://www.bctreaty.ca/files/first_nations.php">BCtreaty.ca</a> for some information on nations in the treaty process. See <a href="http://maps.fphlcc.ca/">First People's Language Map</a> for an idea of language distribution - I might want to remake this into a more modern Google API.</p>
 <ul>
   <li><a href="http://www.squamish.net/"><strong>Skwxwú7mesh Úxwumixw</strong> (Squamish Nation)</a></li>
   <ul>
@@ -46,7 +46,7 @@ Live test at <a href="http://greatlittlewebsite.com/landlanguage/">http://greatl
   </ul>
   <li><a href="http://www.musqueam.bc.ca/"><strong>xʷməθkʷəy̓  əm</a></strong> (Musqueam - extra space accidental)</li>
   <ul>
-    <li><a href="http://www.musqueam.bc.ca/language">Language</li>
+    <li><a href="http://www.musqueam.bc.ca/language">Languagehən̓q̓əmin̓əm</li>
     <li>Lands</li>
       <ul>
         <li><a href="http://www.musqueam.bc.ca/sites/default/files/musqueam_regional_soi_with_reserves.pdf">With reserves PDF</a></li>
@@ -66,7 +66,21 @@ Live test at <a href="http://greatlittlewebsite.com/landlanguage/">http://greatl
     </ul>
     <li>Other</li>
     <ul>
-      <li><a href="http://www.bctreaty.ca/soi/soitsleilwaututh.php">BCtreaty.cs SOI</a></li>
+      <li><a href="http://www.bctreaty.ca/soi/soitsleilwaututh.php">BCtreaty.ca SOI</a></li>
+      <li><a href="http://www.burrardband.com/en/About%20TWN/Declaration.aspx">Poetry, stories</a></li>
+  </ul>
+  <li><a href="http://www.burrardband.com/"><strong>Tsleil-Waututh Nation</strong> (Burrard Band)</a></li>
+  <ul>
+    <li>Language</li>
+    <li>Lands</li>
+    <ul>
+      <li><a href="http://www.burrardband.com/en/About%20TWN/Our%20Territory.aspx">About</a></li>
+      <li><a href="http://www.burrardband.com/Government/Departments/~/media/Files/Stewardship%20January%202009.ashx">Stewardship policy and map PDF</a></li>
+      <li><a href="http://www.bctreaty.ca/nations/soi_maps/Tsleil_Waututh_SOI_Map.pdf">SOI map PDF</a></li>
+    </ul>
+    <li>Other</li>
+    <ul>
+      <li><a href="http://www.bctreaty.ca/soi/soitsleilwaututh.php">BCtreaty.ca SOI</a></li>
       <li><a href="http://www.burrardband.com/en/About%20TWN/Declaration.aspx">Poetry, stories</a></li>
   </ul>
 </ul>
