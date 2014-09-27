@@ -46,7 +46,7 @@ Live test at <a href="http://greatlittlewebsite.com/landlanguage/">http://greatl
   </ul>
   <li><a href="http://www.musqueam.bc.ca/"><strong>xʷməθkʷəy̓  əm</a></strong> (Musqueam - extra space accidental)</li>
   <ul>
-    <li><a href="http://www.musqueam.bc.ca/language">hən̓ q̓əmin̓əm̓Language</li>
+    <li><a href="http://www.musqueam.bc.ca/language">hə n̓q̓əmin̓əm̓Language</li>
     <li>Lands</li>
       <ul>
         <li><a href="http://www.musqueam.bc.ca/sites/default/files/musqueam_regional_soi_with_reserves.pdf">With reserves PDF</a></li>
