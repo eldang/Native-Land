@@ -79,6 +79,7 @@ Band-specific:
     <ul>
       <li><a href="http://www.bctreaty.ca/soi/soitsleilwaututh.php">BCtreaty.cs SOI</a></li>
       <li><a href="http://www.burrardband.com/en/About%20TWN/Declaration.aspx">Poetry, stories</a></li>
+    </ul>
   </ul>
   <li><a href="http://maps.fphlcc.ca/qayqayt"><strong>Qayqayt</strong></a> (<a href="http://en.wikipedia.org/wiki/Qayqayt_First_Nation">Wikipedia</a>, <a href="http://www.bcafn.ca/files/fn-new-westminster-qayqayt.php">Contact</a>)</li>
   <li><a href="http://www.kwikwetlem.com/"><strong>Kwikwetlem Nation</strong></a></li>
@@ -99,24 +100,23 @@ Band-specific:
       <li><a href="http://pse5-esd5.ainc-inac.gc.ca/fnp/Main/Search/FNMain.aspx?BAND_NUMBER=560&lang=eng">Aboriginal Affairs Kwikwetlem</li>
     </ul>
   </ul>
-</ul>
-<li><a href=""><strong>Kwantlen</strong></a></li>
-<li><a href=""><strong>Semyome</strong></a></li>
-<li><a href=""><strong>Matsqui</strong></a></li>
-<li><a href=""><strong>Sumas</strong></a></li>
-<li><a href=""><strong>Leq'á:mel</strong></a></li>
-<li><a href=""><strong>Leq'á:mel</strong></a></li>
-<li><a href=""><strong>Aitchelitz</strong></a></li>
-<li><a href=""><strong>Kwaw-kwaw-apilt</strong></a></li>
-<li><a href=""><strong>Skwah</strong></a></li>
-<li><a href=""><strong>Scowlitz</strong></a></li>
-<li><a href=""><strong>Chehalis</strong></a></li>
-<li><a href=""><strong>Skowkale</strong></a></li>
-<li><a href=""><strong>Yakweakwioose</strong></a></li>
-<li><a href=""><strong>Tzeachten</strong></a></li>
-<li><a href=""><strong>Soowahlie</strong></a></li>
-<li><a href=""><strong>Cheam</strong></a></li>
-<li><a href=""><strong>Popkum</strong></a></li>
-<li><a href=""><strong>Seabird Island</strong></a></li>
-<li><a href=""><strong>Peters</strong></a></li>
+  <li><a href=""><strong>Kwantlen</strong></a></li>
+  <li><a href=""><strong>Semyome</strong></a></li>
+  <li><a href=""><strong>Matsqui</strong></a></li>
+  <li><a href=""><strong>Sumas</strong></a></li>
+  <li><a href=""><strong>Leq'á:mel</strong></a></li>
+  <li><a href=""><strong>Leq'á:mel</strong></a></li>
+  <li><a href=""><strong>Aitchelitz</strong></a></li>
+  <li><a href=""><strong>Kwaw-kwaw-apilt</strong></a></li>
+  <li><a href=""><strong>Skwah</strong></a></li>
+  <li><a href=""><strong>Scowlitz</strong></a></li>
+  <li><a href=""><strong>Chehalis</strong></a></li>
+  <li><a href=""><strong>Skowkale</strong></a></li>
+  <li><a href=""><strong>Yakweakwioose</strong></a></li>
+  <li><a href=""><strong>Tzeachten</strong></a></li>
+  <li><a href=""><strong>Soowahlie</strong></a></li>
+  <li><a href=""><strong>Cheam</strong></a></li>
+  <li><a href=""><strong>Popkum</strong></a></li>
+  <li><a href=""><strong>Seabird Island</strong></a></li>
+  <li><a href=""><strong>Peters</strong></a></li>
 </ul>
