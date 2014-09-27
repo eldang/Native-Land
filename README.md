@@ -97,6 +97,7 @@ Band-specific:
       <li>No SOI (Stolo Nation has put one forward, they aren't listed as a village?)</li>
       <li><a href="http://www.kwikwetlem.com/history___culture">History & culture</a></li>
       <li><a href="http://pse5-esd5.ainc-inac.gc.ca/fnp/Main/Search/FNMain.aspx?BAND_NUMBER=560&lang=eng">Aboriginal Affairs Kwikwetlem</li>
+    </ul>
   </ul>
   <li><a href=""><strong>Kwantlen</strong></a></li>
   <li><a href=""><strong>Semyome</strong></a></li>
