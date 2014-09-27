@@ -34,7 +34,7 @@ Live test at <a href="http://greatlittlewebsite.com/landlanguage/">http://greatl
     <li>Maps</li>
     <li>Other</li>
   </ul>
-  <li><a href="http://www.musqueam.bc.ca/">xʷməθkʷəýəm (Musqueam - note the accent error on the ý, should be y̓   )</a></li>
+  <li><a href="http://www.musqueam.bc.ca/">xʷməθkʷəy̓  əm</a> (Musqueam)</li>
   <ul>
     <li><a href="http://www.musqueam.bc.ca/language">Language</li>
     <li>Maps</li>
