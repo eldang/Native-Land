@@ -94,6 +94,7 @@ Band-specific:
     <li>Other</li>
     <ul>
       <li>Part of <a href="http://www.kwikwetlem.com/history___culture">Stolo Nation</a> (<a href="http://en.wikipedia.org/wiki/Kwikwetlem">Wikipedia</a>)</li>
+    </ul>
     <ul>
       <li>No SOI (Stolo Nation has put one forward, they aren't listed as a village?)</li>
       <li><a href="http://www.kwikwetlem.com/history___culture">History & culture</a></li>
