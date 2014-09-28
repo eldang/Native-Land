@@ -9,19 +9,29 @@
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCoajO_ajNZk7DXuY85V-XeaHqao0sw_gc">
     </script>
     <script type="text/javascript">
-      function initialize() {
+    var musqueamSOI;
+    var squamishLand;
+    var musqueamLand;
+        
+    function initialize() {
+    
+        var musquamSOIImageBounds = new google.maps.LatLngBounds(
+            new google.maps.LatLng(49.004,-123.473),
+            new google.maps.LatLng(49.668,-122.762));
+
         var mapOptions = {
-          center: { lat: 49.55, lng: -123.30 },
-          zoom: 10
-        };
+            zoom: 8,
+            center: new google.maps.LatLng(49.22,-123.20)
+    };
           
-        var map = new google.maps.Map(document.getElementById('map-canvas'),
-            mapOptions);
-          
-          
+    var map = new google.maps.Map(document.getElementById('map-canvas'),
+        mapOptions);
+        
+    // SQUAMISH
+    function squamishPin() {
+        
         // Defining Popup for marker
-          
-          var contentString = '<div id="content">'+
+        var contentString = '<div id="content">'+
               '<div id="siteNotice">'+
               '</div>'+
               '<h1 id="firstHeading" class="firstHeading">Skwxwú7mesh Úxwumixw</h1>'+
@@ -37,16 +47,10 @@
               content: contentString
           });
         
-        // Defining image for marker
-        // Add complex icons for defining shapes (great for geographic features, tribal areas, etc)
-          
         var image = {
             size: new google.maps.Size(75, 119),
             url: 'marker-icons/squamish.png'
         };
-        
-        // Making a marker
-        // Can make them fall into place, bounce, 
         
         var myLatlng = new google.maps.LatLng(49.55,-123.30)
           
@@ -55,17 +59,109 @@
           map: map,
           icon: image,
           title: 'Skwxwú7mesh Úxwumixw'
-      });
-          
-      google.maps.event.addListener(marker, 'click', function() {
-        infowindow.open(map,marker);
-      });
-          
-      }
+        });
         
-      google.maps.event.addDomListener(window, 'load', initialize);
+        google.maps.event.addListener(marker, 'click', function() {
+            infowindow.open(map,marker);
+        });
         
+         var triangleCoords = [
+            new google.maps.LatLng(49.05,-123.30),
+            new google.maps.LatLng(50.55,-122.30),
+            new google.maps.LatLng(50.95,-125.30),
+            new google.maps.LatLng(50.95,-126.30),
+            new google.maps.LatLng(49.55,-123.30)
+          ];
+
+          // Construct the polygon.
+          squamishLand = new google.maps.Polygon({
+            paths: triangleCoords,
+            strokeColor: '#FFF',
+            strokeOpacity: 0.4,
+            strokeWeight: 1,
+            fillColor: '#FFF',
+            fillOpacity: 0.15
+          });
+
+          squamishLand.setMap(map);
+    }
+          
+   
+          
+    // MUSQUEAM
+    function musqueamPin() {
+        // Defining Popup for marker
+        var contentString = '<div id="content">'+
+              '<div id="siteNotice">'+
+              '</div>'+
+              '<h1 id="firstHeading" class="firstHeading">xʷməθkʷəy̓ əm</h1>'+
+              '<div id="bodyContent">'+
+              '<p><b>xʷməθkʷəy̓ əm</b>, also known as the <b>Musqueam Nation</b></p>'+
+              '</div>'+
+              '</div>';
+
+        var infowindow = new google.maps.InfoWindow({
+          content: contentString
+        });
+        
+        var image = {
+            size: new google.maps.Size(72, 103),
+            url: 'marker-icons/musqueam.png'
+        };
+
+        var myLatlng = new google.maps.LatLng(49.22,-123.20)
+
+        var marker = new google.maps.Marker({
+          position: myLatlng,
+          map: map,
+          icon: image,
+          title: 'xʷməθkʷəy̓ əm'
+        });
+        
+        var triangleCoords = [
+            new google.maps.LatLng(49.05,-123.20),
+            new google.maps.LatLng(49.08,-123.10),
+            new google.maps.LatLng(50.55,-122.30),
+            new google.maps.LatLng(50.95,-125.30),
+            new google.maps.LatLng(50.95,-126.30),
+            new google.maps.LatLng(49.05,-123.20)
+          ];
+
+          // Construct the polygon.
+          musqueamLand = new google.maps.Polygon({
+            paths: triangleCoords,
+            strokeColor: '#FFF',
+            strokeOpacity: 0.4,
+            strokeWeight: 1,
+            fillColor: '#FFF',
+            fillOpacity: 0.15
+          });
+          
+         musqueamSOI = new google.maps.GroundOverlay(
+            'overlays/musqueamSOI.png',
+            musquamSOIImageBounds);
+
+        function addOverlay() {
+            musqueamSOI.setMap(map);
+        }
+         function removeOverlay() {
+            musqueamSOI.setMap(null);
+         }
+        
+        google.maps.event.addListener(marker, 'click', function() {
+            addOverlay();
+        });
+        
+        musqueamLand.setMap(map);
+    }
+    musqueamPin();
+    squamishPin();
+
+  }
+  google.maps.event.addDomListener(window, 'load', initialize);
+    
     </script>
+    
   </head>
   <body>
 <div id="map-canvas"></div>
