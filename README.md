@@ -7,6 +7,8 @@ Live test at <a href="http://greatlittlewebsite.com/landlanguage/">http://greatl
 
 <h2>To Do</h2>
 <ul>
+<li>Make icons draggable and saveable for easy repositioning, any way to size overlays more easily?</li>
+<li>Make overlays toggable (look for API plugins for coding these simple things)
 <li>Start gathering icons for bands across BC, size them similarly, save resources below</li>
 <li>Gather good maps, upload them for overlay option, then start mapping the zones</li>
 <li>Contact bands or locals about place names in local languages, conduct field research</li>
