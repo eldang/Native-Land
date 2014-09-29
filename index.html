@@ -14,13 +14,9 @@
     var musqueamLand;
         
     function initialize() {
-    
-        var musquamSOIImageBounds = new google.maps.LatLngBounds(
-            new google.maps.LatLng(49.004,-123.473),
-            new google.maps.LatLng(49.668,-122.762));
 
         var mapOptions = {
-            zoom: 8,
+            zoom: 9,
             center: new google.maps.LatLng(49.22,-123.20)
     };
           
@@ -119,37 +115,63 @@
         });
         
         var triangleCoords = [
-            new google.maps.LatLng(49.05,-123.20),
-            new google.maps.LatLng(49.08,-123.10),
-            new google.maps.LatLng(50.55,-122.30),
-            new google.maps.LatLng(50.95,-125.30),
-            new google.maps.LatLng(50.95,-126.30),
-            new google.maps.LatLng(49.05,-123.20)
+            new google.maps.LatLng(49.044859,-123.177338),
+            new google.maps.LatLng(49.068679,-123.09906),
+            new google.maps.LatLng(49.111846,-123.022156),
+            new google.maps.LatLng(49.131619,-122.957611),
+            new google.maps.LatLng(49.156773,-122.879333),
+            new google.maps.LatLng(49.195377,-122.829895),
+            new google.maps.LatLng(49.22857,-122.801056),
+            new google.maps.LatLng(49.281454,-122.788696),
+            new google.maps.LatLng(49.334282,-122.791443),
+            new google.maps.LatLng(49.382582,-122.820282),
+            new google.maps.LatLng(49.446017,-122.813416),
+            new google.maps.LatLng(49.511153,-122.799683),
+            new google.maps.LatLng(49.506144,-122.825089),
+            new google.maps.LatLng(49.532889,-122.779083),
+            new google.maps.LatLng(49.547593,-122.797623),
+            new google.maps.LatLng(49.571645,-122.766724),
+            new google.maps.LatLng(49.577433,-122.809296),
+            new google.maps.LatLng(49.581885,-122.787323),
+            new google.maps.LatLng(49.601863,-122.830238),
+            new google.maps.LatLng(49.616101,-122.841911),
+            new google.maps.LatLng(49.650841,-123.049622),
+            new google.maps.LatLng(49.60325,-123.037949),
+            new google.maps.LatLng(49.595239,-123.08876),
+            new google.maps.LatLng(49.577878,-123.10112),
+            new google.maps.LatLng(49.556057,-123.099747),
+            new google.maps.LatLng(49.558455,-123.155365),
+            new google.maps.LatLng(49.542417,-123.166351),
+            new google.maps.LatLng(49.5315,-123.195534),
+            new google.maps.LatLng(49.503022,-123.186264),
+            new google.maps.LatLng(49.486691,-123.187637),
+            new google.maps.LatLng(49.465053,-123.178711),
+            new google.maps.LatLng(49.461036,-123.208237),
+            new google.maps.LatLng(49.454341,-123.257675),
+            new google.maps.LatLng(49.441395,-123.284454),
+            new google.maps.LatLng(49.426436,-123.290634),
+            new google.maps.LatLng(49.4041,-123.291321),
+            new google.maps.LatLng(49.378402,-123.302994),
+            new google.maps.LatLng(49.354255,-123.32119),
+            new google.maps.LatLng(49.335914,-123.344193),
+            new google.maps.LatLng(49.320699,-123.398094),
+            new google.maps.LatLng(49.302121,-123.474655),
+            new google.maps.LatLng(49.044859,-123.177338)
           ];
 
           // Construct the polygon.
           musqueamLand = new google.maps.Polygon({
             paths: triangleCoords,
             strokeColor: '#FFF',
-            strokeOpacity: 0.4,
+            strokeOpacity: 0.8,
             strokeWeight: 1,
             fillColor: '#FFF',
-            fillOpacity: 0.15
+            fillOpacity: 0.8
           });
           
-         musqueamSOI = new google.maps.GroundOverlay(
-            'overlays/musqueamSOI.png',
-            musquamSOIImageBounds);
-
-        function addOverlay() {
-            musqueamSOI.setMap(map);
-        }
-         function removeOverlay() {
-            musqueamSOI.setMap(null);
-         }
         
         google.maps.event.addListener(marker, 'click', function() {
-            addOverlay();
+            infowindow.open(map,marker);
         });
         
         musqueamLand.setMap(map);
