@@ -7,8 +7,10 @@ Live test at <a href="http://greatlittlewebsite.com/landlanguage/">http://greatl
 
 <h2>To Do</h2>
 <ul>
-<li>Build simple tool for spitting out the polygons as I draw them</li>
 <li>Start gathering icons for bands across BC, size them similarly, save resources below</li>
+<li>Draw out maps for each band</li>
+<li>Format nicely to appear on click, fade in, nice transparencies, information, etc</li>
+<li>Good way to put place names on the map?</li>
 <li>Contact bands or locals about place names in local languages, conduct field research</li>
 </ul>
 
@@ -33,6 +35,10 @@ Live test at <a href="http://greatlittlewebsite.com/landlanguage/">http://greatl
 <p><strong>I don't want to work on this alone. I know I need to be careful. So I hope to find a lot of help.</strong></p>
 
 <h5>Resources</h5>
+Technical:
+<ul>
+<li>http://www.birdtheme.org/useful/v3tool.html</li>
+</ul>
 General:
   <ul>
     <li>See <a href="http://www.bctreaty.ca/files/first_nations.php">BCtreaty.ca</a> for some information on nations in the treaty process.</li>
