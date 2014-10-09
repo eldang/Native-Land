@@ -7,7 +7,8 @@ Live test at <a href="http://greatlittlewebsite.com/landlanguage/">http://greatl
 
 <h2>To Do</h2>
 <ul>
-<li>Start gathering icons for bands across BC, size them similarly, save resources below</li>
+<li>Add broad BC language map</li>
+<li>Gathering icons for bands across BC, size them similarly, save resources below</li>
 <li>Draw out maps for each band</li>
 <li>Format nicely to appear on click, fade in, nice transparencies, information, etc</li>
 <li>Good way to put place names on the map?</li>
@@ -45,6 +46,9 @@ General:
     <li><a href="http://maps.fphlcc.ca/">First Peoples' Language Map</a> is a great resource for making sure you catch all the different nations, and has great information on languages.</li>
     <li><a href="http://www.aadnc-aandc.gc.ca/eng/1100100013785/1304467449155">Aboriginal Affairs website, maybe useful somewhere</a>. It has <a href="http://scsim-cirrp.aandc-aadnc.gc.ca/index-eng.asp">a map of settled claims</a>.</li>
     <li>City of Vancouver also has a <a href="http://www.metrovancouver.org/region/aboriginal/Aboriginal%20Affairs%20documents/ProfileOfFirstNationsJanuary2014.pdf">useful map PDF</a> on band claims, reserves, and treaties in the City.</li>
+    <li><a href="http://fnlg.arts.ubc.ca/images/BClangs2.gif">UBC First Nations language map</a> - useful for broad languages and also a good disclaimer on this.</li>
+    <li><a href="http://www.stolonation.bc.ca/about-us/stolo-nation-bands.htm">Sto:lo website, good for nations information</a></li>
+    <li><a href="http://fnbc.info/">First Nations of BC information site</a></li>
   </ul>
   
 Band-specific:
@@ -106,8 +110,22 @@ Band-specific:
     </ul>
   </ul>
   <li><a href=""><strong>Kwantlen</strong></a></li>
-  <li><a href=""><strong>Semyome</strong></a></li>
+  <ul>
+    <li>Kwantlen Traditional Territory extends from Richmond and New Westminster in the west, to Surrey and Langley in the south, east to Mission, and to the northernmost reaches of Stave Lake. (<a href="http://www.kwantlenfn.ca/">http://www.kwantlenfn.ca/</a>)</li>
+    <li>Sto:lo associated, map of reserves on Vancouver site, maybe use Sto:lo territory with a marker for Kwantlen nation</li>
+  </ul>
+  <li><a href=""><strong>Semyome (Semiahmoo)</strong></a></li>
+  <ul>
+    <li>"The Semiahmoo are more closely related to the Lummi and Samish peoples south of the international border, and to the Lekwammen and T'sou-ke peoples across the Strait of Georgia, than they are to the Halkomelem-speaking Sto:lo of the Fraser Valley and of the Fraser's delta to the north of themselves, the Musqueam." (<a href="http://en.wikipedia.org/wiki/Semiahmoo_people">wikipedia</a>)</li>
+    <li>"Shortly before 1850, their neighbours to the north, the Snokomish, were almost entirely wiped out by a smallpox epidemic. The few survivors joined the Semiahmoo and the Semiahmoo became heirs to the Snokomish territory which encircled Boundary Bay. After this time, the Semiahmoo made Crescent Beach one of their temporary summer camps."</li>
+    <li>Speaking "Sencoten", known by many names (<a href="http://maps.fphlcc.ca/sencoten">http://maps.fphlcc.ca/sencoten</a>)</li>
+    <li><a href="http://www.semiahmoofirstnation.org/">Website under construction</a></li>
+  </ul>
   <li><a href=""><strong>Matsqui</strong></a></li>
+  <ul>
+    <li>Have Sto:lo as one body of territory with Matsqui nation symbol dropped on their area</li>
+    <li><a href="http://www.angelfire.com/empire2/matsquifirstnation/">Angelfire official site?</a></li>
+  </ul>
   <li><a href=""><strong>Sumas</strong></a></li>
   <li><a href=""><strong>Leq'á:mel</strong></a></li>
   <li><a href=""><strong>Leq'á:mel</strong></a></li>
