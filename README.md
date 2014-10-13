@@ -7,8 +7,8 @@ Live test at <a href="http://greatlittlewebsite.com/landlanguage/">http://greatl
 
 <h2>To Do</h2>
 <ul>
-<li>Add broad BC language map</li>
-<li>Gathering icons for bands across BC, size them similarly, save resources below</li>
+<li>Gathering icons for bands AND languages across BC, size them similarly, save resources below</li>
+<li>Add language map with markers for language resources</li>
 <li>Draw out maps for each band</li>
 <li>Format nicely to appear on click, fade in, nice transparencies, information, etc</li>
 <li>Good way to put place names on the map?</li>
