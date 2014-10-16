@@ -51,7 +51,7 @@ General:
     <li><a href="http://fnbc.info/">First Nations of BC information site</a></li>
   </ul>
   
-Band-specific:
+Nations:
 <ul>
   <li><a href="http://www.squamish.net/"><strong>Skwxwú7mesh Úxwumixw</strong> (Squamish Nation)</a></li>
   <ul>
@@ -91,28 +91,63 @@ Band-specific:
       <li><a href="http://www.burrardband.com/en/About%20TWN/Declaration.aspx">Poetry, stories</a></li>
     </ul>
   </ul>
-  <li><a href="http://maps.fphlcc.ca/qayqayt"><strong>Qayqayt</strong></a> (<a href="http://en.wikipedia.org/wiki/Qayqayt_First_Nation">Wikipedia</a>, <a href="http://www.bcafn.ca/files/fn-new-westminster-qayqayt.php">Contact</a>)</li>
-  <li><a href="http://www.kwikwetlem.com/"><strong>Kwikwetlem Nation</strong></a></li>
+  <li>Stó:lō Nation Members</li>
   <ul>
-    <li><a href="http://en.wikipedia.org/wiki/Halkomelem">Wikipedia page on Halkomelem language group (they speak Downriver)</a></li>
-    <li>Lands</li>
+    <li><strong>Aitchelitz</strong></li>
+    <li><a href=""><strong>Leq'á:mel</strong></a></li>
+    <li><a href=""><strong>Matsqui</strong></a></li>
+      <ul>
+        <li>Have Sto:lo as one body of territory with Matsqui nation symbol dropped on their area</li>
+        <li><a href="http://www.angelfire.com/empire2/matsquifirstnation/">Angelfire official site?</a></li>
+      </ul>
+    <li><a href=""><strong>Popkum</strong></a></li>
+    <li><a href=""><strong>Skway</strong></a></li>
+    <li><a href=""><strong>Skawahlook</strong></a></li>
+    <li><a href=""><strong>Scowlitz</strong></a></li>
+    <li><a href=""><strong>Skowkale</strong></a></li>
+    <li><a href=""><strong>Squiala</strong></a></li>
+    <li><a href=""><strong>Sumas</strong></a></li>
+    <li><a href=""><strong>Yakweakwioose</strong></a></li>
+    <li><a href=""><strong>Tzeachten</strong></a></li>
+  </ul>
+  <li>Stó:lō Nation Tribal Council</li>
+  <ul>
+    <li><a href=""><strong>Chawathil</strong></a></li>
+    <li><a href=""><strong>Cheam</strong></a></li>
+    <li><a href=""><strong>Kwaw-kwaw-apilt</strong></a></li>
+    <li><a href=""><strong>Seabird Island</strong></a></li>
+    <li><a href=""><strong>Shxw'ow'hamel</strong></a></li>
+    <li><a href=""><strong>Soowahlie</strong></a></li>
+    <li><a href=""><strong>Kwantlen</strong></a></li>
     <ul>
-      <li><a href="http://www.kwikwetlem.com/history___culture">Place names on right sidebar</a></li>
-    </ul>
-    <li>Other</li>
-    <ul>
-      <li>Part of <a href="http://www.kwikwetlem.com/history___culture">Stolo Nation</a> (<a href="http://en.wikipedia.org/wiki/Kwikwetlem">Wikipedia</a>)</li>
-    </ul>
-    <ul>
-      <li>No SOI (Stolo Nation has put one forward, they aren't listed as a village?)</li>
-      <li><a href="http://www.kwikwetlem.com/history___culture">History & culture</a></li>
-      <li><a href="http://pse5-esd5.ainc-inac.gc.ca/fnp/Main/Search/FNMain.aspx?BAND_NUMBER=560&lang=eng">Aboriginal Affairs Kwikwetlem</li>
+      <li>Kwantlen Traditional Territory extends from Richmond and New Westminster in the west, to Surrey and Langley in the south, east to Mission, and to the northernmost reaches of Stave Lake. (<a href="http://www.kwantlenfn.ca/">http://www.kwantlenfn.ca/</a>)</li>
+      <li>Sto:lo associated, map of reserves on Vancouver site, maybe use Sto:lo territory with a marker for Kwantlen nation</li>
     </ul>
   </ul>
-  <li><a href=""><strong>Kwantlen</strong></a></li>
+  <li>Stó:lō Nation Tribal Council</li>
   <ul>
-    <li>Kwantlen Traditional Territory extends from Richmond and New Westminster in the west, to Surrey and Langley in the south, east to Mission, and to the northernmost reaches of Stave Lake. (<a href="http://www.kwantlenfn.ca/">http://www.kwantlenfn.ca/</a>)</li>
-    <li>Sto:lo associated, map of reserves on Vancouver site, maybe use Sto:lo territory with a marker for Kwantlen nation</li>
+    <li><a href=""><strong>Skwah</strong></a></li>
+    <li><a href=""><strong>Union Bar First</strong></a></li>
+    <li><a href=""><strong>Peters Band</strong></a></li>
+    <li><a href=""><strong>Katzie</strong></a></li>
+    <li><a href="http://maps.fphlcc.ca/qayqayt"><strong>Qayqayt</strong></a> (<a href="http://en.wikipedia.org/wiki/Qayqayt_First_Nation">Wikipedia</a>, <a href="http://www.bcafn.ca/files/fn-new-westminster-qayqayt.php">Contact</a>)</li>
+    <li><a href="http://www.kwikwetlem.com/"><strong>Kwikwetlem Nation</strong></a></li>
+    <ul>
+      <li><a href="http://en.wikipedia.org/wiki/Halkomelem">Wikipedia page on Halkomelem language group (they speak Downriver)</a></li>
+      <li>Lands</li>
+      <ul>
+        <li><a href="http://www.kwikwetlem.com/history___culture">Place names on right sidebar</a></li>
+      </ul>
+      <li>Other</li>
+      <ul>
+        <li>Part of <a href="http://www.kwikwetlem.com/history___culture">Stolo Nation</a> (<a href="http://en.wikipedia.org/wiki/Kwikwetlem">Wikipedia</a>)</li>
+      </ul>
+      <ul>
+        <li>No SOI (Stolo Nation has put one forward, they aren't listed as a village?)</li>
+        <li><a href="http://www.kwikwetlem.com/history___culture">History & culture</a></li>
+        <li><a href="http://pse5-esd5.ainc-inac.gc.ca/fnp/Main/Search/FNMain.aspx?BAND_NUMBER=560&lang=eng">Aboriginal Affairs Kwikwetlem</li>
+      </ul>
+    </ul>
   </ul>
   <li><a href=""><strong>Semyome (Semiahmoo)</strong></a></li>
   <ul>
@@ -121,25 +156,4 @@ Band-specific:
     <li>Speaking "Sencoten", known by many names (<a href="http://maps.fphlcc.ca/sencoten">http://maps.fphlcc.ca/sencoten</a>)</li>
     <li><a href="http://www.semiahmoofirstnation.org/">Website under construction</a></li>
   </ul>
-  <li><a href=""><strong>Matsqui</strong></a></li>
-  <ul>
-    <li>Have Sto:lo as one body of territory with Matsqui nation symbol dropped on their area</li>
-    <li><a href="http://www.angelfire.com/empire2/matsquifirstnation/">Angelfire official site?</a></li>
-  </ul>
-  <li><a href=""><strong>Sumas</strong></a></li>
-  <li><a href=""><strong>Leq'á:mel</strong></a></li>
-  <li><a href=""><strong>Leq'á:mel</strong></a></li>
-  <li><a href=""><strong>Aitchelitz</strong></a></li>
-  <li><a href=""><strong>Kwaw-kwaw-apilt</strong></a></li>
-  <li><a href=""><strong>Skwah</strong></a></li>
-  <li><a href=""><strong>Scowlitz</strong></a></li>
-  <li><a href=""><strong>Chehalis</strong></a></li>
-  <li><a href=""><strong>Skowkale</strong></a></li>
-  <li><a href=""><strong>Yakweakwioose</strong></a></li>
-  <li><a href=""><strong>Tzeachten</strong></a></li>
-  <li><a href=""><strong>Soowahlie</strong></a></li>
-  <li><a href=""><strong>Cheam</strong></a></li>
-  <li><a href=""><strong>Popkum</strong></a></li>
-  <li><a href=""><strong>Seabird Island</strong></a></li>
-  <li><a href=""><strong>Peters</strong></a></li>
 </ul>
