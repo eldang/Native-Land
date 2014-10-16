@@ -91,7 +91,11 @@ Nations:
       <li><a href="http://www.burrardband.com/en/About%20TWN/Declaration.aspx">Poetry, stories</a></li>
     </ul>
   </ul>
-  <li>Stó:lō Nation Members</li>
+  <li><strong>Stó:lō general information (map as one territory, then split up in later versions)</strong></li>
+  <ul>
+    <li><a href="http://sxta.bc.ca/declaration.html">Beautiful declaration of ownership</a></li>
+  </ul>
+  <li><strong>Stó:lō Nation Members</strong></li>
   <ul>
     <li><strong>Aitchelitz</strong></li>
     <li><a href=""><strong>Leq'á:mel</strong></a></li>
