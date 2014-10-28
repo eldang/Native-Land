@@ -6,10 +6,10 @@ A web app with Google Maps API for mapping Aboriginal nations along with placena
 Live test at <a href="http://greatlittlewebsite.com/landlanguage/">http://greatlittlewebsite.com/landlanguage/</a>
 
 <h2>To Do</h2>
+Languages first, then individual nations.
 <ul>
-<li>Gathering icons for bands AND languages across BC, size them similarly, save resources below</li>
-<li>Add language map with markers for language resources</li>
-<li>Draw out maps for each band</li>
+<li>Add language map (layovers) with markers for basic language information (First Nations language site)</li>
+<li>Draw out maps for each nation you have so far</li>
 <li>Format nicely to appear on click, fade in, nice transparencies, information, etc</li>
 <li>Good way to put place names on the map?</li>
 <li>Contact bands or locals about place names in local languages, conduct field research</li>
