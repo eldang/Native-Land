@@ -98,6 +98,10 @@ fillOpacity: 0.6
 var it = new google.maps.Polygon(polyOptions);
 it.setMap(map);
 
+
+
+----- here start next -----
+    
 // Inland Lingit
 var myCoordinates = [
 new google.maps.LatLng(60.174306,-132.583008),
@@ -136,7 +140,7 @@ var it = new google.maps.Polygon(polyOptions);
 it.setMap(map);
 
 
-// Kaska, Dene
+// Kaska, Dene kaskaDene
 var myCoordinates = [
 new google.maps.LatLng(60.130564,-130.385742),
 new google.maps.LatLng(59.844815,-130.517578),
@@ -182,7 +186,7 @@ var it = new google.maps.Polygon(polyOptions);
 it.setMap(map);
 
 
-// Dene-tha
+// Dene-tha deneTha
 
 var myCoordinates = [
 new google.maps.LatLng(60.152442,-125.024414),
@@ -220,7 +224,7 @@ var it = new google.maps.Polygon(polyOptions);
 it.setMap(map);
 
 
-// Tahitan
+// Tahltan tahltan
 var myCoordinates = [
 new google.maps.LatLng(59.556592,-130.737305),
 new google.maps.LatLng(59.288332,-130.957031),
@@ -271,7 +275,7 @@ fillOpacity: 0.6
 var it = new google.maps.Polygon(polyOptions);
 it.setMap(map);
 
-// Nisga'a and Gitxsan
+// Nisga'a and Gitxsan nisgaaGitxsan
 var myCoordinates = [
 new google.maps.LatLng(54.546580,-130.078125),
 new google.maps.LatLng(54.393352,-129.902344),
@@ -322,7 +326,7 @@ fillOpacity: 0.6
 var it = new google.maps.Polygon(polyOptions);
 it.setMap(map);
 
-// Sokani
+// Sokani sokani
 var myCoordinates = [
 new google.maps.LatLng(58.585436,-127.661133),
 new google.maps.LatLng(58.147519,-127.485352),
@@ -371,7 +375,7 @@ fillOpacity: 0.6
 var it = new google.maps.Polygon(polyOptions);
 it.setMap(map);
 
-// Dunne-za
+// Dunne-za dunneZa
 var myCoordinates = [
 new google.maps.LatLng(57.868132,-125.112305),
 new google.maps.LatLng(57.421294,-124.584961),
@@ -417,7 +421,7 @@ var it = new google.maps.Polygon(polyOptions);
 it.setMap(map);
 
 
-// Xaadas Haida
+// Xaadas Haida xaadasHaida
 
 var myCoordinates = [
 new google.maps.LatLng(54.521081,-134.340820),
@@ -453,7 +457,10 @@ fillOpacity: 0.6
 var it = new google.maps.Polygon(polyOptions);
 it.setMap(map);
 
-// Tsinshiam
+
+---- start here next ----- 
+
+// Tsinshiam tsinshiam
 
 var myCoordinates = [
 new google.maps.LatLng(54.367759,-131.088867),
@@ -509,7 +516,7 @@ var it = new google.maps.Polygon(polyOptions);
 it.setMap(map);
 
 
-// Nat'ooten and Wet'suwet'en
+// Nat'ooten and Wet'suwet'en natootenWetsuweten
 
 var myCoordinates = [
 new google.maps.LatLng(56.218923,-127.309570),
@@ -548,7 +555,7 @@ fillOpacity: 0.6
 var it = new google.maps.Polygon(polyOptions);
 it.setMap(map);
 
-// Dakalina?
+// Dakalina? dakalina
 
 var myCoordinates = [
 new google.maps.LatLng(55.128649,-125.859375),
@@ -616,7 +623,7 @@ fillOpacity: 0.6
 var it = new google.maps.Polygon(polyOptions);
 it.setMap(map);
 
-// Salteaux, Cree
+// Salteaux, Cree salteauxCree
 
 var myCoordinates = [
 new google.maps.LatLng(55.153766,-121.728516),
@@ -647,7 +654,7 @@ fillOpacity: 0.6
 var it = new google.maps.Polygon(polyOptions);
 it.setMap(map);
 
-// Haisla
+// Haisla haisla
 
 var myCoordinates = [
 new google.maps.LatLng(54.085173,-127.836914),
@@ -681,7 +688,7 @@ fillOpacity: 0.6
 var it = new google.maps.Polygon(polyOptions);
 it.setMap(map);
 
-// Heiltsun
+// Heiltsun heiltsun
 
 var myCoordinates = [
 new google.maps.LatLng(51.426614,-129.594727),
@@ -718,7 +725,7 @@ fillOpacity: 0.6
 var it = new google.maps.Polygon(polyOptions);
 it.setMap(map);
 
-// Nuxalik
+// Nuxalik nuxalik
 
 var myCoordinates = [
 new google.maps.LatLng(52.935397,-126.826172),
@@ -743,7 +750,7 @@ fillOpacity: 0.6
 var it = new google.maps.Polygon(polyOptions);
 it.setMap(map);
 
-// Oweekeno
+// Oweekeno oweekeno
 
 var myCoordinates = [
 new google.maps.LatLng(51.316881,-127.705078),
@@ -771,7 +778,7 @@ fillOpacity: 0.6
 var it = new google.maps.Polygon(polyOptions);
 it.setMap(map);
 
-// Tsilhquot'in
+// Tsilhquot'in tsilhquotin
 
 var myCoordinates = [
 new google.maps.LatLng(52.052490,-125.419922),
@@ -807,7 +814,7 @@ fillOpacity: 0.6
 var it = new google.maps.Polygon(polyOptions);
 it.setMap(map);
 
-// Secwepmec (connects to Okanagan)
+// Secwepmec (connects to Okanagan) secwepmec
 
 var myCoordinates = [
 new google.maps.LatLng(52.321911,-122.651367),
@@ -863,7 +870,7 @@ fillOpacity: 0.6
 var it = new google.maps.Polygon(polyOptions);
 it.setMap(map);
 
-// Okanagan (large mixed regions)
+// Okanagan (large mixed regions) okanagan
 
 var myCoordinates = [
 new google.maps.LatLng(50.120578,-120.805664),
@@ -918,7 +925,7 @@ fillOpacity: 0.6
 var it = new google.maps.Polygon(polyOptions);
 it.setMap(map);
 
-// Ktunaxa
+// Ktunaxa ktunaxa
 
 var myCoordinates = [
 new google.maps.LatLng(51.536086,-116.850586),
@@ -949,7 +956,7 @@ fillOpacity: 0.6
 var it = new google.maps.Polygon(polyOptions);
 it.setMap(map);
 
-// Nlaka'pamux
+// Nlaka'pamux nlakapamux
 
 var myCoordinates = [
 new google.maps.LatLng(50.233152,-121.596680),
@@ -991,7 +998,7 @@ fillOpacity: 0.6
 var it = new google.maps.Polygon(polyOptions);
 it.setMap(map);
 
-// Stl'atl'imx
+// Stl'atl'imx stlatlimx
 
 var myCoordinates = [
 new google.maps.LatLng(50.833698,-122.651367),
@@ -1038,7 +1045,7 @@ fillOpacity: 0.6
 var it = new google.maps.Polygon(polyOptions);
 it.setMap(map);
  
-// Kwakwaka'wakw
+// Kwakwaka'wakw kwakwakawakw
 
 var myCoordinates = [
 new google.maps.LatLng(51.096623,-128.671875),
@@ -1071,7 +1078,7 @@ var it = new google.maps.Polygon(polyOptions);
 it.setMap(map);
 
 
-// Nuu-cha-nuulth
+// Nuu-cha-nuulth nuuchatnuulth
 
 var myCoordinates = [
 new google.maps.LatLng(49.781264,-127.902832),

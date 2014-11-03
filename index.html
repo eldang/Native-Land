@@ -9,21 +9,848 @@
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCoajO_ajNZk7DXuY85V-XeaHqao0sw_gc">
     </script>
     <script type="text/javascript">
-        
+    
+    // NATIONS 
     var squamishLand;
     var musqueamLand;
     var tsleilLand;
         
+    // LANGUAGES
+    var lingitLanguage;
+    var tutchoneLanguage;
+    var tagishLanguage;
+    var inlandLingitLanguage;
+    var kaskaDeneLanguage;
+    var deneThaLanguage;
+    var tahltanLanguage;
+    var nisgaaGitxsanLanguage;
+    var sokaniLanguage;
+    var dunneZaLanguage;
+    var xaadasHaidaLanguage;
+    var tsinshiamLanguage;
+    var natootenWetsuwetenLanguage;
+    var dakalinaLanguage;
+    var salteauxCreeLanguage;
+    var haislaLanguage;
+    var heiltsunLanguage;
+    var nuxalikLanguage;
+    var oweekenoLanguage;
+    var tsilhquotinLanguage;
+    var secwepmecLanguage;
+    var okanaganLanguage;
+    var ktunaxaLanguage;
+    var nlakapamuxLanguage;
+    var stlatlimxLanguage;
+    var kwakwakawakwLanguage;
+    var nuuchatnuulthLanguage;
+        
     function initialize() {
 
         var mapOptions = {
-            zoom: 9,
+            zoom: 6,
             center: new google.maps.LatLng(49.22,-123.20)
     };
           
     var map = new google.maps.Map(document.getElementById('map-canvas'),
         mapOptions);
+
+//LANGUAGES
+        // LINGIT
+    function lingitPin() {
         
+        // Defining Popup for marker
+        var contentString = '<div id="content">'+
+              '<div id="siteNotice">'+
+              '</div>'+
+              '<h1 id="firstHeading" class="firstHeading">Lingit</h1>'+
+              '<div id="bodyContent">'+
+              '</div>'+
+              '</div>';
+
+          var infowindow = new google.maps.InfoWindow({
+              content: contentString
+          });
+        
+
+        
+        var myLatlng = new google.maps.LatLng(60.086763,-137.021484)
+          
+        var marker = new google.maps.Marker({
+          position: myLatlng,
+          map: map,
+          title: 'Lingit'
+        });
+        
+        google.maps.event.addListener(marker, 'click', function() {
+            infowindow.open(map,marker);
+        });
+        
+         var myCoordinates = [
+        new google.maps.LatLng(60.086763,-137.021484),
+        new google.maps.LatLng(59.822732,-136.538086),
+        new google.maps.LatLng(59.623325,-136.054688),
+        new google.maps.LatLng(59.623325,-135.439453),
+        new google.maps.LatLng(59.623325,-134.912109),
+        new google.maps.LatLng(59.578851,-134.340820),
+        new google.maps.LatLng(59.175928,-134.077148),
+        new google.maps.LatLng(58.813742,-133.593750),
+        new google.maps.LatLng(58.493694,-133.066406),
+        new google.maps.LatLng(58.217025,-132.714844),
+        new google.maps.LatLng(57.704147,-132.495117),
+        new google.maps.LatLng(57.112385,-132.011719),
+        new google.maps.LatLng(56.752723,-131.704102),
+        new google.maps.LatLng(56.438204,-131.396484),
+        new google.maps.LatLng(56.267761,-130.869141),
+        new google.maps.LatLng(56.047500,-130.341797),
+        new google.maps.LatLng(55.825973,-129.814453),
+        new google.maps.LatLng(55.429013,-129.946289),
+        new google.maps.LatLng(55.053203,-129.946289),
+        new google.maps.LatLng(54.826008,-129.990234),
+        new google.maps.LatLng(54.546580,-130.341797),
+        new google.maps.LatLng(54.495568,-131.088867),
+        new google.maps.LatLng(54.876607,-131.616211),
+        new google.maps.LatLng(55.354135,-131.967773),
+        new google.maps.LatLng(55.603178,-132.187500),
+        new google.maps.LatLng(55.603178,-132.583008),
+        new google.maps.LatLng(55.404070,-132.626953),
+        new google.maps.LatLng(55.178868,-133.022461),
+        new google.maps.LatLng(54.952386,-133.461914),
+        new google.maps.LatLng(54.724620,-133.901367),
+        new google.maps.LatLng(54.572062,-134.472656),
+        new google.maps.LatLng(57.562995,-137.285156),
+        new google.maps.LatLng(59.265881,-138.999023),
+        new google.maps.LatLng(60.064840,-139.086914),
+        new google.maps.LatLng(60.305185,-137.636719) 
+         ];
+
+          // Construct the polygon.
+          lingitLanguage = new google.maps.Polygon({
+            paths: myCoordinates,
+            strokeColor: '#111',
+            strokeOpacity: 0.4,
+            strokeWeight: 1,
+            fillColor: '#111',
+            fillOpacity: 0.8
+          });
+
+          lingitLanguage.setMap(map);
+    }
+    
+    // TUTCHONE
+    function tutchonePin() {
+        
+        // Defining Popup for marker
+        var contentString = '<div id="content">'+
+              '<div id="siteNotice">'+
+              '</div>'+
+              '<h1 id="firstHeading" class="firstHeading">Tutchone</h1>'+
+              '<div id="bodyContent">'+
+              '</div>'+
+              '</div>';
+
+          var infowindow = new google.maps.InfoWindow({
+              content: contentString
+          });
+        
+
+        
+        var myLatlng = new google.maps.LatLng(60.261617,-137.241211)
+          
+        var marker = new google.maps.Marker({
+          position: myLatlng,
+          map: map,
+          title: 'Tutchone'
+        });
+        
+        google.maps.event.addListener(marker, 'click', function() {
+            infowindow.open(map,marker);
+        });
+        
+         var myCoordinates = [
+        new google.maps.LatLng(60.261617,-137.241211),
+        new google.maps.LatLng(59.998986,-136.625977),
+        new google.maps.LatLng(59.844815,-136.054688),
+        new google.maps.LatLng(59.689926,-135.439453),
+        new google.maps.LatLng(59.667741,-134.604492),
+        new google.maps.LatLng(59.955010,-134.692383),
+        new google.maps.LatLng(60.130564,-134.736328),
+        new google.maps.LatLng(60.239811,-134.165039)
+         ];
+
+          // Construct the polygon.
+          tutchoneLanguage = new google.maps.Polygon({
+            paths: myCoordinates,
+            strokeColor: '#222',
+            strokeOpacity: 0.4,
+            strokeWeight: 1,
+            fillColor: '#222',
+            fillOpacity: 0.8
+          });
+
+          tutchoneLanguage.setMap(map);
+    }
+    
+    // TAGISH 
+    function tagishPin() {
+        
+        // Defining Popup for marker
+        var contentString = '<div id="content">'+
+              '<div id="siteNotice">'+
+              '</div>'+
+              '<h1 id="firstHeading" class="firstHeading">tagish</h1>'+
+              '<div id="bodyContent">'+
+              '</div>'+
+              '</div>';
+
+          var infowindow = new google.maps.InfoWindow({
+              content: contentString
+          });
+        
+
+        
+        var myLatlng = new google.maps.LatLng(59.955010,-134.472656)
+          
+        var marker = new google.maps.Marker({
+          position: myLatlng,
+          map: map,
+          title: 'tagish'
+        });
+        
+        google.maps.event.addListener(marker, 'click', function() {
+            infowindow.open(map,marker);
+        });
+        
+         var myCoordinates = [
+            new google.maps.LatLng(59.955010,-134.472656),
+            new google.maps.LatLng(59.645540,-134.340820),
+            new google.maps.LatLng(59.467408,-134.121094),
+            new google.maps.LatLng(59.400365,-133.945313),
+            new google.maps.LatLng(59.422728,-133.549805),
+            new google.maps.LatLng(59.556592,-133.198242),
+            new google.maps.LatLng(59.645540,-132.934570),
+            new google.maps.LatLng(59.866883,-132.670898),
+            new google.maps.LatLng(60.130564,-132.670898),
+            new google.maps.LatLng(60.261617,-132.802734),
+            new google.maps.LatLng(60.239811,-133.901367),
+            new google.maps.LatLng(60.174306,-134.252930)
+         ];
+
+          // Construct the polygon.
+          tagishLanguage = new google.maps.Polygon({
+            paths: myCoordinates,
+            strokeColor: '#333',
+            strokeOpacity: 0.4,
+            strokeWeight: 1,
+            fillColor: '#333',
+            fillOpacity: 0.8
+          });
+
+          tagishLanguage.setMap(map);
+    }
+    
+    // INLAND LINGIT 
+    function inlandLingitPin() {
+        
+        // Defining Popup for marker
+        var contentString = '<div id="content">'+
+              '<div id="siteNotice">'+
+              '</div>'+
+              '<h1 id="firstHeading" class="firstHeading">inlandLingit</h1>'+
+              '<div id="bodyContent">'+
+              '</div>'+
+              '</div>';
+
+          var infowindow = new google.maps.InfoWindow({
+              content: contentString
+          });
+        
+
+        
+        var myLatlng = new google.maps.LatLng(60.174306,-132.583008)
+          
+        var marker = new google.maps.Marker({
+          position: myLatlng,
+          map: map,
+          title: 'inlandLingit'
+        });
+        
+        google.maps.event.addListener(marker, 'click', function() {
+            infowindow.open(map,marker);
+        });
+        
+         var myCoordinates = [
+            new google.maps.LatLng(60.174306,-132.583008),
+            new google.maps.LatLng(59.977005,-132.539063),
+            new google.maps.LatLng(59.822732,-132.539063),
+            new google.maps.LatLng(59.645540,-132.626953),
+            new google.maps.LatLng(59.556592,-133.066406),
+            new google.maps.LatLng(59.400365,-133.198242),
+            new google.maps.LatLng(59.355596,-133.461914),
+            new google.maps.LatLng(59.333189,-133.681641),
+            new google.maps.LatLng(59.243415,-133.901367),
+            new google.maps.LatLng(59.130863,-133.813477),
+            new google.maps.LatLng(58.859224,-133.461914),
+            new google.maps.LatLng(58.608334,-133.154297),
+            new google.maps.LatLng(58.493694,-132.890625),
+            new google.maps.LatLng(58.401712,-132.670898),
+            new google.maps.LatLng(58.654085,-132.451172),
+            new google.maps.LatLng(58.836490,-132.143555),
+            new google.maps.LatLng(59.085739,-131.791992),
+            new google.maps.LatLng(59.220934,-131.352539),
+            new google.maps.LatLng(59.333189,-131.088867),
+            new google.maps.LatLng(59.578851,-130.957031),
+            new google.maps.LatLng(59.734253,-130.781250),
+            new google.maps.LatLng(60.042904,-130.781250),
+            new google.maps.LatLng(60.174306,-130.605469)
+         ];
+
+          // Construct the polygon.
+          inlandLingitLanguage = new google.maps.Polygon({
+            paths: myCoordinates,
+            strokeColor: '#333',
+            strokeOpacity: 0.4,
+            strokeWeight: 1,
+            fillColor: '#333',
+            fillOpacity: 0.8
+          });
+
+          inlandLingitLanguage.setMap(map);
+    }
+        
+    // KASKA, DENE 
+    function kaskaDenePin() {
+        
+        // Defining Popup for marker
+        var contentString = '<div id="content">'+
+              '<div id="siteNotice">'+
+              '</div>'+
+              '<h1 id="firstHeading" class="firstHeading">kaskaDene</h1>'+
+              '<div id="bodyContent">'+
+              '</div>'+
+              '</div>';
+
+          var infowindow = new google.maps.InfoWindow({
+              content: contentString
+          });
+        
+        var myLatlng = new google.maps.LatLng(60.130564,-130.385742)
+          
+        var marker = new google.maps.Marker({
+          position: myLatlng,
+          map: map,
+          title: 'kaskaDene'
+        });
+        
+        google.maps.event.addListener(marker, 'click', function() {
+            infowindow.open(map,marker);
+        });
+        
+         var myCoordinates = [
+            new google.maps.LatLng(60.130564,-130.385742),
+            new google.maps.LatLng(59.844815,-130.517578),
+            new google.maps.LatLng(59.689926,-130.605469),
+            new google.maps.LatLng(59.578851,-130.341797),
+            new google.maps.LatLng(59.489726,-130.166016),
+            new google.maps.LatLng(59.220934,-130.078125),
+            new google.maps.LatLng(59.085739,-130.034180),
+            new google.maps.LatLng(58.904646,-129.638672),
+            new google.maps.LatLng(58.813742,-129.418945),
+            new google.maps.LatLng(58.676938,-129.067383),
+            new google.maps.LatLng(58.585436,-128.627930),
+            new google.maps.LatLng(58.631217,-128.012695),
+            new google.maps.LatLng(58.676938,-127.573242),
+            new google.maps.LatLng(58.631217,-127.133789),
+            new google.maps.LatLng(58.470721,-126.826172),
+            new google.maps.LatLng(58.263287,-126.254883),
+            new google.maps.LatLng(58.147519,-125.859375),
+            new google.maps.LatLng(58.101105,-125.507813),
+            new google.maps.LatLng(57.984808,-125.200195),
+            new google.maps.LatLng(58.170702,-124.628906),
+            new google.maps.LatLng(58.309489,-124.321289),
+            new google.maps.LatLng(58.401712,-123.618164),
+            new google.maps.LatLng(58.516652,-123.354492),
+            new google.maps.LatLng(58.676938,-123.442383),
+            new google.maps.LatLng(58.836490,-123.881836),
+            new google.maps.LatLng(58.995311,-124.189453),
+            new google.maps.LatLng(59.288332,-124.628906),
+            new google.maps.LatLng(59.512029,-124.892578),
+            new google.maps.LatLng(59.734253,-125.112305),
+            new google.maps.LatLng(59.955010,-125.507813),
+            new google.maps.LatLng(60.152442,-126.035156)
+         ];
+
+          // Construct the polygon.
+          kaskaDeneLanguage = new google.maps.Polygon({
+            paths: myCoordinates,
+            strokeColor: '#333',
+            strokeOpacity: 0.4,
+            strokeWeight: 1,
+            fillColor: '#333',
+            fillOpacity: 0.8
+          });
+
+          kaskaDeneLanguage.setMap(map);
+    }
+    
+    // DENE-THA 
+    function deneThaPin() {
+        
+        // Defining Popup for marker
+        var contentString = '<div id="content">'+
+              '<div id="siteNotice">'+
+              '</div>'+
+              '<h1 id="firstHeading" class="firstHeading">deneTha</h1>'+
+              '<div id="bodyContent">'+
+              '</div>'+
+              '</div>';
+
+          var infowindow = new google.maps.InfoWindow({
+              content: contentString
+          });
+        
+        var myLatlng = new google.maps.LatLng(60.130564,-130.385742)
+          
+        var marker = new google.maps.Marker({
+          position: myLatlng,
+          map: map,
+          title: 'deneTha'
+        });
+        
+        google.maps.event.addListener(marker, 'click', function() {
+            infowindow.open(map,marker);
+        });
+        
+         var myCoordinates = [
+            new google.maps.LatLng(60.130564,-130.385742),
+            new google.maps.LatLng(59.844815,-130.517578),
+            new google.maps.LatLng(59.689926,-130.605469),
+            new google.maps.LatLng(59.578851,-130.341797),
+            new google.maps.LatLng(59.489726,-130.166016),
+            new google.maps.LatLng(59.220934,-130.078125),
+            new google.maps.LatLng(59.085739,-130.034180),
+            new google.maps.LatLng(58.904646,-129.638672),
+            new google.maps.LatLng(58.813742,-129.418945),
+            new google.maps.LatLng(58.676938,-129.067383),
+            new google.maps.LatLng(58.585436,-128.627930),
+            new google.maps.LatLng(58.631217,-128.012695),
+            new google.maps.LatLng(58.676938,-127.573242),
+            new google.maps.LatLng(58.631217,-127.133789),
+            new google.maps.LatLng(58.470721,-126.826172),
+            new google.maps.LatLng(58.263287,-126.254883),
+            new google.maps.LatLng(58.147519,-125.859375),
+            new google.maps.LatLng(58.101105,-125.507813),
+            new google.maps.LatLng(57.984808,-125.200195),
+            new google.maps.LatLng(58.170702,-124.628906),
+            new google.maps.LatLng(58.309489,-124.321289),
+            new google.maps.LatLng(58.401712,-123.618164),
+            new google.maps.LatLng(58.516652,-123.354492),
+            new google.maps.LatLng(58.676938,-123.442383),
+            new google.maps.LatLng(58.836490,-123.881836),
+            new google.maps.LatLng(58.995311,-124.189453),
+            new google.maps.LatLng(59.288332,-124.628906),
+            new google.maps.LatLng(59.512029,-124.892578),
+            new google.maps.LatLng(59.734253,-125.112305),
+            new google.maps.LatLng(59.955010,-125.507813),
+            new google.maps.LatLng(60.152442,-126.035156)
+         ];
+
+          // Construct the polygon.
+          deneThaLanguage = new google.maps.Polygon({
+            paths: myCoordinates,
+            strokeColor: '#333',
+            strokeOpacity: 0.4,
+            strokeWeight: 1,
+            fillColor: '#333',
+            fillOpacity: 0.8
+          });
+
+          deneThaLanguage.setMap(map);
+    }
+    
+    // TAHLTAN  
+    function tahltanPin() {
+        
+        // Defining Popup for marker
+        var contentString = '<div id="content">'+
+              '<div id="siteNotice">'+
+              '</div>'+
+              '<h1 id="firstHeading" class="firstHeading">tahltan</h1>'+
+              '<div id="bodyContent">'+
+              '</div>'+
+              '</div>';
+
+          var infowindow = new google.maps.InfoWindow({
+              content: contentString
+          });
+        
+        var myLatlng = new google.maps.LatLng(59.556592,-130.737305)
+          
+        var marker = new google.maps.Marker({
+          position: myLatlng,
+          map: map,
+          title: 'tahltan'
+        });
+        
+        google.maps.event.addListener(marker, 'click', function() {
+            infowindow.open(map,marker);
+        });
+        
+         var myCoordinates = [
+            new google.maps.LatLng(59.556592,-130.737305),
+            new google.maps.LatLng(59.288332,-130.957031),
+            new google.maps.LatLng(59.220934,-131.308594),
+            new google.maps.LatLng(59.063154,-131.484375),
+            new google.maps.LatLng(58.904646,-131.791992),
+            new google.maps.LatLng(58.699776,-132.143555),
+            new google.maps.LatLng(58.470721,-132.363281),
+            new google.maps.LatLng(58.401712,-132.583008),
+            new google.maps.LatLng(58.217025,-132.583008),
+            new google.maps.LatLng(57.727619,-132.275391),
+            new google.maps.LatLng(57.350237,-131.923828),
+            new google.maps.LatLng(57.183902,-131.835938),
+            new google.maps.LatLng(56.800878,-131.440430),
+            new google.maps.LatLng(56.607885,-131.264648),
+            new google.maps.LatLng(56.486762,-130.781250),
+            new google.maps.LatLng(56.365250,-130.429688),
+            new google.maps.LatLng(56.218923,-130.429688),
+            new google.maps.LatLng(56.511018,-129.902344),
+            new google.maps.LatLng(56.680374,-129.462891),
+            new google.maps.LatLng(56.680374,-128.935547),
+            new google.maps.LatLng(56.944974,-128.583984),
+            new google.maps.LatLng(57.231503,-128.144531),
+            new google.maps.LatLng(57.326521,-127.705078),
+            new google.maps.LatLng(57.821355,-127.573242),
+            new google.maps.LatLng(58.193871,-127.529297),
+            new google.maps.LatLng(58.378679,-127.705078),
+            new google.maps.LatLng(58.493694,-127.924805),
+            new google.maps.LatLng(58.562523,-128.232422),
+            new google.maps.LatLng(58.493694,-128.540039),
+            new google.maps.LatLng(58.493694,-128.935547),
+            new google.maps.LatLng(58.699776,-129.287109),
+            new google.maps.LatLng(58.790978,-129.594727),
+            new google.maps.LatLng(58.836490,-129.814453),
+            new google.maps.LatLng(58.972667,-130.078125),
+            new google.maps.LatLng(59.288332,-130.429688),
+            new google.maps.LatLng(59.489726,-130.385742),
+            new google.maps.LatLng(59.556592,-130.517578)
+         ];
+
+          // Construct the polygon.
+          tahltanLanguage = new google.maps.Polygon({
+            paths: myCoordinates,
+            strokeColor: '#333',
+            strokeOpacity: 0.4,
+            strokeWeight: 1,
+            fillColor: '#333',
+            fillOpacity: 0.8
+          });
+
+          tahltanLanguage.setMap(map);
+    }
+    
+    // NISGA'A and GITXSAN  
+    function nisgaaGitxsanPin() {
+        
+        // Defining Popup for marker
+        var contentString = '<div id="content">'+
+              '<div id="siteNotice">'+
+              '</div>'+
+              '<h1 id="firstHeading" class="firstHeading">nisgaaGitxsan</h1>'+
+              '<div id="bodyContent">'+
+              '</div>'+
+              '</div>';
+
+          var infowindow = new google.maps.InfoWindow({
+              content: contentString
+          });
+        
+        var myLatlng = new google.maps.LatLng(54.546580,-130.078125)
+          
+        var marker = new google.maps.Marker({
+          position: myLatlng,
+          map: map,
+          title: 'nisgaaGitxsan'
+        });
+        
+        google.maps.event.addListener(marker, 'click', function() {
+            infowindow.open(map,marker);
+        });
+        
+         var myCoordinates = [
+            new google.maps.LatLng(54.546580,-130.078125),
+            new google.maps.LatLng(54.393352,-129.902344),
+            new google.maps.LatLng(54.444492,-129.682617),
+            new google.maps.LatLng(54.572062,-129.638672),
+            new google.maps.LatLng(54.622978,-129.418945),
+            new google.maps.LatLng(54.597528,-129.111328),
+            new google.maps.LatLng(54.673831,-129.067383),
+            new google.maps.LatLng(54.826008,-128.847656),
+            new google.maps.LatLng(54.648413,-128.671875),
+            new google.maps.LatLng(54.444492,-128.496094),
+            new google.maps.LatLng(54.342149,-128.320313),
+            new google.maps.LatLng(54.367759,-127.968750),
+            new google.maps.LatLng(54.546580,-127.880859),
+            new google.maps.LatLng(54.597528,-127.485352),
+            new google.maps.LatLng(54.673831,-127.309570),
+            new google.maps.LatLng(55.002826,-127.309570),
+            new google.maps.LatLng(55.053203,-127.133789),
+            new google.maps.LatLng(55.254077,-127.133789),
+            new google.maps.LatLng(55.478853,-127.133789),
+            new google.maps.LatLng(55.702355,-127.397461),
+            new google.maps.LatLng(55.899956,-127.397461),
+            new google.maps.LatLng(56.218923,-127.441406),
+            new google.maps.LatLng(56.340901,-127.617188),
+            new google.maps.LatLng(56.365250,-127.397461),
+            new google.maps.LatLng(57.136239,-127.792969),
+            new google.maps.LatLng(56.992883,-128.056641),
+            new google.maps.LatLng(56.776808,-128.496094),
+            new google.maps.LatLng(56.632064,-129.287109),
+            new google.maps.LatLng(56.462490,-129.550781),
+            new google.maps.LatLng(56.267761,-129.990234),
+            new google.maps.LatLng(56.145550,-130.122070),
+            new google.maps.LatLng(56.047500,-130.034180),
+            new google.maps.LatLng(55.924586,-129.858398),
+            new google.maps.LatLng(55.677584,-129.770508),
+            new google.maps.LatLng(55.553495,-129.770508),
+            new google.maps.LatLng(55.178868,-129.638672),
+            new google.maps.LatLng(54.952386,-129.682617)
+         ];
+
+          // Construct the polygon.
+          nisgaaGitxsanLanguage = new google.maps.Polygon({
+            paths: myCoordinates,
+            strokeColor: '#333',
+            strokeOpacity: 0.4,
+            strokeWeight: 1,
+            fillColor: '#333',
+            fillOpacity: 0.8
+          });
+
+          nisgaaGitxsanLanguage.setMap(map);
+    }
+        
+    // SOKANI  
+    function sokaniPin() {
+        
+        // Defining Popup for marker
+        var contentString = '<div id="content">'+
+              '<div id="siteNotice">'+
+              '</div>'+
+              '<h1 id="firstHeading" class="firstHeading">sokani</h1>'+
+              '<div id="bodyContent">'+
+              '</div>'+
+              '</div>';
+
+          var infowindow = new google.maps.InfoWindow({
+              content: contentString
+          });
+        
+        var myLatlng = new google.maps.LatLng(58.585436,-127.661133)
+          
+        var marker = new google.maps.Marker({
+          position: myLatlng,
+          map: map,
+          title: 'sokani'
+        });
+        
+        google.maps.event.addListener(marker, 'click', function() {
+            infowindow.open(map,marker);
+        });
+        
+         var myCoordinates = [
+            new google.maps.LatLng(58.585436,-127.661133),
+            new google.maps.LatLng(58.147519,-127.485352),
+            new google.maps.LatLng(57.844751,-127.397461),
+            new google.maps.LatLng(57.492214,-127.397461),
+            new google.maps.LatLng(57.255281,-127.397461),
+            new google.maps.LatLng(56.968936,-127.529297),
+            new google.maps.LatLng(56.559482,-127.441406),
+            new google.maps.LatLng(56.121060,-127.045898),
+            new google.maps.LatLng(55.727110,-126.474609),
+            new google.maps.LatLng(55.279115,-125.771484),
+            new google.maps.LatLng(54.901882,-125.200195),
+            new google.maps.LatLng(54.749991,-124.365234),
+            new google.maps.LatLng(54.749991,-123.793945),
+            new google.maps.LatLng(54.673831,-123.442383),
+            new google.maps.LatLng(54.418930,-123.134766),
+            new google.maps.LatLng(54.188155,-122.739258),
+            new google.maps.LatLng(54.085173,-122.431641),
+            new google.maps.LatLng(54.316523,-122.167969),
+            new google.maps.LatLng(54.749991,-121.992188),
+            new google.maps.LatLng(55.002826,-121.860352),
+            new google.maps.LatLng(55.404070,-122.080078),
+            new google.maps.LatLng(55.825973,-122.475586),
+            new google.maps.LatLng(56.096556,-122.827148),
+            new google.maps.LatLng(56.243350,-123.442383),
+            new google.maps.LatLng(56.340901,-123.750000),
+            new google.maps.LatLng(56.752723,-124.057617),
+            new google.maps.LatLng(57.016814,-124.365234),
+            new google.maps.LatLng(57.231503,-124.672852),
+            new google.maps.LatLng(57.468589,-125.068359),
+            new google.maps.LatLng(57.657158,-125.156250),
+            new google.maps.LatLng(57.984808,-125.375977),
+            new google.maps.LatLng(58.124320,-126.254883),
+            new google.maps.LatLng(58.240164,-126.650391),
+            new google.maps.LatLng(58.355630,-127.045898),
+            new google.maps.LatLng(58.562523,-127.309570)
+         ];
+
+          // Construct the polygon.
+          sokaniLanguage = new google.maps.Polygon({
+            paths: myCoordinates,
+            strokeColor: '#333',
+            strokeOpacity: 0.4,
+            strokeWeight: 1,
+            fillColor: '#333',
+            fillOpacity: 0.8
+          });
+
+          sokaniLanguage.setMap(map);
+    }
+        
+    // DUNNE-ZA  
+    function dunneZaPin() {
+        
+        // Defining Popup for marker
+        var contentString = '<div id="content">'+
+              '<div id="siteNotice">'+
+              '</div>'+
+              '<h1 id="firstHeading" class="firstHeading">dunneZa</h1>'+
+              '<div id="bodyContent">'+
+              '</div>'+
+              '</div>';
+
+          var infowindow = new google.maps.InfoWindow({
+              content: contentString
+          });
+        
+        var myLatlng = new google.maps.LatLng(57.868132,-125.112305)
+          
+        var marker = new google.maps.Marker({
+          position: myLatlng,
+          map: map,
+          title: 'dunneZa'
+        });
+        
+        google.maps.event.addListener(marker, 'click', function() {
+            infowindow.open(map,marker);
+        });
+        
+         var myCoordinates = [
+            new google.maps.LatLng(57.868132,-125.112305),
+            new google.maps.LatLng(57.421294,-124.584961),
+            new google.maps.LatLng(56.824933,-124.057617),
+            new google.maps.LatLng(56.559482,-123.750000),
+            new google.maps.LatLng(56.316537,-123.266602),
+            new google.maps.LatLng(56.121060,-122.519531),
+            new google.maps.LatLng(55.825973,-122.387695),
+            new google.maps.LatLng(55.578345,-122.080078),
+            new google.maps.LatLng(55.279115,-121.772461),
+            new google.maps.LatLng(55.128649,-120.937500),
+            new google.maps.LatLng(54.952386,-119.838867),
+            new google.maps.LatLng(54.927142,-119.047852),
+            new google.maps.LatLng(54.977614,-118.388672),
+            new google.maps.LatLng(56.243350,-118.784180),
+            new google.maps.LatLng(57.279043,-118.916016),
+            new google.maps.LatLng(57.727619,-118.916016),
+            new google.maps.LatLng(58.470721,-119.179688),
+            new google.maps.LatLng(58.170702,-119.487305),
+            new google.maps.LatLng(58.054632,-119.750977),
+            new google.maps.LatLng(57.868132,-119.838867),
+            new google.maps.LatLng(57.680660,-120.278320),
+            new google.maps.LatLng(57.610107,-120.673828),
+            new google.maps.LatLng(57.657158,-121.333008),
+            new google.maps.LatLng(57.938183,-121.684570),
+            new google.maps.LatLng(57.938183,-122.124023),
+            new google.maps.LatLng(57.961503,-122.651367),
+            new google.maps.LatLng(58.124320,-122.915039),
+            new google.maps.LatLng(58.240164,-123.266602),
+            new google.maps.LatLng(58.378679,-123.310547),
+            new google.maps.LatLng(58.332567,-123.574219),
+            new google.maps.LatLng(58.217025,-124.013672)
+         ];
+
+          // Construct the polygon.
+          dunneZaLanguage = new google.maps.Polygon({
+            paths: myCoordinates,
+            strokeColor: '#333',
+            strokeOpacity: 0.4,
+            strokeWeight: 1,
+            fillColor: '#333',
+            fillOpacity: 0.8
+          });
+
+          dunneZaLanguage.setMap(map);
+    }
+    
+    // XAADAS HAIDA 
+    function xaadasHaidaPin() {
+        
+        // Defining Popup for marker
+        var contentString = '<div id="content">'+
+              '<div id="siteNotice">'+
+              '</div>'+
+              '<h1 id="firstHeading" class="firstHeading">xaadasHaida</h1>'+
+              '<div id="bodyContent">'+
+              '</div>'+
+              '</div>';
+
+          var infowindow = new google.maps.InfoWindow({
+              content: contentString
+          });
+        
+        var myLatlng = new google.maps.LatLng(54.521081,-134.340820)
+          
+        var marker = new google.maps.Marker({
+          position: myLatlng,
+          map: map,
+          title: 'xaadasHaida'
+        });
+        
+        google.maps.event.addListener(marker, 'click', function() {
+            infowindow.open(map,marker);
+        });
+        
+         var myCoordinates = [
+            new google.maps.LatLng(54.521081,-134.340820),
+            new google.maps.LatLng(54.622978,-133.769531),
+            new google.maps.LatLng(54.927142,-133.154297),
+            new google.maps.LatLng(55.128649,-132.758789),
+            new google.maps.LatLng(55.379110,-132.539063),
+            new google.maps.LatLng(55.429013,-132.319336),
+            new google.maps.LatLng(55.329144,-132.143555),
+            new google.maps.LatLng(55.028022,-131.923828),
+            new google.maps.LatLng(54.749991,-131.748047),
+            new google.maps.LatLng(54.521081,-131.484375),
+            new google.maps.LatLng(54.213861,-131.308594),
+            new google.maps.LatLng(53.852527,-131.264648),
+            new google.maps.LatLng(53.488046,-131.396484),
+            new google.maps.LatLng(53.252069,-131.528320),
+            new google.maps.LatLng(52.855864,-131.220703),
+            new google.maps.LatLng(52.482780,-130.737305),
+            new google.maps.LatLng(51.998410,-130.561523),
+            new google.maps.LatLng(51.645294,-130.385742),
+            new google.maps.LatLng(51.344339,-130.649414),
+            new google.maps.LatLng(51.316881,-131.044922),
+            new google.maps.LatLng(51.206883,-131.791992)
+         ];
+
+          // Construct the polygon.
+          xaadasHaidaLanguage = new google.maps.Polygon({
+            paths: myCoordinates,
+            strokeColor: '#333',
+            strokeOpacity: 0.4,
+            strokeWeight: 1,
+            fillColor: '#333',
+            fillOpacity: 0.8
+          });
+
+          xaadasHaidaLanguage.setMap(map);
+    }
+          
+        
+        
+//NATIONS
     // SQUAMISH
     function squamishPin() {
         
@@ -184,10 +1011,40 @@
         
         tsleilLand.setMap(map);
     }
-       
+
+    //NATIONS
     musqueamPin();
     squamishPin();
     tsleilPin();
+        
+    //LANGUAGES 
+    lingitPin();
+    tutchonePin();
+    tagishPin();
+    inlandLingitPin();
+    kaskaDenePin();
+    deneThaPin();
+    tahltanPin();
+    nisgaaGitxsanPin();
+    sokaniPin();
+    dunneZaPin();
+    xaadasHaidaPin();
+    tsinshiamPin();
+    natootenWetsuwetenPin();
+    dakalinaPin();
+    salteauxCreePin();
+    haislaPin();
+    heiltsunPin();
+    nuxalikPin();
+    oweekenoPin();
+    tsilhquotinPin();
+    secwepmecPin();
+    okanaganPin();
+    ktunaxaPin();
+    nlakapamuxPin();
+    stlatlimxPin();
+    kwakwakawakwPin();
+    nuuchatnuulthPin();
 
   }
         
