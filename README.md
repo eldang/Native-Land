@@ -8,10 +8,11 @@ Live test at <a href="http://greatlittlewebsite.com/landlanguage/">http://greatl
 <h2>To Do</h2>
 Languages first, then individual nations.
 <ul>
-<li>Add language map (layovers) with markers for basic language information (First Nations language site)</li>
-<li>Draw out maps for each nation you have so far</li>
-<li>Format nicely to appear on click, fade in, nice transparencies, information, etc</li>
+<li>Trace language map for lower mainland, then add</li>
+<li>Format languages to appear on click, fade in, nice transparencies, information, etc (set up with variables all in one spot), add markers in center of areas</li>
+<li>Change map to satellite, upload and make a home page for it</li>
 <li>Good way to put place names on the map?</li>
+<li>Draw out maps for nations and claims?, then add</li>
 <li>Contact bands or locals about place names in local languages, conduct field research</li>
 </ul>
 
