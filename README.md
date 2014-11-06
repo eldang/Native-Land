@@ -19,6 +19,7 @@ Rebooted from the other branch - needed to be rethought considerably.
 <li>Change to satellite, remove city names from map</li>
 <li>Add language names from other map on hover over</li>
 <li>Try adding some local placenames in Halq'melem</li>
+<li>Create iOS app that can access the same database</li>
 <li>Try to go around and add more local names to areas and places</li>
 </ul>
 
