@@ -16,9 +16,8 @@ Rebooted from the other branch - needed to be rethought considerably.
 
 <h2>To Do</h2>
 <ul>
-<li>Change to satellite, remove city names from map</li>
+<li>Try adding some local placenames in Halq'melem (https://developers.google.com/maps/documentation/javascript/styling) - maybe create a marker with a transparent icon, then add a caption/title to it underneath</li>
 <li>Add language names from other map on hover over</li>
-<li>Try adding some local placenames in Halq'melem</li>
 <li>Create iOS app that can access the same database</li>
 <li>Try to go around and add more local names to areas and places</li>
 </ul>
