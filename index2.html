@@ -5,32 +5,82 @@
     <style type="text/css">
       html, body, #map-canvas { height: 100%; width:100%; margin: 0; padding: 0;}
     </style>
+      
+      <style type="text/css">
+       .labels {
+         color: black;
+         background-color: rgba(255,255,255,0.5);
+         padding:5px;
+         border-radius:10px;
+         font-family: "Lucida Grande", "Arial", sans-serif;
+         font-size: 12px;
+         font-weight: normal;
+         text-align: center;
+         border: none;
+         text-shadow: 1px 1px 1px #fff;
+         white-space: nowrap;
+       }
+     </style>
+      
     <script type="text/javascript"
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCoajO_ajNZk7DXuY85V-XeaHqao0sw_gc">
     </script>
+    <script type="text/javascript" src="js/markerwithlabel.js"></script>
     <script type="text/javascript">
     function initialize() {
+      var myLatlng = new google.maps.LatLng(49.185967129738465, -121.6819953918457);
       map = new google.maps.Map(document.getElementById('map-canvas'), {
-        center: new google.maps.LatLng(-19.257753, 146.823688),
-        zoom: 2,
+        center: new google.maps.LatLng(49.185967129738465, -121.6819953918457),
+        zoom: 10,
         mapTypeId: google.maps.MapTypeId.TERRAIN
       });
       loadKmlLayer('http://maps.fphlcc.ca/fphlccmap/kml/Contemporary.kml', map);
+    
+    
+    // Sample location
+        var contentString = '<div id="content">'+
+          '<div id="siteNotice">'+
+          '</div>'+
+          '<h1 id="firstHeading" class="firstHeading">Lhílheqey</h1>'+
+          '<div id="bodyContent">'+
+          '</div>'+
+          '</div>';
+
+          var infowindow = new google.maps.InfoWindow({
+              content: contentString
+          });
+        
+     var image = 'images/beachflag.png';
+     var marker1 = new MarkerWithLabel({
+       position: myLatlng,
+       map: map,
+       icon: image,
+       labelContent: "Lhílheqey",
+       labelAnchor: new google.maps.Point(22, 22),
+       labelClass: "labels"
+     });
+        
+      google.maps.event.addListener(marker1, 'click', function() {
+        infowindow.open(map,marker1);
+      });
     }
+        
+
     function loadKmlLayer(src, map) {
       var kmlLayer = new google.maps.KmlLayer(src, {
-        suppressInfoWindows: true,
-        preserveViewport: false,
+        suppressInfoWindows: false,
+        preserveViewport: true,
         map: map
       });
-      var kmlLayer = new google.maps.KmlLayer(kmlUrl, kmlOptions);
         
       google.maps.event.addListener(kmlLayer, 'click', function(event) {
         var content = event.featureData.infoWindowHtml;
         var testimonial = document.getElementById('capture');
         testimonial.innerHTML = content;
       });
+    
     }
+        
     
     google.maps.event.addDomListener(window, 'load', initialize);
     </script>

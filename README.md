@@ -16,10 +16,11 @@ Rebooted from the other branch - needed to be rethought considerably.
 
 <h2>To Do</h2>
 <ul>
-<li>Try adding some local placenames in Halq'melem (https://developers.google.com/maps/documentation/javascript/styling) - maybe create a marker with a transparent icon, then add a caption/title to it underneath</li>
-<li>Add language names from other map on hover over</li>
+<li>Add language names from other map on hover over, style nicely (hover code already in map)</li>
+<li>Make marker icons disappear at certain zoom level; have them appear on click of language zone</li>
 <li>Create iOS app that can access the same database</li>
 <li>Try to go around and add more local names to areas and places</li>
+<li>Streetview? (https://developers.google.com/maps/documentation/javascript/examples/streetview-service)</li>
 </ul>
 
 <h2>Purpose</h2>
