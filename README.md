@@ -16,8 +16,9 @@ Rebooted from the other branch - needed to be rethought considerably.
 
 <h2>To Do</h2>
 <ul>
-<li>Add language names from other map on hover over, style nicely (hover code already in map)</li>
+<li>Add a bunch of local place names</li>
 <li>Make marker icons disappear at certain zoom level; have them appear on click of language zone</li>
+<li>Add a legend for language areas - possible to do mouseover with KLM any simple way? Other solutions?</li>
 <li>Create iOS app that can access the same database</li>
 <li>Try to go around and add more local names to areas and places</li>
 <li>Streetview? (https://developers.google.com/maps/documentation/javascript/examples/streetview-service)</li>
