@@ -1,46 +1,48 @@
 Native-Land
 ===========
 
-A web app with Google Maps API for mapping Aboriginal nations along with placenames in local languages.
+A web app with Google Maps API for mapping Indigenous territories, languages, and treaties across Turtle Island (North America).
 
-Rebooted from the other branch - needed to be rethought considerably.
-
-<h2>The Idea</h2>
+<h2>Upcoming fixes</h2>
 <ul>
-  <li>A way to access Aboriginal languages of BC on the go, from the field, etc</li>
-  <li>Highly user-friendly and accessible in devices (Javascript, iOS app, Android)</li>
-  <li>Resources only from Aboriginal nations</li>
-  <li>Language resources pointing to First Nations Language Map, plus any pronounciation guides online</li>
-  <li>Local placenames</li>
+<li>Fix language of Squamish to their actual language, not Halqemelem</li>
+<li>Fix language boundary of Squamish (http://squamishlanguage.com/about/territory/)</li>
+<li>Markham Ontario as huron-wendat</li>
+<li>Fisher River Cree nation is Cree, not Ojibway</li>
+<li>Fixing Sinixt beyond Greenwood to Kettle Valley</li>
+<li>Kaska Dene fixes</li>
+<li>The Pas, Manitoba and Cumberland House, Sask -- is Swampy Cree, not Plains Cree</li>
+<li>Opaskwayak Cree Nation territory</li>
+<li>Fixing Wsanec on Southern Vancouver island</li>
+<li>Tsimshian territory fixes</li>
+<li>Quebec Cree treaty</li>
+<li>Western New Brunswick is Maliseet (Wolastoqiyik )</li>
+<li>Cowichan tribes and Hulqiminum treaty group</li>
+<li>Drawing broad nation boundaries (“Cree”)</li>
+<li>Adding languages with colour-coding, that nice map (http://store.universalworkshop.com/product_p/mapi.htm)</li>
+<li>Adding American nations</li>
 </ul>
 
-<h2>To Do</h2>
+<h2>Design</h2>
+<li>Make the layers distinct as groups visually</li>
+<li>Adding share buttons, having FB page or Twitter account to shoot out updates?</li>
+
+<h2>Technical</h2>
 <ul>
-<li>Add a bunch of local place names</li>
-<li>Make marker icons disappear at certain zoom level; have them appear on click of language zone</li>
-<li>Add a legend for language areas - possible to do mouseover with KLM any simple way? Other solutions?</li>
-<li>Create iOS app that can access the same database</li>
-<li>Try to go around and add more local names to areas and places</li>
-<li>Streetview? (https://developers.google.com/maps/documentation/javascript/examples/streetview-service)</li>
+<li>Get US-friendly domain name, host on Github</li>
+<li>Add legend for map on front page (modal, have explanation more about map colours etc)</li>
+<li>Hover-through ability for layers</li>
+<li>Adding another variable that shows type of territory (treaty, land claim, traditional, etc), time of language (current day, past, etc)</li>
+<li>Standardize the different collections of coordinates into GeoJSONs</li>
 </ul>
 
-<h2>Purpose</h2>
+<h5>Long term ideas and goals</h5>
+<ul>
+<li>Make app form of the site, for travellers or even alternative to "normal" maps</li>
+<li>Add place names in local languages</li>
+<li>Use a map that allows redrawing/removal of national boundaries (OpenStreetMap? Others?) </li>
+<li>Adding ability to scroll over time</li>
+</ul>
+
 <p>This app is simply meant to sit on top of Google maps and provide a map of native land. This is starting in British Columbia, Canada, but if I establish a good framework it should work anywhere.</p>
 <p>I got the idea for this app while driving along the Sea-to-Sky highway between Vancouver and Squamish in BC. Many of the road signs had the local language place names for rivers, towns, and more, in brackets underneath the English names. I thought "why isn't the English in brackets...?"</p>
-
-<h5>Resources</h5>
-Technical:
-<ul>
-<li>http://www.birdtheme.org/useful/v3tool.html</li>
-</ul>
-General:
-  <ul>
-    <li><a href="http://maps.fphlcc.ca/">First Peoples' Language Map</a> is a great resource for making sure you catch all the different nations, and has great information on languages.</li>
-    <li><a href="http://fnlg.arts.ubc.ca/images/BClangs2.gif">UBC First Nations language map</a> - useful for broad languages and also a good disclaimer on this.</li>
-  </ul>
-  
-  <li><strong>Stó:lō information</strong></li>
-  <ul>
-    <li><a href="http://sxta.bc.ca/declaration.html">Declaration of ownership</a></li>
-  </ul>
-</ul>
