@@ -3,8 +3,9 @@ A web app with Google Maps API for mapping Indigenous territories, languages, an
 <h2>To Do</h2>
 <ul>
 <li>Add legend and "click to see more information" in it instead of clicking doing nothing:)</li>
-<li>More small fixes</li>
+<li>Standardize Geo files and make available</li>
 <li>Begin work on app version</li>
+<li>More small fixes</li>
 </ul>
 
 <h2>Upcoming fixes</h2>
