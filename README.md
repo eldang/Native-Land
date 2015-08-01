@@ -2,12 +2,8 @@ A web app with Google Maps API for mapping Indigenous territories, languages, an
 
 <h2>Upcoming fixes</h2>
 <ul>
-<li>Fix language of Squamish to their actual language, not Halqemelem</li>
-<li>Fix language boundary of Squamish (http://squamishlanguage.com/about/territory/)</li>
-<li>Markham Ontario as huron-wendat</li>
 <li>Fisher River Cree nation is Cree, not Ojibway</li>
 <li>Fixing Sinixt beyond Greenwood to Kettle Valley</li>
-<li>Kaska Dene fixes</li>
 <li>The Pas, Manitoba and Cumberland House, Sask -- is Swampy Cree, not Plains Cree</li>
 <li>Opaskwayak Cree Nation territory</li>
 <li>Fixing Wsanec on Southern Vancouver island</li>
@@ -20,9 +16,17 @@ A web app with Google Maps API for mapping Indigenous territories, languages, an
 <li>Adding American nations</li>
 </ul>
 
+<h2>Notes</h2>
+<ul>
+<li>Different JSONs are kind of a mess, some KML, GeoJSON, etc... gotta clean up</li>
+<li>Territories have optional space for specified languages, otherwise it searches by location</li>
+</ul>
+
 <h2>Design</h2>
+<ul>
 <li>Make the layers distinct as groups visually</li>
 <li>Adding share buttons, having FB page or Twitter account to shoot out updates?</li>
+</ul>
 
 <h2>Technical</h2>
 <ul>
