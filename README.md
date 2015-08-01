@@ -2,17 +2,16 @@ A web app with Google Maps API for mapping Indigenous territories, languages, an
 
 <h2>To Do</h2>
 <ul>
-<li>Immediate fixes</li>
-<li>Add legend</li>
+<li>Add legend and "click to see more information" in it instead of clicking doing nothing:)</li>
+<li>More small fixes</li>
 <li>Begin work on app version</li>
 </ul>
 
 <h2>Upcoming fixes</h2>
 <ul>
-<li>Tsimshian territory fixes</li>
-<li>Quebec Cree treaty</li>
-<li>Western New Brunswick is Maliseet (Wolastoqiyik )</li>
-<li>Cowichan tribes and Hulqiminum treaty group</li>
+<li>Tsimshian minor edit</li>
+<li>KLMSS extension south</li>
+<li>We Wai Kai Nation fix</li>
 <li>Adding languages with colour-coding, that nice map (http://store.universalworkshop.com/product_p/mapi.htm)</li>
 <li>Adding American nations</li>
 </ul>
@@ -31,7 +30,6 @@ A web app with Google Maps API for mapping Indigenous territories, languages, an
 
 <h2>Technical</h2>
 <ul>
-<li>Get US-friendly domain name, host on Github</li>
 <li>Add legend for map on front page (modal, have explanation more about map colours etc)</li>
 <li>Hover-through ability for layers</li>
 <li>Adding another variable that shows type of territory (treaty, land claim, traditional, etc), time of language (current day, past, etc)</li>
@@ -40,6 +38,7 @@ A web app with Google Maps API for mapping Indigenous territories, languages, an
 
 <h5>Long term ideas and goals</h5>
 <ul>
+<li>Adding ability to have users, who draw their own maps or submit corrections and sources</li>
 <li>Make app form of the site, for travellers or even alternative to "normal" maps</li>
 <li>Add place names in local languages</li>
 <li>Use a map that allows redrawing/removal of national boundaries (OpenStreetMap? Others?) </li>
