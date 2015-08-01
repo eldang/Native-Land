@@ -2,16 +2,10 @@ A web app with Google Maps API for mapping Indigenous territories, languages, an
 
 <h2>Upcoming fixes</h2>
 <ul>
-<li>Fisher River Cree nation is Cree, not Ojibway</li>
-<li>Fixing Sinixt beyond Greenwood to Kettle Valley</li>
-<li>The Pas, Manitoba and Cumberland House, Sask -- is Swampy Cree, not Plains Cree</li>
-<li>Opaskwayak Cree Nation territory</li>
-<li>Fixing Wsanec on Southern Vancouver island</li>
 <li>Tsimshian territory fixes</li>
 <li>Quebec Cree treaty</li>
 <li>Western New Brunswick is Maliseet (Wolastoqiyik )</li>
 <li>Cowichan tribes and Hulqiminum treaty group</li>
-<li>Drawing broad nation boundaries (“Cree”)</li>
 <li>Adding languages with colour-coding, that nice map (http://store.universalworkshop.com/product_p/mapi.htm)</li>
 <li>Adding American nations</li>
 </ul>
