@@ -25,8 +25,10 @@ A web app with Google Maps API for mapping Indigenous territories, languages, an
 
 <h2>Design</h2>
 <ul>
+<li>Change intense colours to simple borders (like nations)</li>
 <li>Make the layers distinct as groups visually</li>
 <li>Adding share buttons, having FB page or Twitter account to shoot out updates?</li>
+<li>Add name of nation in the middle of its area?</li>
 </ul>
 
 <h2>Technical</h2>
