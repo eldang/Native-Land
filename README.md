@@ -2,10 +2,9 @@ A web app with Google Maps API for mapping Indigenous territories, languages, an
 
 <h2>To Do</h2>
 <ul>
-<li>Add legend and "click to see more information" in it instead of clicking doing nothing:)</li>
-<li>Standardize Geo files and make available</li>
 <li>Begin work on app version</li>
 <li>More small fixes</li>
+<li>Standardize Geo files and make available (blah...)</li>
 </ul>
 
 <h2>Upcoming fixes</h2>
@@ -17,26 +16,17 @@ A web app with Google Maps API for mapping Indigenous territories, languages, an
 <li>Adding American nations</li>
 </ul>
 
-<h2>Notes</h2>
-<ul>
-<li>Different JSONs are kind of a mess, some KML, GeoJSON, etc... gotta clean up</li>
-<li>Territories have optional space for specified languages, otherwise it searches by location</li>
-</ul>
-
 <h2>Design</h2>
 <ul>
-<li>Change intense colours to simple borders (like nations)</li>
 <li>Make the layers distinct as groups visually</li>
 <li>Adding share buttons, having FB page or Twitter account to shoot out updates?</li>
-<li>Add name of nation in the middle of its area?</li>
 </ul>
 
 <h2>Technical</h2>
 <ul>
-<li>Add legend for map on front page (modal, have explanation more about map colours etc)</li>
-<li>Hover-through ability for layers</li>
+<li>Hover-through ability for layers, or be able to isolate polygons for easier viewing</li>
 <li>Adding another variable that shows type of territory (treaty, land claim, traditional, etc), time of language (current day, past, etc)</li>
-<li>Standardize the different collections of coordinates into GeoJSONs</li>
+<li>Standardize the different collections of coordinates into GeoJSONs, or another? </li>
 </ul>
 
 <h5>Long term ideas and goals</h5>
