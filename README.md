@@ -1,5 +1,12 @@
 A web app with Google Maps API for mapping Indigenous territories, languages, and treaties across Turtle Island (North America).
 
+<h2>To Do</h2>
+<ul>
+<li>Immediate fixes</li>
+<li>Add legend</li>
+<li>Begin work on app version</li>
+</ul>
+
 <h2>Upcoming fixes</h2>
 <ul>
 <li>Tsimshian territory fixes</li>
