@@ -63,7 +63,7 @@
         <div class="col-md-4">
             <H1>Learn more about where you live.</H1>
             <p>Native-land.ca is a resource to help Canadians learn more about their local history.</p>
-            <p><strong>These maps are not definitive OR complete. Language results may be incorrect.
+            <p><strong>These maps are not definitive OR complete. Boundaries are continually being revised.
                 See <a href="resources.html">Resources page</a> for more information. Please <a href="mailto:tempranova@gmail.com">contact me</a> with any fixes or suggestions.</strong></p>
             </ul>
             <input id="autocomplete" class="form-control" placeholder="Enter your town or address." type="text"></input>
@@ -93,9 +93,6 @@
                 <td style="padding:0 5px;"><input type="checkbox" name="languages" data-size="mini"><br>Languages</td>
                 <td style="padding:0 5px;"><input type="checkbox" name="treaties" data-size="mini"><br>Treaties</td>
             </tr>
-            <tr>
-                <td colspan="3"><small>Click on any shape for more information below.</small></td>
-            </tr>
         </table>
     </div>
   </body>
@@ -111,33 +108,7 @@
 
     <script>
     var map;
-    var MY_MAPTYPE_ID = 'custom_style';
     function initialize() {
-      // Removing national labels
-      var featureOpts = [
-          {
-            featureType: "all",
-            elementType: "labels",
-            stylers: [
-                { visibility: "off" }
-            ]
-          },
-          {
-            featureType: "administrative.country",
-            elementType: "geometry.fill",
-            stylers: [
-                { visibility: "off" }
-            ]
-          },
-             {
-            featureType: "administrative.country",
-            elementType: "geometry.stroke",
-            stylers: [
-                { visibility: "off" }
-            ]
-          }
-      ];
-      // Map options
       var mapOptions = {
         zoom: 3,
         center: new google.maps.LatLng(55.115371, -100.056882),
@@ -145,23 +116,13 @@
           style: google.maps.MapTypeControlStyle.DEFAULT,
           mapTypeIds: [
             google.maps.MapTypeId.SATELLITE,
-            google.maps.MapTypeId.ROADMAP,
-            MY_MAPTYPE_ID
-          ],
-        },
-        mapTypeId: MY_MAPTYPE_ID
+            google.maps.MapTypeId.ROADMAP
+          ]
+        }
       };
-        
       map = new google.maps.Map(document.getElementById('map-canvas'),
           mapOptions);
-        
-      var styledMapOptions = {
-        name: 'Custom Style'
-      };
-      var customMapType = new google.maps.StyledMapType(featureOpts, styledMapOptions);
-     
-      map.mapTypes.set('custom_style', customMapType);
-        
+    
       map.controls[google.maps.ControlPosition.BOTTOM_CENTER].push(
         document.getElementById('currentFN')
       );
@@ -199,10 +160,14 @@
             }
             map.setOptions(myOptions);
             var resultsArray = []; // Array with objects having Territory, Language, Link
-            // Language search
+            // Language search prep
             var thisLanguage = '';
+            var finalLanguageLinks = '';
+            // Beginning of search
             tryThisGeoJSON.forEach( function(element,array,index) {
                 thisLatLngArray.forEach(function(thisLatLng,array2,index2) {
+                    // Need to adjust language search so that territory is taken into account, and if a language is specified
+                    // then it prints that language and its links
                     if (google.maps.geometry.poly.containsLocation(thisLatLng, element[0])) {
                         thisLanguage = element[0].geojsonProperties.Name;
                         // Store results into array
@@ -212,7 +177,7 @@
                             var thisLink = ' <a target="_blank" href="'+element+'">'+(index+1)+'</a>';
                             formattedLanguageLinks.push(thisLink);
                         });
-                        var finalLanguageLinks = " <i style='font-size:12px;'>(Language links: "+formattedLanguageLinks.join()+")</i>";
+                        finalLanguageLinks = " <i style='font-size:12px;'>(Language links: "+formattedLanguageLinks.join()+")</i>";
                         // Treaty search
                         var thisTreaty = '';
                         var thisTreatyLink = '';
@@ -227,62 +192,7 @@
                                 thisTreatyLink = firstNationsTreaties[obj][2];
                             }
                         }
-                        console.log(thisTreatyLink);
-                        // Territory search
-                        var thisTerritory = '';
-                        var thisTerritoryLink = '';
-                        var foundTerritory;
-                        for(var obj in firstNationsTerritories) {
-                            var thisPolygon = new google.maps.Polygon({
-                                paths: firstNationsTerritories[obj][1]
-                            });
-                            if (google.maps.geometry.poly.containsLocation(thisLatLng, thisPolygon)) {
-                                foundTerritory = true;
-                                thisTerritory = firstNationsTerritories[obj][0];
-                                thisTerritoryLink = firstNationsTerritories[obj][3];
-                                if(firstNationsTerritories[obj][4]) {
-                                    thisLanguage = firstNationsTerritories[obj][4];
-                                    // Store language link results into array
-                                    // Check if this nation has a specific language ascribed to it
-                                    var languageLinks = firstNationsTerritories[obj][5].split(",");
-                                    var formattedLanguageLinks = [];
-                                    languageLinks.forEach(function(element,index,array) {
-                                        var thisLink = ' <a target="_blank" href="'+element+'">'+(index+1)+'</a>';
-                                        formattedLanguageLinks.push(thisLink);
-                                    });
-                                    finalLanguageLinks = " <i style='font-size:12px;'>(Language links: "+formattedLanguageLinks.join()+")</i>";
-                                }
-                                // Check if result is already stored
-                                if(resultsArray.length > 0){    
-                                    var isItTrue = false;
-                                    resultsArray.forEach(function(element3,array3,index3) {
-                                        if (element3.territory===thisTerritory) {
-                                            isItTrue = true;
-                                        }
-                                    });
-                                    if(isItTrue==false) {
-                                        resultsArray.push({
-                                            territory    :   thisTerritory,
-                                            language     :   thisLanguage,
-                                            treaty       :   thisTreaty,
-                                            languageLink :   finalLanguageLinks,
-                                            territoryLink:   thisTerritoryLink,
-                                            treatyLink   :   thisTreatyLink
-                                        });
-                                    }
-                                } else {
-                                    // If array is empty
-                                    resultsArray.push({
-                                        territory    :   thisTerritory,
-                                        language     :   thisLanguage,
-                                        treaty       :   thisTreaty,
-                                        languageLink :   finalLanguageLinks,
-                                        territoryLink:   thisTerritoryLink,
-                                        treatyLink   :   thisTreatyLink
-                                    });
-                                }
-                            }
-                        }
+                    }
                         if(foundTerritory!==true) {
                             if(foundTreaty!==true) {
                                 if(resultsArray.length > 0){   
@@ -342,6 +252,52 @@
                                 }
                             }
                         }
+                    // Territory search
+                    var thisTerritory = '';
+                    var thisTerritoryLink = '';
+                    var foundTerritory;
+                    for(var obj in firstNationsTerritories) {
+                        var thisPolygon = new google.maps.Polygon({
+                            paths: firstNationsTerritories[obj][1]
+                        });
+                        if (google.maps.geometry.poly.containsLocation(thisLatLng, thisPolygon)) {
+                            foundTerritory = true;
+                            thisTerritory = firstNationsTerritories[obj][0];
+                            thisTerritoryLink = firstNationsTerritories[obj][3];
+                            if(firstNationsTerritories[obj][4]) {
+                                thisLanguage = firstNationsTerritories[obj][4];
+                                finalLanguageLinks =  " <i style='font-size:12px;'>(Language links: <a target='_blank' href="+firstNationsTerritories[obj][4]+">1</a>)</i>";
+                            }
+                            // Check if result is already stored
+                            if(resultsArray.length > 0){    
+                                var isItTrue = false;
+                                resultsArray.forEach(function(element3,array3,index3) {
+                                    if (element3.territory===thisTerritory) {
+                                        isItTrue = true;
+                                    }
+                                });
+                                if(isItTrue==false) {
+                                    resultsArray.push({
+                                        territory    :   thisTerritory,
+                                        language     :   thisLanguage,
+                                        treaty       :   thisTreaty,
+                                        languageLink :   finalLanguageLinks,
+                                        territoryLink:   thisTerritoryLink,
+                                        treatyLink   :   thisTreatyLink
+                                    });
+                                }
+                            } else {
+                                // If array is empty
+                                resultsArray.push({
+                                    territory    :   thisTerritory,
+                                    language     :   thisLanguage,
+                                    treaty       :   thisTreaty,
+                                    languageLink :   finalLanguageLinks,
+                                    territoryLink:   thisTerritoryLink,
+                                    treatyLink   :   thisTreatyLink
+                                });
+                            }
+                        }
                     }
                 });
           });
@@ -366,29 +322,23 @@
         tryThisGeoJSON.forEach(function(element,array,index) {
             var color = getRandomColor();
             var thisPolygon = element[0];
-                thisPolygon.setOptions({strokeWeight:0.1});
+                thisPolygon.setOptions({strokeColor:color});
+                thisPolygon.setOptions({strokeWeight:1});
                 thisPolygon.setOptions({fillColor:color});
                 thisPolygon.caption = element[0].geojsonProperties.Name;
-                thisPolygon.customInfo = element[0].geojsonProperties.description.split(",");
             languagePolygons.push(thisPolygon);
             // placeLanguages(thisPolygon,map);
         });
-      // Define a symbol using SVG path notation, with an opacity of 1.
-      var lineSymbol = {
-        path: 'M 0,-1 0,1',
-        strokeOpacity: 0.3,
-        scale: 1
-      };
         for(var obj in firstNationsTerritories) {
             var color = getRandomColor();
             var thisPolygon = new google.maps.Polygon({
-                path: firstNationsTerritories[obj][1],
-                strokeOpacity: 1,
-                strokeWeight: 0.1,
+                paths: firstNationsTerritories[obj][1],
+                strokeColor: color,
+                strokeOpacity: 0.8,
+                strokeWeight: 1,
                 fillColor: color,
                 fillOpacity: 0.35,
-                caption: firstNationsTerritories[obj][0],
-                customInfo : firstNationsTerritories[obj][3]
+                caption: firstNationsTerritories[obj][0]
             });
             territoryPolygons.push(thisPolygon);
             // placeTerritories(thisPolygon,map);
@@ -397,12 +347,12 @@
             var color = getRandomColor();
             var thisPolygon = new google.maps.Polygon({
                 paths: firstNationsTreaties[obj][1],
-                strokeOpacity: 1,
-                strokeWeight: 0.1,
+                strokeColor: color,
+                strokeOpacity: 0.8,
+                strokeWeight: 1,
                 fillColor: color,
                 fillOpacity: 0.35,
-                caption: firstNationsTreaties[obj][0],
-                customInfo : firstNationsTreaties[obj][2]
+                caption: firstNationsTreaties[obj][0]
             });
             treatyPolygons.push(thisPolygon);
             // placeTreaties(thisPolygon,map);
@@ -465,10 +415,8 @@
     // Place territory polygons
     function placeTerritories(element,map) {
         element.setMap(map);
-        google.maps.event.addListener(element, 'click', function() {
-            $('#moreCurrentInformation').html('<h2>'+this.caption+'</h2><h4>Community information</h4><p><a href="'+this.customInfo+' target="blank">'+this.customInfo+'</a></p>');
-        });
         google.maps.event.addListener(element, 'mouseover', function() {
+            this.setOptions({strokeOpacity:1});
             this.setOptions({fillOpacity:0.5});
             $('#currentFN').show();
             $('#currentFN').html(this.caption);
@@ -476,6 +424,7 @@
             $('#currentFN').css('margin-left',-textWidth/2);
         });
         google.maps.event.addListener(element, 'mouseout', function() {
+            this.setOptions({strokeOpacity:0.8});
             this.setOptions({fillOpacity:0.35});
             $('#currentFN').hide();
         });
@@ -484,13 +433,6 @@
     // Place language polygons
     function placeLanguages(element,map) {
         element.setMap(map);
-        google.maps.event.addListener(element, 'click', function() {
-            var languageLinks = '';
-            this.customInfo.forEach(function(element,index,array) {
-                languageLinks += '<a href='+element+' target="blank">'+element+'</a><br>';
-            });
-            $('#moreCurrentInformation').html('<h2>'+this.caption+'</h2><h4>Language information</h4><p>'+languageLinks+'</p>');
-        });
         google.maps.event.addListener(element, 'mouseover', function() {
             this.setOptions({strokeOpacity:1});
             this.setOptions({fillOpacity:0.5});
@@ -509,9 +451,6 @@
     // Place treaty polygons
     function placeTreaties(element,map) {
         element.setMap(map);
-        google.maps.event.addListener(element, 'click', function() {
-            $('#moreCurrentInformation').html('<h2>'+this.caption+'</h2><h4>Treaty information</h4><p><a href="'+this.customInfo+' target="blank">'+this.customInfo+'</a></p>');
-        });
         google.maps.event.addListener(element, 'mouseover', function() {
             this.setOptions({strokeOpacity:1});
             this.setOptions({fillOpacity:0.5});
@@ -526,34 +465,7 @@
             $('#currentFN').hide();
         });
     }
-    function ColorLuminance(hex, lum) {
-      // validate hex string
-      hex = String(hex).replace(/[^0-9a-f]/gi, '');
-      if (hex.length < 6) {
-        hex = hex[0]+hex[0]+hex[1]+hex[1]+hex[2]+hex[2];
-      }
-      lum = lum || 0;
-
-      // convert to decimal and change luminosity
-      var rgb = "#", c, i;
-      for (i = 0; i < 3; i++) {
-        c = parseInt(hex.substr(i*2,2), 16);
-        c = Math.round(Math.min(Math.max(0, c + (c * lum)), 255)).toString(16);
-        rgb += ("00"+c).substr(c.length);
-      }
-
-      return rgb;
-    }
 
     </script>
-    <div class="information-area col-sm-6">
-        <div id="moreCurrentInformation" style=""></div>
-    </div>
-    <div class="information-area col-sm-6">
-        <h2>Information</h2>
-        <p>Colors are randomly assigned right now and have no intended meaning.</p>
-        <p>Please help me add more to this map so it can become more complete!</p>
-        <p>See <a href="resources.html">Resources page</a> for more.</p>
-    </div>
     <center><h2><a href="full-map.html">See full screen map</a></h2></center>
 </html>
