@@ -9,11 +9,10 @@ A web app with Google Maps API for mapping Indigenous territories, languages, an
 
 <h2>Upcoming fixes</h2>
 <ul>
-<li>Tsimshian minor edit</li>
-<li>KLMSS extension south</li>
-<li>We Wai Kai Nation fix</li>
-<li>Adding languages with colour-coding, that nice map (http://store.universalworkshop.com/product_p/mapi.htm)</li>
+<li>Semiahmoo and Kwantlen</li>
+<li>Adding languages with colour-coding, that nice map (http://store.universalworkshop.com/product_p/mapi.htm, http://theways.org/map)</li>
 <li>Adding American nations</li>
+<li>Add more Métis</li>
 </ul>
 
 <h2>Design</h2>
