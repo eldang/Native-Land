@@ -10,6 +10,7 @@ A web app with Google Maps API for mapping Indigenous territories, languages, an
 <h2>Upcoming fixes</h2>
 <ul>
 <li>Semiahmoo and Kwantlen</li>
+<li>Blackfoot bigger territory</li>
 <li>Adding languages with colour-coding, that nice map (http://store.universalworkshop.com/product_p/mapi.htm, http://theways.org/map)</li>
 <li>Languages should be correct for different nations</li>
 <li>Adding American nations</li>
