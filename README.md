@@ -11,6 +11,7 @@ A web app with Google Maps API for mapping Indigenous territories, languages, an
 <ul>
 <li>Semiahmoo and Kwantlen</li>
 <li>Adding languages with colour-coding, that nice map (http://store.universalworkshop.com/product_p/mapi.htm, http://theways.org/map)</li>
+<li>Languages should be correct for different nations</li>
 <li>Adding American nations</li>
 <li>Add more Métis</li>
 </ul>
