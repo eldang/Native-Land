@@ -39,5 +39,13 @@ A web app with Google Maps API for mapping Indigenous territories, languages, an
 <li>Adding ability to scroll over time</li>
 </ul>
 
+<h2>Volunteer work</h2>
+<ul>
+  <li>More technical: tracing geo boundaries, increasing accuracy</li>
+  <li>Basic: searching for maps, gathering resources</li>
+  <li>Discussing strategies for promotion, ideas for where to go with it, categorization issues</li>
+  <li>Reaching out to people</li>
+</ul>
+
 <p>This app is simply meant to sit on top of Google maps and provide a map of native land. This is starting in British Columbia, Canada, but if I establish a good framework it should work anywhere.</p>
 <p>I got the idea for this app while driving along the Sea-to-Sky highway between Vancouver and Squamish in BC. Many of the road signs had the local language place names for rivers, towns, and more, in brackets underneath the English names. I thought "why isn't the English in brackets...?"</p>
