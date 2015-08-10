@@ -16,6 +16,7 @@ A web app with Google Maps API for mapping Indigenous territories, languages, an
 <li>Languages should be correct for different nations</li>
 <li>Adding American nations</li>
 <li>Add more Métis</li>
+<li>Adding hard-copy maps to buy?</li>
 </ul>
 
 <h2>Design</h2>
