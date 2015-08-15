@@ -15,6 +15,7 @@ A web app with Google Maps API for mapping Indigenous territories, languages, an
 <li>Adding languages with colour-coding, that nice map (http://store.universalworkshop.com/product_p/mapi.htm, http://theways.org/map)</li>
 <li>Languages should be correct for different nations</li>
 <li>Adding American nations</li>
+<li>Around Wiyot, there is Yurok, Chilula, Whilkut, Nongatl, Sinkyone, Mattole</li>
 <li>Add more Métis</li>
 <li>Adding hard-copy maps to buy?</li>
 </ul>
