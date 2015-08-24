@@ -10,13 +10,13 @@ A web app with Google Maps API for mapping Indigenous territories, languages, an
 <ul>
 <li>Semiahmoo and Kwantlen</li>
 <li>Blackfoot bigger territory</li>
+<li>Revise Wendat/Huron</li>
 <li>Doing California (https://lh3.googleusercontent.com/-qVKCopFZHpI/TdNSQjqJhjI/AAAAAAAAfSU/ITQWijl292M/s2048-Ic42/Cahuilla%252520Homeland.png)</li>
+<li>Around Wiyot, there is Yurok, Chilula, Whilkut, Nongatl, Sinkyone, Mattole</li>
 <li>Victoria and Secwepmec fix http://bcheritage.ca/salish/ph2/map/03.htm</li>
 <li>Adding languages with colour-coding, that nice map (http://store.universalworkshop.com/product_p/mapi.htm, http://theways.org/map)</li>
 <li>Languages should be correct for different nations</li>
-<li>Around Wiyot, there is Yurok, Chilula, Whilkut, Nongatl, Sinkyone, Mattole</li>
 <li>Treaty for Chickasaw, Menomenee</li>
-<li>Add more Métis</li>
 <li>Adding hard-copy maps to buy?</li>
 </ul>
 
