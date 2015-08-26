@@ -28,7 +28,6 @@ A web app with Google Maps API for mapping Indigenous territories, languages, an
 
 <h2>Technical</h2>
 <ul>
-<li>Hover-through ability for layers, or be able to isolate polygons for easier viewing</li>
 <li>Adding another variable that shows type of territory (treaty, land claim, traditional, etc), time of language (current day, past, etc)</li>
 <li>Standardize the different collections of coordinates into GeoJSONs, or another? </li>
 </ul>
