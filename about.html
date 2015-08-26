@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Native-land.net | Our home on native land</title>
+    <title>Native-land.net About</title>
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
     <meta charset="utf-8">
       <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
@@ -25,7 +25,8 @@
       html, body, #map-canvas {
         height: 100%;
         margin: 0px;
-        padding: 0px
+        padding: 0px;
+        background: #b4d1ff;
       }
       #map-canvas {
             position:absolute;
@@ -96,70 +97,36 @@
     <div class="col-sm-4">
         <nav class="navbar navbar-default">
               <ul class="nav navbar-nav">
-                <li class="active" style="background:white;padding:4px 10px 10px 10px;"><a href="http://native-land.net">Search</a></li>
+                <li style="background:white;padding:4px 10px 10px 10px;"><a href="http://native-land.net">Search</a></li>
                 <li style="background:white;padding:4px 10px 10px 10px;"><a href="http://native-land.net/full-map.html">Map</a></li>
                 <li style="background:white;padding:4px 10px 10px 10px;"><a href="http://native-land.net/resources.html">Resources</a></li>
-                <li style="background:white;padding:4px 10px 10px 10px;"><a href="http://native-land.net/about.html">About</a></li>
+                <li class="active" style="background:white;padding:4px 10px 10px 10px;"><a href="http://native-land.net/about.html">About</a></li>
               </ul>
         </nav>
     </div>
     <div class="col-sm-4"></div>
 
       <div class="container">
-        <div class="col-md-4" style="background:white;box-shadow:2px 2px 2px #ccc;border-radius:20px;padding:20px;">
-            <h1 style="font-size:17px;margin-top:0px;">Learn more about where you live.</H1>
-            <p><strong>Native-Land.net</strong> is a resource to help North Americans learn more about their local history.</p>
-            <input id="autocomplete" class="form-control" placeholder="Enter your town or address." type="text"></input>
-            <hr>
-            <div class="hidden-xs">
-                <table style="width:100%;text-align:center;">
-                    <tr>
-                        <td style="padding:0 5px;"><input type="checkbox" name="territories" data-size="mini"><br>Territories</td>
-                        <td style="padding:0 5px;"><input type="checkbox" name="languages" data-size="mini"><br>Languages</td>
-                        <td style="padding:0 5px;"><input type="checkbox" name="treaties" data-size="mini"><br>Treaties</td>
-                    </tr>
-                    <tr>
-                        <td colspan="3"><small>Click on any shape for more information.</small></td>
-                    </tr>
-                </table>
-                <div id="moreCurrentInformation" style=""></div>
-            </div>
-            <div class="visible-xs">
-                <p><a href="full-map.html">Click here for a larger map for mobile (without search function).</a></p>   
-                <div class="results">
-                  <table class="table">
-                      <tr><td>
-                        <div style="text-align:center;width:100%;">
-                            <h4 style="margin-top:20px;">Please type your address or city into the search box and select from the menu of addresses that appear.</h4>
-                            <h5 style="margin-top:20px;">Your search results will appear here.</h5>
-                            <hr>
-                            <p style="color:#9e0b12;">These maps are not definitive OR complete. Language results may be incorrect. Please 
-                                <a href="mailto:tempranova@gmail.com">contact me</a> with any fixes.</p>
-                        </div>
-                      </td></tr>
-                  </table>
-                </div> 
-            </div>
-        </div>
-        <div class="col-sm-1"></div>
-        <div class="col-md-7 hidden-xs">
-            <div class="results" style="background:white;box-shadow:2px 2px 2px #ccc;border-radius:20px;padding:20px;">
-              <table class="table">
-                  <tr><td>
-                    <div style="text-align:center;width:100%;">
-                        <h4 style="margin-top:20px;">Please type your address or city into the search box and select from the menu of addresses that appear.</h4>
-                        <h5 style="margin-top:20px;">Your search results will appear here.</h5>
-                        <hr>
-                        <p style="color:#9e0b12;">These maps are not definitive OR complete. Language results may be incorrect. Please 
-                            <a href="mailto:tempranova@gmail.com">contact me</a> with any fixes.</p>
-                    </div>
-                  </td></tr>
-              </table>
+        <div class="col-sm-12" style="background:white;box-shadow:2px 2px 2px #ccc;border-radius:20px;padding:20px;">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h1>About this site</h1>
+                    <p>I'm Victor. I am a settler, born in traditional Katzie territory and raised in the Okanagan. I am concerned about many of the issues
+                    raised by using maps and colonial ways of thinking when it comes to maps. For instance, who has the right to define where a 
+                    particular territory ends, and another begins? Who should I speak to about such matters?</p>
+                    <p>There are over 630 different First Nations in Canada and I am not sure of the right process to map territories, languages, 
+                    and treaties respectfully - and I'm not even sure if it is possible to do respectfully. I am not at all sure about the right
+                    way to go about this project, so I would very much appreciate your input.</p>
+                    <p>I feel that maps are inherently colonial, in that they delegate power according to imposed borders that don't really exist in many nations throughout history. They were rarely created in good faith, and are often used in wrong ways. I am open to criticism about this project and I welcome suggestions and changes. <a href="mailto:tempranova@gmail.com">Email me</a>.</p>
+                    <p>You can visit the <a href="https://github.com/tempranova/Native-Land">Github page for information</a>.</p>
+                    <h4>Thanks</h4>
+                    <p>Thanks to everyone that has emailed to help with this project! Especial thanks to Travis Henry for his huge research and help with American nations.</p>
+                </div>
             </div>
         </div>
     </div>
-    <div id="currentFN" style="padding:5px;background:white;border-radius:5px;
-                            box-shadow:2px 2px 2px #ccc;margin:0 auto;margin-bottom:20px;
+    <div id="currentFN" style="padding:15px;background:white;border-radius:5px;
+                            box-shadow:2px 2px 2px #ccc;margin:0 auto;margin-top:30px;
                             font-size:14px;display:none;"></div>
   </body>
 
@@ -172,4 +139,27 @@
     <script src="indigineousTerritories.js"></script>
     <script src="indigineousTreaties.js"></script>
     <script src="nativeland.js"></script>
+    
+    <script>
+        for(var obj in firstNationsTerritories) {
+            $('.territories-resources ul').append('<li>'+firstNationsTerritories[obj][0]+' - <a href="'
+                                                  +firstNationsTerritories[obj][3]+'">Nation website</a></li>');
+        }
+        // Encode stuff loaded in JS file above
+        var tryThisGeoJSON = new GeoJSON(thisGeoJSON);
+        tryThisGeoJSON.forEach( function(element,array,index) {
+            var languageLinks = element[0].geojsonProperties.description.split(",");
+            var formattedLanguageLinks = [];
+            languageLinks.forEach(function(element,index,array) {
+                var thisLink = ' <a target="_blank" href="'+element+'">Link '+(index+1)+'</a> ';
+                formattedLanguageLinks.push(thisLink);
+            });
+            var fullyFormatted = formattedLanguageLinks.join();
+            $('.language-resources ul').append('<li>'+element[0].geojsonProperties.Name+' - '+fullyFormatted+'</li>');
+        });
+        for(var obj in firstNationsTreaties) {
+            $('.treaty-resources ul').append('<li>'+firstNationsTreaties[obj][0]+' - <a href="'
+                                                  +firstNationsTreaties[obj][2]+'">Treaty information</a></li>');
+        }
+    </script>
 </html>
