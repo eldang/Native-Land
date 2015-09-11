@@ -3,6 +3,10 @@
         homeTrue = true;
     }
         
+    // Load areas of language and territories onto map
+    var languagePolygons = [];
+    var territoryPolygons = [];
+    var treatyPolygons = [];
     var map;
     var MY_MAPTYPE_ID = 'custom_style';
     function initialize() {
@@ -72,11 +76,21 @@
             // Do the stuff after they enter a place        
             google.maps.event.addListener(autocomplete, 'place_changed', function() {
                 var place = autocomplete.getPlace();
+                $.ajax({
+                    url: '/writeToFile.php',
+                    type: 'POST',
+                    dataType: "json",
+                    data: {
+                        search_address: place.formatted_address,
+                    },
+                    success: function(data){
+                        alert(JSON.stringify(data));
+                    }
+                });
                 if (!place.geometry) {
                   return;
                 }
                 // Making a variety of points all around the central searched point
-                console.log(place.geometry.location);
                 var thisLatLng = new google.maps.LatLng(place.geometry.location.G,place.geometry.location.K);
                 var thisLatLngEast = new google.maps.LatLng(place.geometry.location.G + 0.1,place.geometry.location.K + 0.1);
                 var thisLatLngWest = new google.maps.LatLng(place.geometry.location.G + 0.1,place.geometry.location.K - 0.1);
@@ -369,7 +383,7 @@
                 }
               $('.results .table').empty();
                 // Can add color into results here
-              $('.results .table').append('<tr><td><strong>Territory</strong></td><td><strong>Treaty</strong></td><td><strong>Language</strong><span id="clearresults" style="float:right;"></td></tr>');
+              $('.results .table').append('<tr><td><strong>Territory</strong></td><td><strong>Treaty</strong></td><td><strong>Language</strong></td></tr>');
               resultsArray.forEach(function(element,index,array) {
                     $('.results .table').append('<tr><td><a target="_blank" href="'+element.territoryLink+'">'+element.territory+'</a></td>'+
                                                 '<td><a target="_blank" href="'+element.treatyLink+'">'+
@@ -384,11 +398,6 @@
               });
             });
         }
-        
-        // Load areas of language and territories onto map
-        var languagePolygons = [];
-        var territoryPolygons = [];
-        var treatyPolygons = [];
         tryThisGeoJSON.forEach(function(element,array,index) {
             var color = getRandomColor();
             var thisPolygon = element[0];
@@ -494,17 +503,7 @@
         google.maps.event.addListener(element, 'click', function() {
             $('#moreCurrentInformation').html('<hr><h4>'+this.caption+'</h2><p><a href="'+this.customInfo+'" target="blank">'+this.customInfo+'</a></p>');
         });
-        google.maps.event.addListener(element, 'mouseover', function() {
-            this.setOptions({fillOpacity:0.5});
-            $('#currentFN').show();
-            $('#currentFN').html(this.caption);
-            var textWidth = $('#currentFN').width();
-            $('#currentFN').css('margin-left',-textWidth/2);
-        });
-        google.maps.event.addListener(element, 'mouseout', function() {
-            this.setOptions({fillOpacity:0.35});
-            $('#currentFN').hide();
-        });
+        printNations(element,firstNationsTerritories,territoryPolygons);
     }
         
     // Place language polygons
@@ -538,19 +537,7 @@
         google.maps.event.addListener(element, 'click', function() {
             $('#moreCurrentInformation').html('<hr><h4>'+this.caption+'</h2><p><a href="'+this.customInfo+'" target="blank">'+this.customInfo+'</a></p>');
         });
-        google.maps.event.addListener(element, 'mouseover', function() {
-            this.setOptions({strokeOpacity:1});
-            this.setOptions({fillOpacity:0.5});
-            $('#currentFN').show();
-            $('#currentFN').html(this.caption);
-            var textWidth = $('#currentFN').width();
-            $('#currentFN').css('margin-left',-textWidth/2);
-        });
-        google.maps.event.addListener(element, 'mouseout', function() {
-            this.setOptions({strokeOpacity:0.8});
-            this.setOptions({fillOpacity:0.35});
-            $('#currentFN').hide();
-        });
+        printNations(element,firstNationsTreaties,treatyPolygons);
     }
     function ColorLuminance(hex, lum) {
       // validate hex string
@@ -569,4 +556,68 @@
       }
 
       return rgb;
+    }
+    
+    function printNations(thisPolygon) {
+        google.maps.event.addListener(thisPolygon, 'mousemove', function(event) {
+            this.setOptions({strokeOpacity:1});
+            this.setOptions({fillOpacity:0.5});
+            var mouseLocation = event.latLng;
+            var thisTerritory = '';
+            var theseTerritories = [];
+            var foundTerritory;
+            for(var obj in firstNationsTerritories) {
+                var thisPolygon = new google.maps.Polygon({
+                    paths: firstNationsTerritories[obj][1]
+                });
+                if (google.maps.geometry.poly.containsLocation(mouseLocation, thisPolygon)) {
+                    var color;
+                    thisTerritory = firstNationsTerritories[obj][0];
+                    territoryPolygons.forEach(function(element,index,array) {
+                        if(element.caption===thisTerritory) {
+                            color = element.fillColor;
+                        }
+                    });
+                    theseTerritories.push('<div style="width:10px;height:10px;float:left;margin-right:5px;background-color:'+color+';"></div>'+thisTerritory+'<br>');
+                }
+            }
+            $('#currentFN').show();
+            $('#currentFN').html(theseTerritories);
+        });
+        google.maps.event.addListener(thisPolygon, 'mouseout', function(event) {
+            this.setOptions({strokeOpacity:0.8});
+            this.setOptions({fillOpacity:0.35});
+            $('#currentFN').hide();
+        });
+    }
+    function printNations(thisPolygon,thisTypeObject,theseTypePolygons) {
+        google.maps.event.addListener(thisPolygon, 'mousemove', function(event) {
+            this.setOptions({strokeOpacity:1});
+            this.setOptions({fillOpacity:0.5});
+            var mouseLocation = event.latLng;
+            var thisFinding = '';
+            var theseFindings = [];
+            for(var obj in thisTypeObject) {
+                var thisPolygon = new google.maps.Polygon({
+                    paths: thisTypeObject[obj][1]
+                });
+                if (google.maps.geometry.poly.containsLocation(mouseLocation, thisPolygon)) {
+                    var color;
+                    thisFinding = thisTypeObject[obj][0];
+                    theseTypePolygons.forEach(function(element,index,array) {
+                        if(element.caption===thisFinding) {
+                            color = element.fillColor;
+                        }
+                    });
+                    theseFindings.push('<div style="width:10px;height:10px;float:left;margin-right:5px;background-color:'+color+';"></div>'+thisFinding+'<br>');
+                }
+            }
+            $('#currentFN').show();
+            $('#currentFN').html(theseFindings);
+        });
+        google.maps.event.addListener(thisPolygon, 'mouseout', function(event) {
+            this.setOptions({strokeOpacity:0.8});
+            this.setOptions({fillOpacity:0.35});
+            $('#currentFN').hide();
+        });
     }

@@ -76,11 +76,21 @@
             // Do the stuff after they enter a place        
             google.maps.event.addListener(autocomplete, 'place_changed', function() {
                 var place = autocomplete.getPlace();
+                $.ajax({
+                    url: '/writeToFile.php',
+                    type: 'POST',
+                    dataType: "json",
+                    data: {
+                        search_address: place.formatted_address,
+                    },
+                    success: function(data){
+                        alert(JSON.stringify(data));
+                    }
+                });
                 if (!place.geometry) {
                   return;
                 }
                 // Making a variety of points all around the central searched point
-                console.log(place.geometry.location);
                 var thisLatLng = new google.maps.LatLng(place.geometry.location.G,place.geometry.location.K);
                 var thisLatLngEast = new google.maps.LatLng(place.geometry.location.G + 0.1,place.geometry.location.K + 0.1);
                 var thisLatLngWest = new google.maps.LatLng(place.geometry.location.G + 0.1,place.geometry.location.K - 0.1);
@@ -453,7 +463,6 @@
                 territoryPolygons.forEach(function(element,index,array) {
                     element.setMap(map);
                     placeTerritories(element,map);
-                    console.log(element);
                 });
             } else {
                 territoryPolygons.forEach(function(element,index,array) {
