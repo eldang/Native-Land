@@ -62,7 +62,7 @@
         var tryThisGeoJSON = new GeoJSON(thisGeoJSON);
 
         // Stuff for search section
-        if(homeTrue) {
+        if(typeof homeTrue !=='undefined') {
           var autocomplete = new google.maps.places.Autocomplete(
             (document.getElementById('autocomplete')), {
             types: ['geocode']
