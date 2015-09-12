@@ -1,8 +1,3 @@
-    var homeTrue = false;
-    if(window.location.href==='http://native-land.net/'||window.location.href==='http://native-land.net/#') {
-        homeTrue = true;
-    }
-        
     // Load areas of language and territories onto map
     var languagePolygons = [];
     var territoryPolygons = [];
@@ -83,9 +78,7 @@
                     data: {
                         search_address: place.formatted_address,
                     },
-                    success: function(data){
-                        alert(JSON.stringify(data));
-                    }
+                    success: function(data){}
                 });
                 if (!place.geometry) {
                   return;
