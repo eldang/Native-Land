@@ -95,6 +95,13 @@
                 }
                 map.setOptions(myOptions);
                 var resultsArray = []; // Array with objects having Territory, Language, Link
+                var resultsArray2 = [];
+                var resultsLanguages = [];
+                var resultsTreaties = [];
+                var resultsTerritories = [];
+                // This results array should change instead to have an object with foundTerritories, foundLanguages, foundTreaties
+                // These each get pushed in as they are found, unless they already exist
+                // Then displayed as a simple list with commas
                 // Language search
                 var thisLanguage = '';
                 var foundLanguage;
@@ -102,293 +109,157 @@
                     thisLatLngArray.forEach(function(thisLatLng,array2,index2) {
                         // If language is found
                         if (google.maps.geometry.poly.containsLocation(thisLatLng, element[0])) {
-                            var foundLanguage = true;
                             thisLanguage = element[0].geojsonProperties.Name;
                             // Store results into array
                             var languageLinks = element[0].geojsonProperties.description.split(",");
                             var formattedLanguageLinks = [];
                             languageLinks.forEach(function(element,index,array) {
-                                var thisLink = ' <a target="_blank" href="'+element+'">'+(index+1)+'</a>';
+                                var thisLink = '<a target="_blank" href="'+element+'">'+(index+1)+'</a>';
                                 formattedLanguageLinks.push(thisLink);
                             });
-                            var finalLanguageLinks = " <i style='font-size:12px;'>(Language links: "+formattedLanguageLinks.join()+")</i>";
-                            // Then search for treaties
-                            var thisTreaty = '';
-                            var thisTreatyLink = '';
-                            var foundTreaty;
-                            for(var obj in firstNationsTreaties) {
-                                var thisPolygon = new google.maps.Polygon({
-                                    paths: firstNationsTreaties[obj][1]
+                            var finalLanguageLinks = " <i>("+formattedLanguageLinks.join()+")</i>";
+                            var thisLanguageObject = {
+                                name    :   thisLanguage,
+                                link   :   finalLanguageLinks
+                            }
+                            if(resultsLanguages.length===0) {
+                                resultsLanguages.push(thisLanguageObject);
+                            } else {
+                                var alreadyExists = false;
+                                resultsLanguages.forEach(function(element,index,array) {
+                                    if(_.isEqual(element, thisLanguageObject)) {
+                                        alreadyExists = true;
+                                    }
                                 });
-                                if (google.maps.geometry.poly.containsLocation(thisLatLng, thisPolygon)) {
-                                    foundTreaty = true;
-                                    thisTreaty = firstNationsTreaties[obj][0];
-                                    thisTreatyLink = firstNationsTreaties[obj][2];
+                                if(alreadyExists!==true) {
+                                    resultsLanguages.push(thisLanguageObject);
                                 }
                             }
-                            // Then search for territories
-                            var thisTerritory = '';
-                            var thisTerritoryLink = '';
-                            var foundTerritory;
-                            for(var obj in firstNationsTerritories) {
-                                var thisPolygon = new google.maps.Polygon({
-                                    paths: firstNationsTerritories[obj][1]
-                                });
-                                if (google.maps.geometry.poly.containsLocation(thisLatLng, thisPolygon)) {
-                                    foundTerritory = true;
-                                    thisTerritory = firstNationsTerritories[obj][0];
-                                    thisTerritoryLink = firstNationsTerritories[obj][3];
-                                    if(firstNationsTerritories[obj][4]) {
-                                        thisLanguage = firstNationsTerritories[obj][4];
-                                        // Store language link results into array
-                                        // Check if this nation has a specific language ascribed to it
-                                        var languageLinks = firstNationsTerritories[obj][5].split(",");
-                                        var formattedLanguageLinks = [];
-                                        languageLinks.forEach(function(element,index,array) {
-                                            var thisLink = ' <a target="_blank" href="'+element+'">'+(index+1)+'</a>';
-                                            formattedLanguageLinks.push(thisLink);
-                                        });
-                                        finalLanguageLinks = " <i style='font-size:12px;'>(Language links: "+formattedLanguageLinks.join()+")</i>";
-                                    }
-                                    // Check if result is already stored
-                                    if(resultsArray.length > 0){    
-                                        var isItTrue = false;
-                                        resultsArray.forEach(function(element3,array3,index3) {
-                                            if (element3.territory===thisTerritory) {
-                                                isItTrue = true;
-                                            }
-                                        });
-                                        if(isItTrue==false) {
-                                            resultsArray.push({
-                                                territory    :   thisTerritory,
-                                                language     :   thisLanguage,
-                                                treaty       :   thisTreaty,
-                                                languageLink :   finalLanguageLinks,
-                                                territoryLink:   thisTerritoryLink,
-                                                treatyLink   :   thisTreatyLink
-                                            });
-                                        }
-                                    } else {
-                                        // If array is empty
-                                        resultsArray.push({
-                                            territory    :   thisTerritory,
-                                            language     :   thisLanguage,
-                                            treaty       :   thisTreaty,
-                                            languageLink :   finalLanguageLinks,
-                                            territoryLink:   thisTerritoryLink,
-                                            treatyLink   :   thisTreatyLink
-                                        });
-                                    }
-                                }
-                            }
-                            if(foundTerritory!==true) {
-                                if(foundTreaty!==true) {
-                                    if(resultsArray.length > 0){   
-                                        var isItTrue = false;
-                                        resultsArray.forEach(function(element,array,index) {
-                                            if(element.language===thisLanguage) {
-                                                isItTrue = true;
-                                            }
-                                        });
-                                        if(isItTrue==false) {
-                                            resultsArray.push({
-                                                territory    :   'None entered yet',
-                                                language     :   thisLanguage,
-                                                treaty       :   'No treaty',
-                                                languageLink :   finalLanguageLinks,
-                                                territoryLink:   'none',
-                                                treatyLink   :   ''
-                                            });
-                                        }
-                                    } else {
-                                        resultsArray.push({
-                                            territory    :   'None entered yet',
-                                            language     :   thisLanguage,
-                                            treaty       :   'No treaty',
-                                            languageLink :   finalLanguageLinks,
-                                            territoryLink:   'none',
-                                            treatyLink   :   ''
-                                        });
-                                    }
-                                } else {
-                                    if(resultsArray.length > 0){   
-                                        var isItTrue = false;
-                                        resultsArray.forEach(function(element,array,index) {
-                                            if(element.treaty===thisTreaty) {
-                                                isItTrue = true;
-                                            }
-                                        });
-                                        if(isItTrue==false) {
-                                            resultsArray.push({
-                                                territory    :   'None entered yet',
-                                                language     :   thisLanguage,
-                                                treaty       :   thisTreaty,
-                                                languageLink :   finalLanguageLinks,
-                                                territoryLink:   'none',
-                                                treatyLink   :   thisTreatyLink
-                                            });
-                                        }
-                                    } else {
-                                        resultsArray.push({
-                                            territory    :   'None entered yet',
-                                            language     :   thisLanguage,
-                                            treaty       :   thisTreaty,
-                                            languageLink :   finalLanguageLinks,
-                                            territoryLink:   'none',
-                                            treatyLink   :   thisTreatyLink
-                                        });
-                                    }
-                                }
-                            }
-                        // Else if no language is found
-                        }   
+                        }
                     });
-              });
-              if(foundLanguage!==true) {
-                  // Then search for treaties
+                });
+                thisLatLngArray.forEach(function(thisLatLng,array,index) {
+                    // Then search for treaties
                     var thisTreaty = '';
                     var thisTreatyLink = '';
-                    var foundTreaty;
                     for(var obj in firstNationsTreaties) {
                         var thisPolygon = new google.maps.Polygon({
                             paths: firstNationsTreaties[obj][1]
                         });
                         if (google.maps.geometry.poly.containsLocation(thisLatLng, thisPolygon)) {
-                            foundTreaty = true;
                             thisTreaty = firstNationsTreaties[obj][0];
                             thisTreatyLink = firstNationsTreaties[obj][2];
+                            var thisTreatyObject = {
+                                name    :   thisTreaty,
+                                link    :   thisTreatyLink
+                            }
+                            if(resultsTreaties.length===0) {
+                                resultsTreaties.push(thisTreatyObject);
+                            } else {
+                                var alreadyExists = false;
+                                resultsTreaties.forEach(function(element,index,array) {
+                                    if(_.isEqual(element, thisTreatyObject)) {
+                                        alreadyExists = true;
+                                    }
+                                });
+                                if(alreadyExists!==true) {
+                                    resultsTreaties.push(thisTreatyObject);
+                                }
+                            }
                         }
                     }
                     // Then search for territories
                     var thisTerritory = '';
                     var thisTerritoryLink = '';
-                    var foundTerritory;
                     for(var obj in firstNationsTerritories) {
                         var thisPolygon = new google.maps.Polygon({
                             paths: firstNationsTerritories[obj][1]
                         });
                         if (google.maps.geometry.poly.containsLocation(thisLatLng, thisPolygon)) {
-                            foundTerritory = true;
                             thisTerritory = firstNationsTerritories[obj][0];
                             thisTerritoryLink = firstNationsTerritories[obj][3];
-                            if(firstNationsTerritories[obj][4]) {
-                                thisLanguage = firstNationsTerritories[obj][4];
-                                // Store language link results into array
-                                // Check if this nation has a specific language ascribed to it
-                                var languageLinks = firstNationsTerritories[obj][5].split(",");
-                                var formattedLanguageLinks = [];
-                                languageLinks.forEach(function(element,index,array) {
-                                    var thisLink = ' <a target="_blank" href="'+element+'">'+(index+1)+'</a>';
-                                    formattedLanguageLinks.push(thisLink);
-                                });
-                                finalLanguageLinks = " <i style='font-size:12px;'>(Language links: "+formattedLanguageLinks.join()+")</i>";
+                            var thisTerritoryObject = {
+                                name    :   thisTerritory,
+                                link    :   thisTerritoryLink
                             }
-                            // Check if result is already stored
-                            if(resultsArray.length > 0){    
-                                var isItTrue = false;
-                                resultsArray.forEach(function(element3,array3,index3) {
-                                    if (element3.territory===thisTerritory) {
-                                        isItTrue = true;
+                            if(resultsTerritories.length===0) {
+                                resultsTerritories.push(thisTerritoryObject);
+                            } else {
+                                var alreadyExists = false;
+                                resultsTerritories.forEach(function(element,index,array) {
+                                    if(alreadyExists!==true) {
+                                        if(_.isEqual(element, thisTerritoryObject)) {
+                                            alreadyExists = true; 
+                                        }
                                     }
                                 });
-                                if(isItTrue==false) {
-                                    resultsArray.push({
-                                        territory    :   thisTerritory,
-                                        language     :   'No language mapped yet',
-                                        treaty       :   thisTreaty,
-                                        languageLink :   'None',
-                                        territoryLink:   thisTerritoryLink,
-                                        treatyLink   :   thisTreatyLink
-                                    });
+                                if(alreadyExists!==true) {
+                                    resultsTerritories.push(thisTerritoryObject);
                                 }
-                            } else {
-                                // If array is empty
-                                resultsArray.push({
-                                    territory    :   thisTerritory,
-                                    language     :   'No language mapped yet',
-                                    treaty       :   thisTreaty,
-                                    languageLink :   '',
-                                    territoryLink:   thisTerritoryLink,
-                                    treatyLink   :   thisTreatyLink
-                                });
                             }
                         }
                     }
-                    if(foundTerritory!==true) {
-                        if(foundTreaty!==true) {
-                            if(resultsArray.length > 0){   
-                                var isItTrue = false;
-                                resultsArray.forEach(function(element,array,index) {
-                                    if(element.language===thisLanguage) {
-                                        isItTrue = true;
-                                    }
-                                });
-                                if(isItTrue==false) {
-                                    resultsArray.push({
-                                        territory    :   'Not mapped yet',
-                                        language     :   'No language mapped yet',
-                                        treaty       :   'No treaty',
-                                        languageLink :   '',
-                                        territoryLink:   'none',
-                                        treatyLink   :   ''
-                                    });
-                                }
-                            } else {
-                                resultsArray.push({
-                                    territory    :   'None entered yet',
-                                    language     :   'No language mapped yet',
-                                    treaty       :   'No treaty',
-                                    languageLink :   '',
-                                    territoryLink:   'none',
-                                    treatyLink   :   ''
-                                });
-                            }
-                        } else {
-                            if(resultsArray.length > 0){   
-                                var isItTrue = false;
-                                resultsArray.forEach(function(element,array,index) {
-                                    if(element.treaty===thisTreaty) {
-                                        isItTrue = true;
-                                    }
-                                });
-                                if(isItTrue==false) {
-                                    resultsArray.push({
-                                        territory    :   'Not mapped yet',
-                                        language     :   'No language mapped yet',
-                                        treaty       :   thisTreaty,
-                                        languageLink :   '',
-                                        territoryLink:   'none',
-                                        treatyLink   :   thisTreatyLink
-                                    });
-                                }
-                            } else {
-                                resultsArray.push({
-                                    territory    :   'Not mapped yet',
-                                    language     :   'No language mapped yet',
-                                    treaty       :   thisTreaty,
-                                    languageLink :   '',
-                                    territoryLink:   'none',
-                                    treatyLink   :   thisTreatyLink
-                                });
-                            }
-                        }
-                    }
-                }
-              $('.results .table').empty();
-                // Can add color into results here
-              $('.results .table').append('<tr><td><strong>Territory</strong></td><td><strong>Treaty</strong></td><td><strong>Language</strong></td></tr>');
-              resultsArray.forEach(function(element,index,array) {
-                    $('.results .table').append('<tr><td><a target="_blank" href="'+element.territoryLink+'">'+element.territory+'</a></td>'+
-                                                '<td><a target="_blank" href="'+element.treatyLink+'">'+
-                                                element.treaty+'</td>'+
-                                                '<td>'+element.language+
-                                                element.languageLink+'</td></tr>');
+                });
+                resultsArray2.push(resultsTerritories);
+                resultsArray2.push(resultsLanguages);
+                resultsArray2.push(resultsTreaties);
+                var htmlToAppend = '<div class="pull-right" style="color:#ccc;"><a href="mailto:tempranova@gmail.com">Email Corrections</a></div>';
+                htmlToAppend += '<p style="color:#ccc;"><small>Results for '+place.formatted_address+'</small></p>';
+                resultsArray2.forEach(function(element,index,array) {
+                  // Territories
+                  if(index===0) {
+                      htmlToAppend += '<h5>Nations</h5><p><small>This also may include treaty assocations and others.</small></p>';
+                      element.forEach(function(element2,index2,array2) {
+                          // Adding or removing comma from end
+                          if(index2===(array2.length-1)) {
+                               htmlToAppend += '<a href="'+element2.link+'" target="_new">'+element2.name+'</a>';
+                          } else {
+                               htmlToAppend += '<a href="'+element2.link+'" target="_new">'+element2.name+'</a>, ';
+                          }
+                      });
+                  }
+                  // Languages
+                  if(index===1) {
+                      htmlToAppend += '<h5>Languages</h5>';
+                      element.forEach(function(element2,index2,array2) {
+                          // Adding or removing comma from end
+                          if(index2===(array2.length-1)) {
+                                htmlToAppend += element2.name+element2.link;
+                          } else {
+                                htmlToAppend += element2.name+element2.link+', ';
+                          }
+                      });
+                  }
+                  // Treaties
+                  if(index===2) {
+                      // If no treaties
+                      if(element.length===0) {
+                          htmlToAppend += '<h5>Treaties</h5>';
+                          htmlToAppend += '<p><small>No treaties listed. This may be unceded territory, or the area is yet to be mapped.</small></p>';
+                      } else {
+                          // If treaties
+                          htmlToAppend += '<h5>Treaties</h5>';
+                          element.forEach(function(element2,index2,array2) {
+                              // Adding or removing comma from end
+                              if(index2===(array2.length-1)) {
+                                    htmlToAppend += '<a href="'+element2.link+'" target="_new">'+element2.name+'</a>';
+                              } else {
+                                    htmlToAppend += '<a href="'+element2.link+'" target="_new">'+element2.name+'</a>, ';
+                              }
+                          });
+                      }
+                  }
               });
+              $('.results').empty();
+              $('.results').append(htmlToAppend);
               $('.results').show();
               $('.searchbar').hide();
               $('#clearresults').click(function() {
                   $('.results').hide();
               });
+              $(function () {
+                  $('[data-toggle="tooltip"]').tooltip()
+              })
             });
         }
         tryThisGeoJSON.forEach(function(element,array,index) {
