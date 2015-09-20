@@ -5,6 +5,7 @@
     var map;
     var MY_MAPTYPE_ID = 'custom_style';
     function initialize() {
+        console.log('what');
       // Removing national labels
       var featureOpts = [
           {
@@ -71,6 +72,7 @@
             // Do the stuff after they enter a place        
             google.maps.event.addListener(autocomplete, 'place_changed', function() {
                 var place = autocomplete.getPlace();
+                console.log(place);
                 $.ajax({
                     url: '/writeToFile.php',
                     type: 'POST',
