@@ -84,6 +84,7 @@
                   return;
                 }
                 // Making a variety of points all around the central searched point
+                console.log(place);
                 var thisLatLng = new google.maps.LatLng(place.geometry.location.G,place.geometry.location.K);
                 var thisLatLngEast = new google.maps.LatLng(place.geometry.location.G + 0.1,place.geometry.location.K + 0.1);
                 var thisLatLngWest = new google.maps.LatLng(place.geometry.location.G + 0.1,place.geometry.location.K - 0.1);
