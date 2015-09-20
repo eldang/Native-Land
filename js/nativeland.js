@@ -87,11 +87,11 @@
                 }
                 // Making a variety of points all around the central searched point
                 console.log(place);
-                var thisLatLng = new google.maps.LatLng(place.geometry.location.lat(),place.geometry.location.lng());
-                var thisLatLngEast = new google.maps.LatLng(place.geometry.location.lat() + 0.1,place.geometry.location.lng() + 0.1);
-                var thisLatLngWest = new google.maps.LatLng(place.geometry.location.lat() + 0.1,place.geometry.location.lng() - 0.1);
-                var thisLatLngNorth = new google.maps.LatLng(place.geometry.location.lat() - 0.1,place.geometry.location.lng() - 0.1);
-                var thisLatLngSouth = new google.maps.LatLng(place.geometry.location.lat() - 0.1,place.geometry.location.lng() + 0.1);
+                var thisLatLng = new google.maps.LatLng(place.geometry.location.lng(),place.geometry.location.lat());
+                var thisLatLngEast = new google.maps.LatLng(place.geometry.location.lng() + 0.1,place.geometry.location.lat() + 0.1);
+                var thisLatLngWest = new google.maps.LatLng(place.geometry.location.lng() + 0.1,place.geometry.location.lat() - 0.1);
+                var thisLatLngNorth = new google.maps.LatLng(place.geometry.location.lng() - 0.1,place.geometry.location.lat() - 0.1);
+                var thisLatLngSouth = new google.maps.LatLng(place.geometry.location.lng() - 0.1,place.geometry.location.lat() + 0.1);
                 var thisLatLngArray = [thisLatLng,thisLatLngEast,thisLatLngWest,thisLatLngNorth,thisLatLngSouth];
                 var myOptions = {
                     center:thisLatLng
