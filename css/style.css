@@ -65,3 +65,14 @@
     #currentFN a {
         display: inline;
     }
+@media (max-device-width: 736px) {
+    .gmnoprint {
+        display: none !important;
+    }
+    #currentFN {
+        display: none;
+    }
+    #display-area {
+        width:210px !important;
+    }
+}
