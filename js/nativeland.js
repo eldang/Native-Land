@@ -1,3 +1,7 @@
+    $('.nl-results').hide();
+    $('.nl-close-results').click(function() {
+      $('.nl-results').hide();
+    });
     // Load areas of language and territories onto map
     var languagePolygons = [];
     var territoryPolygons = [];
@@ -5,7 +9,6 @@
     var map;
     var MY_MAPTYPE_ID = 'custom_style';
     function initialize() {
-        console.log('what');
       // Removing national labels
       var featureOpts = [
           {
@@ -54,9 +57,9 @@
       var customMapType = new google.maps.StyledMapType(featureOpts, styledMapOptions);
      
       map.mapTypes.set('custom_style', customMapType);
-        
-      map.controls[google.maps.ControlPosition.BOTTOM_CENTER].push(
-        document.getElementById('currentFN')
+
+      map.controls[google.maps.ControlPosition.LEFT_TOP].push(
+        document.getElementById('nl-search')
       );
         
         // Encode stuff loaded in JS file above
@@ -86,7 +89,6 @@
                   return;
                 }
                 // Making a variety of points all around the central searched point
-                console.log(place);
                 var thisLatLng = new google.maps.LatLng(place.geometry.location.lat(),place.geometry.location.lng());
                 var thisLatLngEast = new google.maps.LatLng(place.geometry.location.lat() + 0.1,place.geometry.location.lng() + 0.1);
                 var thisLatLngWest = new google.maps.LatLng(place.geometry.location.lat() + 0.1,place.geometry.location.lng() - 0.1);
@@ -206,12 +208,11 @@
                 resultsArray2.push(resultsTerritories);
                 resultsArray2.push(resultsLanguages);
                 resultsArray2.push(resultsTreaties);
-                var htmlToAppend = '<div class="pull-right" style="color:#ccc;"><a href="mailto:tempranova@gmail.com">Email Corrections</a></div>';
-                htmlToAppend += '<p style="color:#ccc;"><small>Results for '+place.formatted_address+'</small></p>';
+                var htmlToAppend = '';
                 resultsArray2.forEach(function(element,index,array) {
                   // Territories
                   if(index===0) {
-                      htmlToAppend += '<h5>Nations</h5><p><small>This also may include treaty assocations and others.</small></p>';
+                      htmlToAppend += '<div class="tresult"><strong>Territories</strong>: ';
                       element.forEach(function(element2,index2,array2) {
                           // Adding or removing comma from end
                           if(index2===(array2.length-1)) {
@@ -220,10 +221,11 @@
                                htmlToAppend += '<a href="'+element2.link+'" target="_new">'+element2.name+'</a>, ';
                           }
                       });
+                      htmlToAppend += '</div>';
                   }
                   // Languages
                   if(index===1) {
-                      htmlToAppend += '<h5>Languages</h5>';
+                      htmlToAppend += '<div class="lresult"><strong>Languages</strong>: ';
                       element.forEach(function(element2,index2,array2) {
                           // Adding or removing comma from end
                           if(index2===(array2.length-1)) {
@@ -232,16 +234,17 @@
                                 htmlToAppend += element2.name+element2.link+', ';
                           }
                       });
+                      htmlToAppend += '</div>';
                   }
                   // Treaties
                   if(index===2) {
                       // If no treaties
                       if(element.length===0) {
-                          htmlToAppend += '<h5>Treaties</h5>';
-                          htmlToAppend += '<p><small>No treaties listed. This may be unceded territory, or the area is yet to be mapped.</small></p>';
+                          htmlToAppend += '<div class="t2result"><strong>Treaties</strong>: ';
+                          htmlToAppend += 'No treaties listed. This may be unceded territory, or the area is yet to be mapped.</div>';
                       } else {
                           // If treaties
-                          htmlToAppend += '<h5>Treaties</h5>';
+                          htmlToAppend += '<div class="t2result"><strong>Treaties</strong>: ';
                           element.forEach(function(element2,index2,array2) {
                               // Adding or removing comma from end
                               if(index2===(array2.length-1)) {
@@ -251,18 +254,12 @@
                               }
                           });
                       }
+                      htmlToAppend += '</div>';
                   }
               });
-              $('.results').empty();
-              $('.results').append(htmlToAppend);
-              $('.results').show();
-              $('.searchbar').hide();
-              $('#clearresults').click(function() {
-                  $('.results').hide();
-              });
-              $(function () {
-                  $('[data-toggle="tooltip"]').tooltip()
-              })
+              $('#results').empty();
+              $('#results').append(htmlToAppend);
+              $('.nl-results').show();
             });
         }
         tryThisGeoJSON.forEach(function(element,array,index) {
@@ -310,42 +307,38 @@
             // placeTreaties(thisPolygon,map);
         }
         // Create checkboxes for turning off and on polygons
-        $('input[name="languages"]').bootstrapSwitch();
-        $('input[name="territories"]').bootstrapSwitch();
-        $('input[name="treaties"]').bootstrapSwitch();
-        
-        $('input[name="languages"]').on('switchChange.bootstrapSwitch', function(event, state) {
-            if(state==true) {
-                languagePolygons.forEach(function(element,index,array) {
-                    placeLanguages(element,map);
-                });
-            } else {
-                languagePolygons.forEach(function(element,index,array) {
+        $('#territories').click(function() {
+            if($($(this).parent()).hasClass('is-checked')) {
+                territoryPolygons.forEach(function(element,index,array) {
                     element.setMap(null);
                 });
-            }
-        });
-        $('input[name="territories"]').on('switchChange.bootstrapSwitch', function(event, state) {
-            if(state==true) {
+            } else {
                 territoryPolygons.forEach(function(element,index,array) {
                     element.setMap(map);
                     placeTerritories(element,map);
                 });
-            } else {
-                territoryPolygons.forEach(function(element,index,array) {
+            }
+        });
+        $('#languages').click(function() {
+            if($($(this).parent()).hasClass('is-checked')) {
+                languagePolygons.forEach(function(element,index,array) {
                     element.setMap(null);
+                });
+            } else {
+                languagePolygons.forEach(function(element,index,array) {
+                    placeLanguages(element,map);
                 });
             }
         });
-        $('input[name="treaties"]').on('switchChange.bootstrapSwitch', function(event, state) {
-            if(state==true) {
+        $('#treaties').click(function() {
+            if($($(this).parent()).hasClass('is-checked')) {
                 treatyPolygons.forEach(function(element,index,array) {
-                    element.setMap(map);
-                    placeTreaties(element,map);
+                    element.setMap(null);
                 });
             } else {
                 treatyPolygons.forEach(function(element,index,array) {
-                    element.setMap(null);
+                    element.setMap(map);
+                    placeTreaties(element,map);
                 });
             }
         });
@@ -368,7 +361,8 @@
     function placeTerritories(element,map) {
         element.setMap(map);
         google.maps.event.addListener(element, 'click', function() {
-            $('#moreCurrentInformation').html('<hr><h4>'+this.caption+'</h2><p><a href="'+this.customInfo+'" target="blank">'+this.customInfo+'</a></p>');
+            $('#results').html(this.caption+': <a href="'+this.customInfo+'" target="blank">'+this.customInfo+'</a>');
+            $('.nl-results').show();
         });
         printNations(element,firstNationsTerritories,territoryPolygons);
     }
@@ -381,20 +375,19 @@
             this.customInfo.forEach(function(element,index,array) {
                 languageLinks += '<a href='+element+' target="blank">'+element+'</a><br>';
             });
-            $('#moreCurrentInformation').html('<hr><h4>'+this.caption+'</h2><p>'+languageLinks+'</p>');
+            $('#results').html(this.caption+': '+languageLinks);
+            $('.nl-results').show();
         });
         google.maps.event.addListener(element, 'mouseover', function() {
             this.setOptions({strokeOpacity:1});
             this.setOptions({fillOpacity:0.5});
             $('#currentFN').show();
-            $('#currentFN').html(this.caption);
-            var textWidth = $('#currentFN').width();
-            $('#currentFN').css('margin-left',-textWidth/2);
+            $('#currentFN').html('<div style="text-align:center;display:inline-block;margin-right:10px;">'+this.caption+'</div>');
         });
         google.maps.event.addListener(element, 'mouseout', function() {
             this.setOptions({strokeOpacity:0.8});
             this.setOptions({fillOpacity:0.35});
-            $('#currentFN').hide();
+            $('#currentFN').html('Type your address or city into the search box<br>and select from the menu of addresses that appear.');
         });
     }
     
@@ -402,7 +395,8 @@
     function placeTreaties(element,map) {
         element.setMap(map);
         google.maps.event.addListener(element, 'click', function() {
-            $('#moreCurrentInformation').html('<hr><h4>'+this.caption+'</h2><p><a href="'+this.customInfo+'" target="blank">'+this.customInfo+'</a></p>');
+            $('#results').html(this.caption+': <a href="'+this.customInfo+'" target="blank">'+this.customInfo+'</a>');
+            $('.nl-results').show();
         });
         printNations(element,firstNationsTreaties,treatyPolygons);
     }
@@ -425,38 +419,6 @@
       return rgb;
     }
     
-    function printNations(thisPolygon) {
-        google.maps.event.addListener(thisPolygon, 'mousemove', function(event) {
-            this.setOptions({strokeOpacity:1});
-            this.setOptions({fillOpacity:0.5});
-            var mouseLocation = event.latLng;
-            var thisTerritory = '';
-            var theseTerritories = [];
-            var foundTerritory;
-            for(var obj in firstNationsTerritories) {
-                var thisPolygon = new google.maps.Polygon({
-                    paths: firstNationsTerritories[obj][1]
-                });
-                if (google.maps.geometry.poly.containsLocation(mouseLocation, thisPolygon)) {
-                    var color;
-                    thisTerritory = firstNationsTerritories[obj][0];
-                    territoryPolygons.forEach(function(element,index,array) {
-                        if(element.caption===thisTerritory) {
-                            color = element.fillColor;
-                        }
-                    });
-                    theseTerritories.push('<div style="width:10px;height:10px;float:left;margin-right:5px;background-color:'+color+';"></div>'+thisTerritory+'<br>');
-                }
-            }
-            $('#currentFN').show();
-            $('#currentFN').html(theseTerritories);
-        });
-        google.maps.event.addListener(thisPolygon, 'mouseout', function(event) {
-            this.setOptions({strokeOpacity:0.8});
-            this.setOptions({fillOpacity:0.35});
-            $('#currentFN').hide();
-        });
-    }
     function printNations(thisPolygon,thisTypeObject,theseTypePolygons) {
         google.maps.event.addListener(thisPolygon, 'mousemove', function(event) {
             this.setOptions({strokeOpacity:1});
@@ -476,7 +438,7 @@
                             color = element.fillColor;
                         }
                     });
-                    theseFindings.push('<div style="width:10px;height:10px;float:left;margin-right:5px;background-color:'+color+';"></div>'+thisFinding+'<br>');
+                    theseFindings.push('<div style="text-align:center;display:inline-block;margin-right:10px;"><div style="width:10px;height:10px;margin:0 auto;background-color:'+color+';"></div>'+thisFinding+'</div>');
                 }
             }
             $('#currentFN').show();
@@ -485,6 +447,6 @@
         google.maps.event.addListener(thisPolygon, 'mouseout', function(event) {
             this.setOptions({strokeOpacity:0.8});
             this.setOptions({fillOpacity:0.35});
-            $('#currentFN').hide();
+            $('#currentFN').html('Type your address or city into the search box<br>and select from the menu of addresses that appear.');
         });
     }
