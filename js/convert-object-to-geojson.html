@@ -1,0 +1,41 @@
+
+<meta charset="utf-8">
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+<body>
+<div id="oops">
+</div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?sensor=false" type="text/javascript"></script>
+<script src="../coordinates/legacy-format/indigineousTerritories.js"></script>
+<script>
+    'use strict';
+    var revisedGeoJSON = {
+        "type": "FeatureCollection",
+        "crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+        "features": []
+    }
+//    revisedGeoJSON.type.features = [];
+    for(var nation in firstNationsTerritories) {
+        console.log(firstNationsTerritories[nation]);
+        var theseCoordinates = [];
+        firstNationsTerritories[nation][1].forEach(function(element,index,array) {
+            var theseTwo = [element.M, element.J]
+            theseCoordinates.push(theseTwo);
+        });
+//        $('body').append(decodeURIComponent(escape(firstNationsTerritories[nation][0])));
+        revisedGeoJSON.features.push(
+            { "type": "Feature", "properties": 
+             { "Name": firstNationsTerritories[nation][0].toString(), 
+               "description": firstNationsTerritories[nation][3], 
+               "timestamp": null, "begin": null, "end": null, "altitudeMode": null, "tessellate": 1, "extrude": -1, 
+               "visibility": -1, "drawOrder": null, "icon": null, "snippet": "" }, "geometry": { "type": "MultiPolygon", "coordinates": [ [ 
+               theseCoordinates
+                                                   ] ] } 
+            }
+        );
+    }
+    console.log(revisedGeoJSON);
+    
+
+</script>
