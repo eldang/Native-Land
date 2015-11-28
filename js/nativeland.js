@@ -64,8 +64,8 @@
      
       map.mapTypes.set('custom_style', customMapType);
 
-      map.controls[google.maps.ControlPosition.LEFT_TOP].push(
-        document.getElementById('nl-search')
+      map.controls[google.maps.ControlPosition.LEFT_BOTTOM].push(
+        document.getElementById('legend')
       );
         
 
@@ -122,10 +122,10 @@
                             var languageLinks = element[0].geojsonProperties.description.split(",");
                             var formattedLanguageLinks = [];
                             languageLinks.forEach(function(element,index,array) {
-                                var thisLink = '<a target="_blank" href="'+element+'">'+(index+1)+'</a>';
+                                var thisLink = ' <a target="_blank" href="'+element+'">'+(index+1)+'</a>';
                                 formattedLanguageLinks.push(thisLink);
                             });
-                            var finalLanguageLinks = " <i>("+formattedLanguageLinks.join()+")</i>";
+                            var finalLanguageLinks = " <i>(Links:"+formattedLanguageLinks.join()+")</i>";
                             var thisLanguageObject = {
                                 name    :   thisLanguage,
                                 link   :   finalLanguageLinks
@@ -207,7 +207,7 @@
                 resultsArray2.forEach(function(element,index,array) {
                   // Territories
                   if(index===0) {
-                      htmlToAppend += '<div class="tresult"><strong>Territories</strong>: ';
+                      htmlToAppend += '<div class="tresult"><span class="lead"><strong>Territories</strong></span>: ';
                       element.forEach(function(element2,index2,array2) {
                           // Adding or removing comma from end
                           if(index2===(array2.length-1)) {
@@ -220,7 +220,7 @@
                   }
                   // Languages
                   if(index===1) {
-                      htmlToAppend += '<div class="lresult"><strong>Languages</strong>: ';
+                      htmlToAppend += '<div class="lresult"><span class="lead"><strong>Languages</strong></span>: ';
                       element.forEach(function(element2,index2,array2) {
                           // Adding or removing comma from end
                           if(index2===(array2.length-1)) {
@@ -235,11 +235,11 @@
                   if(index===2) {
                       // If no treaties
                       if(element.length===0) {
-                          htmlToAppend += '<div class="t2result"><strong>Treaties</strong>: ';
+                          htmlToAppend += '<div class="t2result"><span class="lead"><strong>Treaties</strong></span>: ';
                           htmlToAppend += 'No treaties listed. This may be unceded territory, or the area is yet to be mapped.</div>';
                       } else {
                           // If treaties
-                          htmlToAppend += '<div class="t2result"><strong>Treaties</strong>: ';
+                          htmlToAppend += '<div class="t2result"><span class="lead"><strong>Treaties</strong></span>: ';
                           element.forEach(function(element2,index2,array2) {
                               // Adding or removing comma from end
                               if(index2===(array2.length-1)) {
@@ -277,8 +277,8 @@
         scale: 1
       };
         // Create checkboxes for turning off and on polygons
-        $('#territories').click(function() {
-            if($($(this).parent()).hasClass('is-checked')) {
+        $('#territories').on('switchChange.bootstrapSwitch', function(event, state) {
+            if(!state) {
                 territoryPolygons.forEach(function(element,index,array) {
                     element.setMap(null);
                 });
@@ -288,8 +288,8 @@
                 });
             }
         });
-        $('#languages').click(function() {
-            if($($(this).parent()).hasClass('is-checked')) {
+        $('#languages').on('switchChange.bootstrapSwitch', function(event, state) {
+            if(!state) {
                 languagePolygons.forEach(function(element,index,array) {
                     element.setMap(null);
                 });
@@ -299,8 +299,8 @@
                 });
             }
         });
-        $('#treaties').click(function() {
-            if($($(this).parent()).hasClass('is-checked')) {
+        $('#treaties').on('switchChange.bootstrapSwitch', function(event, state) {
+            if(!state) {
                 treatyPolygons.forEach(function(element,index,array) {
                     element.setMap(null);
                 });
@@ -363,7 +363,7 @@
         google.maps.event.addListener(element, 'mouseout', function() {
             this.setOptions({strokeOpacity:0.8});
             this.setOptions({fillOpacity:0.35});
-            $('#currentFN').html('Type your address or city into the search box<br>and select from the menu of addresses that appear.');
+            $('#currentFN').html('Load polygons and mouse over them or click to see more.');
         });
     }
     function ColorLuminance(hex, lum) {

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Native-land.ca | About</title>
+    <title>Native-land.ca | Full Map</title>
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
     <meta charset="utf-8">
       <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
@@ -14,7 +14,7 @@
       <meta property="og:description" content="Welcome to Native Land. This is a resource for North Americans (and others)
                                         to find out more about local indigenous territories and languages.">
       <meta property="og:type" content="website">
-      <meta property="og:url" content="http://native-land.ca">
+      <meta property="og:url" content="http://native-land.ca/ca/full-map.html">
       <meta property="og:image" content="http://native-land.ca/images/incomplete-territories.png">
       <meta property="og:site_name" content="Native-land.ca - Our home on native land">
       <link rel="icon" href="/images/favicon.png" type="image/x-icon"/>
@@ -33,7 +33,6 @@
       ga('send', 'pageview');
 
     </script>
-
 </head>
 
 <body>
@@ -83,36 +82,57 @@
     </nav>
 
     <!-- Page Content -->
-    <div class="container">
-
+    <div class="container-fluid" style="margin-top:-20px;">
         <div class="row">
-
-            <div class="col-md-3">
+            <div id="map-canvas" style="width:100%;height:1000px;"></div>
+            <div id="legend" style="width:200px;margin-left:30px;padding:10px;background:white;">
+                <p><strong style="font-size:17px;">Map Legend</strong></p>
+                <div id="currentFN">
+                     <p>Load polygons and mouse over them or click to see more.</p>
+                </div>
             </div>
-
-            <div class="col-md-9">
-                <h1>About this site</h1>
-                <p>I'm Victor. I am a settler, born in traditional Katzie territory and raised in the Okanagan. I am concerned about many of the issues
-                raised by using maps and colonial ways of thinking when it comes to maps. For instance, who has the right to define where a 
-                particular territory ends, and another begins? Who should I speak to about such matters?</p>
-                <p>There are over 630 different First Nations in Canada and I am not sure of the right process to map territories, languages, 
-                and treaties respectfully - and I'm not even sure if it is possible to do respectfully. I am not at all sure about the right
-                way to go about this project, so I would very much appreciate your input.</p>
-                <p>I feel that maps are inherently colonial, in that they delegate power according to imposed borders that don't really exist in many nations throughout history. They were rarely created in good faith, and are often used in wrong ways. I am open to criticism about this project and I welcome suggestions and changes. <a href="mailto:tempranova@gmail.com">Email me</a>.</p>
-                <p>You can visit the <a href="https://github.com/tempranova/Native-Land">Github page for information</a>.</p>
-                <h2>Team</h2>
-                <p>Big thanks to <strong>Shauna Johnson</strong> for helping get the Teacher's Guide started!</p>
-                <p><strong>Urooba Jamal</strong> is our social media person, so get in touch with her on Twitter or Facebook anytime!</p>
-                <p>Thanks to everyone that has emailed to help with this project! Especial thanks to Travis Henry for his huge research and help with American nations.</p>
-                <h2>Donations and contributions</h2>
-                <p>Right now I can afford to pay out-of-pocket for this site, but as the team grows I need a better way to pay people. If you're interested in contributing or know of a grant that might help, please <a href="mailto:tempranova@gmail.com">get in contact with me</a>.</p>
+            <div class="hidden-xs">
+                <table style="width:60%;text-align:center;margin:10px auto;">
+                    <tr>
+                        <td colspan="3">
+                            <div id="results" class="results">
+                                <div style="text-align:center;width:100%;">
+                                </div>
+                            </div>
+                            <hr />
+                        </td>
+                    </tr>
+                    <tr>
+                        <form>
+                        <td style="padding:0 5px;">
+                              <input id="territories" type="checkbox" name="territories"> Territories
+                        </td>
+                        <td style="padding:0 5px;">
+                          <div class="checkbox">
+                            <label>
+                              <input id="languages" type="checkbox" name="languages"> Languages
+                            </label>
+                          </div>
+                        </td>
+                        <td style="padding:0 5px;">
+                          <div class="checkbox">
+                            <label>
+                              <input id="treaties" type="checkbox" name="treaties"> Treaties
+                            </label>
+                          </div>
+                        </td>
+                        </form>
+                    </tr>
+                    <tr>
+                        <td colspan="3"><small>Click here to add polygons to the map. Click on individual shapes for more information (on the left).</small></td>
+                    </tr>
+                </table>
             </div>
         </div>
-
     </div>
     <!-- /.container -->
 
-    <div class="container">
+    <div class="container-fluid">
 
         <hr>
 
@@ -129,6 +149,22 @@
 
     </div>
     <!-- /.container -->
+    <script src="https://maps.googleapis.com/maps/api/js?libraries=geometry,places,drawing"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="../js/fromgeojson.js"></script>
+    <script src="../js/underscore-min.js"></script>
+    <script src="../coordinates/indigenousLanguages.js"></script>
+    <script src="../coordinates/indigenousTerritories.js"></script>
+    <script src="../coordinates/indigenousTreaties.js"></script>
+    <script src="../bootstrap/bootstrap.min.js"></script>
+    <script src="../bootstrap/bootstrap-switch.min.js"></script>
+    <script>
+    var homeTrue = true;
+    $("[name='languages']").bootstrapSwitch();
+    $("[name='treaties']").bootstrapSwitch();
+    $("[name='territories']").bootstrapSwitch();
+    </script>
+    <script src="../js/nativeland.js"></script>
 </body>
 
 </html>
