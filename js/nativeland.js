@@ -100,7 +100,7 @@
                 var thisLatLngArray = [thisLatLng,thisLatLngEast,thisLatLngWest,thisLatLngNorth,thisLatLngSouth];
                 var myOptions = {
                     center:thisLatLng,
-                    zoom:13
+                    zoom:9
                 }
                 map.setOptions(myOptions);
                 var resultsArray = []; // Array with objects having Territory, Language, Link
