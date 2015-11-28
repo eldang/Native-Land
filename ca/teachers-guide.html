@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Native-land.ca About</title>
+<html lang="en">
+<head>
+    <title>Native-land.ca | Teacher's Guide</title>
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
     <meta charset="utf-8">
       <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
@@ -16,13 +16,13 @@
       <meta property="og:type" content="website">
       <meta property="og:url" content="http://native-land.ca">
       <meta property="og:image" content="http://native-land.ca/images/incomplete-territories.png">
-      <meta property="og:site_name" content="Native-land.ca - Teacher's Guide">
+      <meta property="og:site_name" content="Native-land.ca - Our home on native land">
       <link rel="icon" href="/images/favicon.png" type="image/x-icon"/>
       
-      <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.5/material.indigo-pink.min.css">
-      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-      <link rel="stylesheet" href="../css/style.css">
-      
+    <link href="../bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link href="../bootstrap/bootstrap-switch.min.css" rel="stylesheet">
+    <link href="../css/bootstrap-style.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300' rel='stylesheet' type='text/css'>
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -33,28 +33,65 @@
       ga('send', 'pageview');
 
     </script>
-  </head>
-  <body>
-    <div class="demo-layout-transparent mdl-layout mdl-js-layout">
-        
-      <div class="mdl-layout__drawer">
-        <span class="mdl-layout-title">Native-Land.ca</span>
-        <nav class="mdl-navigation">
-          <a class="mdl-navigation__link" href="http://native-land.ca/ca/index.html">Full Map</a>
-          <a class="mdl-navigation__link" href="http://native-land.ca/ca/about.html">About Us</a>
-          <a class="mdl-navigation__link" href="http://native-land.ca/ca/teachers-guide.html">Teacher's Guide</a>
-          <a class="mdl-navigation__link" href="http://native-land.ca/ca/resources.html">Resources<br><small>Look here for a list of maps used on this site.</small></a>
-          <a class="mdl-navigation__link" href="mailto:tempranova@gmail.com">Email Contact<br><small>Please send corrections here!</small></a>
-            <hr>
-          <a class="mdl-navigation__link" href="https://twitter.com/nativelandnet"><img src="../images/twitter.png" style="width:17px;display:inline;padding:0;"> Twitter</a>
-          <a class="mdl-navigation__link" href="https://www.facebook.com/nativelandnet"><img src="../images/facebook.png" style="width:17px;display:inline;padding:0;"> Facebook</a>
-        </nav>
-      </div>
-      <main class="mdl-layout__content" style="background: skyblue;">
-<!--         <div id="map-canvas"></div>-->
-          <div id="nl-search">
-              <div id="display-area" style="width:80%;background:white;margin-left:10px;padding:10px;padding-left:20px;margin-left:50px;font-size:12px;">
-                  <h1>Teacher's Guide</h1>
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="http://native-land.ca">Native-Land.ca</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="http://native-land.ca/ca/full-map.html">Large Map</a>
+                    </li>
+                    <li>
+                        <a href="http://native-land.ca/ca/teachers-guide.html">Teacher's Guide</a>
+                    </li>
+                    <li>
+                        <a href="http://native-land.ca/ca/resources.html">Resources</a>
+                    </li>
+                    <li>
+                        <a href="http://native-land.ca/ca/about.html">About</a>
+                    </li>
+                    <li>
+                        <a href="mailto:tempranova@gmail.com">Email Contact</a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="../images/twitter.png" style="width:17px;display:inline;padding:0;"></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="../images/facebook.png" style="width:17px;display:inline;padding:0;"></a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-md-3">
+            </div>
+
+            <div class="col-md-9">
+<h1>Teacher's Guide</h1>
 <!--                  <span class="mdl-layout-title" style="margin-bottom:15px;">Teacher's PDF coming soon.</span>-->
                   <p>Since creating this map, we've recieved a lot of emails from teachers at all levels asking if they can use the map in teaching their students. Of course we would love for people to spread the map around more, but there are some very important things to take into account when using this map.</p>
                   <p><strong>First of all, this map must be used critically. Maps function as colonial artifacts and represent a very particular way of seeing the world - a way primarily concerned with ownership, exclusivity, and power relations.</strong></p>
@@ -133,22 +170,29 @@
                     Discovery in the English Colonies. Oxford:
                     University of Oxford Press. Ch. 4.</p>
                     <p>Smith, Linda Tuhiwai (2012). <u>Decolonizing Indigenous
-                    Methodologies: Research and Indigenous Peoples. </u>London: Zed Books. </p>
-              </div>
-          </div>
-      </main>
-    </div>
-    <div id="currentFN" style="padding:5px;background:white;border-radius:5px;
-                            box-shadow:2px 2px 2px #ccc;margin:0 auto;margin-bottom:20px;
-                            font-size:14px;display:none;"></div>
-  </body>
+                    Methodologies: Research and Indigenous Peoples. </u>London: Zed Books. </p>            </div>
+        </div>
 
-    <script src="https://storage.googleapis.com/code.getmdl.io/1.0.5/material.min.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?libraries=geometry,places,drawing"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script src="../js/fromgeojson.js"></script>
-    <script src="../coordinates/indigineousLanguages.js"></script>
-    <script src="../coordinates/indigineousTerritories.js"></script>
-    <script src="../coordinates/indigineousTreaties.js"></script>
-    <script src="../js/nativeland.js"></script>
+    </div>
+    <!-- /.container -->
+
+    <div class="container">
+
+        <hr>
+
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p class="pull-right" style="color:#9e0b12;">These maps are not definitive OR complete. Language results may be incorrect. Please 
+                        <a href="mailto:tempranova@gmail.com">contact me</a> with any fixes.</p>
+                    <p>Native-Land.ca.</p>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+    <!-- /.container -->
+</body>
+
 </html>
