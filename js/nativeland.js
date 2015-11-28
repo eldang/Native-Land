@@ -99,7 +99,8 @@
                 var thisLatLngSouth = new google.maps.LatLng(place.geometry.location.lat() - 0.1,place.geometry.location.lng() + 0.1);
                 var thisLatLngArray = [thisLatLng,thisLatLngEast,thisLatLngWest,thisLatLngNorth,thisLatLngSouth];
                 var myOptions = {
-                    center:thisLatLng
+                    center:thisLatLng,
+                    zoom:13
                 }
                 map.setOptions(myOptions);
                 var resultsArray = []; // Array with objects having Territory, Language, Link
