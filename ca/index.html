@@ -90,11 +90,7 @@
             <div class="col-md-3">
                 <h2 style="margin-top:0;">Learn more about where you live.</h2>
                 <p><strong>Native-Land.ca</strong> is a resource to help North Americans learn more about their local history. <a href="http://native-land.ca/ca/about.html">Read more...</a></p>
-                <div class="list-group">
-                    <div class="list-group-item">
-                        <input id="autocomplete" class="form-control" placeholder="Enter a town or address" type="text"></input>
-                    </div>
-                </div>
+                <input id="autocomplete" class="form-control" placeholder="Enter a town or address" type="text"></input>
                 <div class="list-group">
                     <div class="list-group-item">
                         <div id="results" class="results">
@@ -105,6 +101,14 @@
                         </div>
                     </div>
                 </div>
+                <p>or, load individual polygons below.</p>
+                <small>Languages</small>
+                <select id="languageSelect" class="form-control"><option value="">Select a language</option></select>
+                <small>Territories</small>
+                <select id="territorySelect" class="form-control"></select>
+                <small>Treaties</small>
+                <select id="treatySelect" class="form-control"><option value="">Select a treaty</option></select>
+                <button id="reset_map" class="btn btn-default" style="margin-top:15px;">Reset map</button>
             </div>
 
             <div class="col-md-9">
@@ -139,7 +143,7 @@
                         </form>
                     </tr>
                     <tr>
-                        <td colspan="3"><small>Click here to add polygons to the map. Click on individual shapes for more information (on the left).</small></td>
+                        <td colspan="3"><small>Use the switches to add polygons to the map. Click on individual shapes for more information (on the left). <strong>Please note all colours are randomly generated.</strong></strong></small></td>
                     </tr>
                 </table>
             </div>
@@ -156,7 +160,7 @@
         <footer>
             <div class="row">
                 <div class="col-lg-12">
-                    <p class="pull-right" style="color:#9e0b12;">These maps are not definitive OR complete. Language results may be incorrect. Please 
+                    <p class="pull-right" style="color:#9e0b12;">These maps are not definitive OR complete. Some results may be incorrect. Please 
                         <a href="mailto:tempranova@gmail.com">contact me</a> with any fixes.</p>
                     <p>Native-Land.ca.</p>
                 </div>
