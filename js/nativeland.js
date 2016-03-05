@@ -2,6 +2,19 @@
     $('.nl-close-results').click(function() {
       $('.nl-results').hide();
     });
+    // Create bounds from polygon
+    google.maps.Polygon.prototype.getBounds = function() {
+        var bounds = new google.maps.LatLngBounds();
+        var paths = this.getPaths();
+        var path;        
+        for (var i = 0; i < paths.getLength(); i++) {
+            path = paths.getAt(i);
+            for (var ii = 0; ii < path.getLength(); ii++) {
+                bounds.extend(path.getAt(ii));
+            }
+        }
+        return bounds;
+    }
     // Load areas of language and territories onto map
     var languagePolygons = [];
     var treatyPolygons = [];
@@ -311,6 +324,70 @@
                 });
             }
         });
+        
+        // Set up selected menus to load appropriate polygon
+        for(i=0;i<indigenousMapArray.length;i++) {
+            for(k=0;k<indigenousMapArray[i].length;k++) {
+                if(i===0) {
+                    $('#languageSelect').append('<option value="'+k+'">'+indigenousMapArray[i][k][0].geojsonProperties.Name+'</option>');
+                } else if(i===1) {
+                    $('#territorySelect').append('<option value="'+k+'">'+indigenousMapArray[i][k][0].geojsonProperties.Name+'</option>');
+                } else if(i===2) {
+                    $('#treatySelect').append('<option value="'+k+'">'+indigenousMapArray[i][k][0].geojsonProperties.Name+'</option>');
+                }
+            }
+        }
+        // Alphabetize
+        $("#languageSelect").append($("#languageSelect option").remove().sort(function(a, b) {
+            var at = $(a).text(), bt = $(b).text();
+            return (at > bt)?1:((at < bt)?-1:0);
+        }));
+        $("#territorySelect").append($("#territorySelect option").remove().sort(function(a, b) {
+            var at = $(a).text(), bt = $(b).text();
+            return (at > bt)?1:((at < bt)?-1:0);
+        }));
+        $("#treatySelect").append($("#treatySelect option").remove().sort(function(a, b) {
+            var at = $(a).text(), bt = $(b).text();
+            return (at > bt)?1:((at < bt)?-1:0);
+        }));
+        $('#languageSelect').prepend('<option value="">Select a language</option>');
+        $('#territorySelect').prepend('<option value="">Select a territory</option>');
+        $('#treatySelect').prepend('<option value="">Select a treaty</option>');
+        // Individual selection
+        $("#languageSelect").on('change', function() {
+            var thisIndex = $( "#languageSelect option:selected" ).val();
+            if(thisIndex!=='') {
+                placePolygons(languagePolygons[thisIndex],map);
+                map.fitBounds(languagePolygons[thisIndex].getBounds());
+            }
+        });
+        $("#territorySelect").on('change', function() {
+            var thisIndex = $( "#territorySelect option:selected" ).val();
+            if(thisIndex!=='') {
+                placePolygons(territoryPolygons[thisIndex],map);
+                map.fitBounds(territoryPolygons[thisIndex].getBounds());
+            }
+        });
+        $("#treatySelect").on('change', function() {
+            var thisIndex = $( "#treatySelect option:selected" ).val();
+            if(thisIndex!=='') {
+                placePolygons(treatyPolygons[thisIndex],map);
+                map.fitBounds(treatyPolygons[thisIndex].getBounds());
+            }
+        });
+        
+        // Clear map polygons
+        $('#reset_map').click(function() {
+            for(i=0;i<polygonArray.length;i++) {
+                for(k=0;k<polygonArray[i].length;k++) {
+                    map.setCenter({lat:55.115371, lng: -100.056882});
+                    map.setZoom(3);
+                    polygonArray[i][k].setMap(null);
+                }
+            }
+        });
+        
+        // Send out PDF
     }
 
     google.maps.event.addDomListener(window, 'load', initialize);
@@ -351,13 +428,22 @@
         google.maps.event.addListener(element, 'mousemove', function(event) {
             var mouseLocation = event.latLng;
             var theseFindings = [];
-            jsonToCheck.forEach(function(element,array,index) {
-                if (google.maps.geometry.poly.containsLocation(mouseLocation, element[0])) {
-                    var thisFinding = element[0].geojsonProperties.Name;
-                    var color = element[0].fillColor;
+            // If it's an individual polygon, just get the name directory
+            if(jsonToCheck) {
+                jsonToCheck.forEach(function(element,array,index) {
+                    if (google.maps.geometry.poly.containsLocation(mouseLocation, element[0])) {
+                        var thisFinding = element[0].geojsonProperties.Name;
+                        var color = element[0].fillColor;
+                        theseFindings.push('<div style="text-align:center;display:inline-block;margin-right:10px;"><div style="width:10px;height:10px;margin:0 auto;background-color:'+color+';"></div>'+thisFinding+'</div>');
+                    }
+                });
+            } else {
+                if (google.maps.geometry.poly.containsLocation(mouseLocation, element)) {
+                    var thisFinding = element.geojsonProperties.Name;
+                    var color = element.fillColor;
                     theseFindings.push('<div style="text-align:center;display:inline-block;margin-right:10px;"><div style="width:10px;height:10px;margin:0 auto;background-color:'+color+';"></div>'+thisFinding+'</div>');
                 }
-            });
+            }
             $('#currentFN').show();
             $('#currentFN').html(theseFindings);
         });
@@ -384,4 +470,33 @@
       }
 
       return rgb;
+    }
+    function sortUnorderedList(ul, sortDescending) {
+      if(typeof ul == "string")
+        ul = document.getElementById(ul);
+
+      // Idiot-proof, remove if you want
+      if(!ul) {
+        alert("The UL object is null!");
+        return;
+      }
+
+      // Get the list items and setup an array for sorting
+      var lis = ul.getElementsByTagName("LI");
+      var vals = [];
+
+      // Populate the array
+      for(var i = 0, l = lis.length; i < l; i++)
+        vals.push(lis[i].innerHTML);
+
+      // Sort it
+      vals.sort();
+
+      // Sometimes you gotta DESC
+      if(sortDescending)
+        vals.reverse();
+
+      // Change the list on the page
+      for(var i = 0, l = lis.length; i < l; i++)
+        lis[i].innerHTML = vals[i];
     }
