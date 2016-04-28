@@ -40,25 +40,88 @@
             height: 280px; 
             width: 100%;
         }
+        iframe {
+            border: none;
+        }
     </style>
 
 </head>
 
 <body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="http://native-land.net">Native-Land.net</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="http://native-land.net/net/full-map.html">Large Map</a>
+                    </li>
+                    <li>
+                        <a href="http://native-land.net/net/teachers-guide.html">Teacher's Guide</a>
+                    </li>
+                    <li>
+                        <a href="http://native-land.net/net/resources.html">Resources</a>
+                    </li>
+                    <li>
+                        <a href="http://native-land.net/net/about.html">About</a>
+                    </li>
+                    <li>
+                        <a href="mailto:tempranova@gmail.com">Email Contact</a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/nativelandnet"><img src="../images/twitter.png" style="width:17px;display:inline;padding:0;"></a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/nativelandnet"><img src="../images/facebook.png" style="width:17px;display:inline;padding:0;"></a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
     <div class="container">
         <h1>Native-Land API Documentation</h1>
-        <p>This is a fun little API to get specific polygons and maps from our main documents. These are updated regularly.</p>
-        <h3>Request format</h3>
+        <p>This allows you to do some calls that will return specific data on nations, languages, or treaties, that you can use
+        in your programming.</p>
+        <h2>Embed Code</h2>
+        <p>Create an iframe as follows:</p> 
+            <pre>&lt;iframe src="index.php?maps=languages&name=witsuwiten" /&gt;</pre>
+        <p>Further instructions
+            for how to use the API (by entering different URLs) are below.</p>
+        <iframe src="http://native-land.ca/api/embed/embed.html?maps=languages&name=witsuwiten" width="300" height="300"></iframe>
+        <h2>AJAX Requests</h2>
+        <p>You must supply one or more <strong>type</strong>. There are 3 types:</p>
+        <ul>
+            <li>territories</li>
+            <li>languages</li>
+            <li>treaties</li>
+        </ul>
+        <p>You can also optionally supply one or more <strong>name</strong>. These are listed at the bottom of this page (it's a big list). These
+        must be supplied within the correct type for the name (only names of treaties with the treaty type, for instance).</p>
+        <h3>Usage</h3>
         <p>Do a GET request to the following URL: <strong>http://native-land.ca/api/index.php</strong> in the following format:</p>
         <p><strong>General maps:</strong> http://native-land.ca/api/index.php?maps=territories,treaties,languages</p>
         <p><strong>Specific polygons:</strong> http://native-land.ca/api/index.php?maps=territories&name=nakota,lakota</p>
         
         <h3>Examples</h3>
-        <h5>Specific languages ( index.php?maps=languages&name=nakota,lakota )</h5>
+        <h4>Iframe example</h4>
+        <h4>Specific languages ( index.php?maps=languages&name=nakota,lakota )</h4>
         <div id="specificLanguagesMap" class="exampleMap"></div>
-        <h5>One languages ( index.php?maps=languages&name=witsuwiten )</h5>
+        <h4>One languages ( index.php?maps=languages&name=witsuwiten )</h4>
         <div id="oneLanguageMap" class="exampleMap"></div>
-        <h5>All languages ( index.php?maps=languages )</h5>
+        <h4>All languages ( index.php?maps=languages )</h4>
         <div id="allLanguageMap" class="exampleMap"></div>
     </div>
 </body>
