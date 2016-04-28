@@ -1,0 +1,56 @@
+<!-- Embed code -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Native-land.ca | API Endpoint</title>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+      <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+      <link rel="icon" href="/images/favicon.png" type="image/x-icon"/>
+    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.css" />
+    
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300' rel='stylesheet' type='text/css'>
+    <style>
+        body, html {
+            padding: 0;
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="nativeLandMap" class="nativeLandMap" style="width:100%;height:300px;"></div>
+</body>
+<script src="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="../../js/fromgeojson.js"></script>
+<script src="../../js/underscore-min.js"></script>
+<script src="../../coordinates/indigenousLanguages.js"></script>
+<script src="../../coordinates/indigenousTerritories.js"></script>
+<script src="../../coordinates/indigenousTreaties.js"></script>
+<script>
+    $.get( "../index.php?maps=languages&name=witsuwiten", function( data ) {
+        console.log(data);
+        var map = L.map('nativeLandMap').setView([51.505, -0.09], 13);
+        L.tileLayer( 'http://{s}.mqcdn.com/tiles/1.0.0/map/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="http://osm.org/copyright" title="OpenStreetMap" target="_blank">OpenStreetMap</a> contributors | Tiles Courtesy of <a href="http://www.mapquest.com/" title="MapQuest" target="_blank">MapQuest</a> <img src="http://developer.mapquest.com/content/osm/mq_logo.png" width="16" height="16">',
+            subdomains: ['otile1','otile2','otile3','otile4']
+        }).addTo( map );
+        var allGeoJsons = []; 
+        if(data.features) {
+            data.features.forEach(function(element,index,array) {
+                var thisGeoJson = L.geoJson(element);
+                allGeoJsons.push(thisGeoJson);
+            });
+        } else {
+            data.forEach(function(element,index,array) {
+                var thisGeoJson = L.geoJson(element);
+                allGeoJsons.push(thisGeoJson);
+            });
+        }
+        var layerGeoJsons = L.featureGroup(allGeoJsons).addTo(map);
+        map.fitBounds(layerGeoJsons.getBounds());
+    });
+
+
+</script>
