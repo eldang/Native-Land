@@ -67,6 +67,9 @@
                         <a href="http://native-land.ca/ca/about.html">About</a>
                     </li>
                     <li>
+                        <a href="http://native-land.ca/api/index.html">API</a>
+                    </li>
+                    <li>
                         <a href="mailto:tempranova@gmail.com">Email Contact</a>
                     </li>
                     <li>
@@ -229,40 +232,47 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script src="../js/fromgeojson.js"></script>
 <script src="../js/underscore-min.js"></script>
-<script src="../coordinates/indigenousLanguages.js"></script>
-<script src="../coordinates/indigenousTerritories.js"></script>
-<script src="../coordinates/indigenousTreaties.js"></script>
 <script src="../js/nativeland.js"></script>
 <script src="../bootstrap/bootstrap.min.js"></script>
 <script src="../bootstrap/bootstrap-switch.min.js"></script>
 <script>
     // Encode stuff loaded in JS file above
-    var tryThisGeoJSON = new GeoJSON(indigenousTerritories);
-    tryThisGeoJSON.forEach( function(element,array,index) {
-        var thisLink = ' <a target="_blank" href="'+element[0].geojsonProperties.description+'">'+element[0].geojsonProperties.description+'</a> ';
-        $('.territories-resources ul').append('<li>'+element[0].geojsonProperties.Name+' - '+thisLink+'</li>');
-    });
-    var tryThisGeoJSON = new GeoJSON(indigenousLanguages);
-    tryThisGeoJSON.forEach( function(element,array,index) {
-        var languageLinks = element[0].geojsonProperties.description.split(",");
-        var formattedLanguageLinks = [];
-        languageLinks.forEach(function(element,index,array) {
-            var thisLink = ' <a target="_blank" href="'+element+'">Link '+(index+1)+'</a> ';
-            formattedLanguageLinks.push(thisLink);
+    var indigenousLanguagesGeoJSON, indigenousTerritoriesGeoJSON, indigenousTreatiesGeoJSON;
+    $.getJSON("/coordinates/indigenousLanguages.json", function(data){
+        var indigenousLanguages = data;
+        indigenousLanguagesGeoJSON = new GeoJSON(indigenousLanguages);
+        indigenousLanguagesGeoJSON.forEach( function(element,array,index) {
+            var languageLinks = element[0].geojsonProperties.description.split(",");
+            var formattedLanguageLinks = [];
+            languageLinks.forEach(function(element,index,array) {
+                var thisLink = ' <a target="_blank" href="'+element+'">Link '+(index+1)+'</a> ';
+                formattedLanguageLinks.push(thisLink);
+            });
+            var fullyFormatted = formattedLanguageLinks.join();
+            $('.language-resources ul').append('<li>'+element[0].geojsonProperties.Name+' - '+fullyFormatted+'</li>');
         });
-        var fullyFormatted = formattedLanguageLinks.join();
-        $('.language-resources ul').append('<li>'+element[0].geojsonProperties.Name+' - '+fullyFormatted+'</li>');
-    });
-    var tryThisGeoJSON = new GeoJSON(indigenousTreaties);
-    tryThisGeoJSON.forEach( function(element,array,index) {
-        var languageLinks = element[0].geojsonProperties.description.split(",");
-        var formattedLanguageLinks = [];
-        languageLinks.forEach(function(element,index,array) {
-            var thisLink = ' <a target="_blank" href="'+element+'">Link '+(index+1)+'</a> ';
-            formattedLanguageLinks.push(thisLink);
+        $.getJSON("/coordinates/indigenousTerritories.json", function(data){
+            var indigenousTerritories = data;
+            indigenousTerritoriesGeoJSON = new GeoJSON(indigenousTerritories);
+            indigenousTerritoriesGeoJSON.forEach( function(element,array,index) {
+                var thisLink = ' <a target="_blank" href="'+element[0].geojsonProperties.description+'">'+element[0].geojsonProperties.description+'</a> ';
+                $('.territories-resources ul').append('<li>'+element[0].geojsonProperties.Name+' - '+thisLink+'</li>');
+            });
+            $.getJSON("/coordinates/indigenousTreaties.json", function(data){
+                var indigenousTreaties = data;
+                indigenousTreatiesGeoJSON = new GeoJSON(indigenousTreaties);
+                indigenousTreatiesGeoJSON.forEach( function(element,array,index) {
+                    var languageLinks = element[0].geojsonProperties.description.split(",");
+                    var formattedLanguageLinks = [];
+                    languageLinks.forEach(function(element,index,array) {
+                        var thisLink = ' <a target="_blank" href="'+element+'">Link '+(index+1)+'</a> ';
+                        formattedLanguageLinks.push(thisLink);
+                    });
+                    var fullyFormatted = formattedLanguageLinks.join();
+                    $('.treaty-resources ul').append('<li>'+element[0].geojsonProperties.Name+' - '+fullyFormatted+'</li>');
+                });
+            });
         });
-        var fullyFormatted = formattedLanguageLinks.join();
-        $('.treaty-resources ul').append('<li>'+element[0].geojsonProperties.Name+' - '+fullyFormatted+'</li>');
     });
 </script>
 </html>

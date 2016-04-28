@@ -20,14 +20,28 @@
     var treatyPolygons = [];
     var territoryPolygons = [];
     var polygonArray = [languagePolygons,territoryPolygons,treatyPolygons];
+
     // Encode stuff loaded in coordinates files
-    var indigenousLanguagesGeoJSON = new GeoJSON(indigenousLanguages);
-    var indigenousTerritoriesGeoJSON = new GeoJSON(indigenousTerritories);
-    var indigenousTreatiesGeoJSON = new GeoJSON(indigenousTreaties);
-    var indigenousMapArray = [indigenousLanguagesGeoJSON,indigenousTerritoriesGeoJSON,indigenousTreatiesGeoJSON];
+    var indigenousLanguagesGeoJSON, indigenousTerritoriesGeoJSON, indigenousTreatiesGeoJSON;
+    $.getJSON("/coordinates/indigenousLanguages.json", function(data){
+        var indigenousLanguages = data;
+        indigenousLanguagesGeoJSON = new GeoJSON(indigenousLanguages);
+        $.getJSON("/coordinates/indigenousTerritories.json", function(data){
+            var indigenousTerritories = data;
+            indigenousTerritoriesGeoJSON = new GeoJSON(indigenousTerritories);
+            $.getJSON("/coordinates/indigenousTreaties.json", function(data){
+                var indigenousTreaties = data;
+                indigenousTreatiesGeoJSON = new GeoJSON(indigenousTreaties);
+                initialize();
+            });
+        });
+    });
+
+
     var map;
     var MY_MAPTYPE_ID = 'custom_style';
     function initialize() {
+      var indigenousMapArray = [indigenousLanguagesGeoJSON,indigenousTerritoriesGeoJSON,indigenousTreatiesGeoJSON];
       // Removing national labels
       var featureOpts = [
           {
@@ -390,7 +404,7 @@
         // Send out PDF
     }
 
-    google.maps.event.addDomListener(window, 'load', initialize);
+//    google.maps.event.addDomListener(window, 'load', initialize);
 
 // FUNCTIONS
     // Get random color
