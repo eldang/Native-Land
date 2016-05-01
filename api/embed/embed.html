@@ -15,6 +15,12 @@
             padding: 0;
             margin: 0;
         }
+        a {
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 
@@ -29,25 +35,33 @@
 <script src="../../coordinates/indigenousTerritories.js"></script>
 <script src="../../coordinates/indigenousTreaties.js"></script>
 <script>
-    $.get( "../index.php?maps=languages&name=witsuwiten", function( data ) {
-        console.log(data);
+    
+    var afterQuestionMark = window.location.href.substr(window.location.href.indexOf("?") + 1);
+    $.get( "../index.php?"+afterQuestionMark, function( data ) {
         var map = L.map('nativeLandMap').setView([51.505, -0.09], 13);
         L.tileLayer( 'http://{s}.mqcdn.com/tiles/1.0.0/map/{z}/{x}/{y}.png', {
             attribution: '&copy; <a href="http://osm.org/copyright" title="OpenStreetMap" target="_blank">OpenStreetMap</a> contributors | Tiles Courtesy of <a href="http://www.mapquest.com/" title="MapQuest" target="_blank">MapQuest</a> <img src="http://developer.mapquest.com/content/osm/mq_logo.png" width="16" height="16">',
             subdomains: ['otile1','otile2','otile3','otile4']
         }).addTo( map );
         var allGeoJsons = []; 
-        if(data.features) {
-            data.features.forEach(function(element,index,array) {
-                var thisGeoJson = L.geoJson(element);
-                allGeoJsons.push(thisGeoJson);
+        data.forEach(function(element,index,array) {
+            var thisGeoJson = L.geoJson(element,{
+                onEachFeature: function(feature, layer) {
+                    layer.bindPopup('<a href="'+feature.properties.description+'">'+feature.properties.Name+'</a>');
+                },
+                style: function(feature) {
+                    return {
+                        weight: 2,
+                        opacity: 1,
+                        color: 'white',
+                        dashArray: '3',
+                        fillOpacity: 0.7,
+                        fillColor: '#FFF'
+                    }
+                }
             });
-        } else {
-            data.forEach(function(element,index,array) {
-                var thisGeoJson = L.geoJson(element);
-                allGeoJsons.push(thisGeoJson);
-            });
-        }
+            allGeoJsons.push(thisGeoJson);
+        });
         var layerGeoJsons = L.featureGroup(allGeoJsons).addTo(map);
         map.fitBounds(layerGeoJsons.getBounds());
     });

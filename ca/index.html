@@ -22,6 +22,7 @@
     <link href="../bootstrap/bootstrap.min.css" rel="stylesheet">
     <link href="../bootstrap/bootstrap-switch.min.css" rel="stylesheet">
     <link href="../css/bootstrap-style.css" rel="stylesheet">
+    <link href="../css/select2.css" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300' rel='stylesheet' type='text/css'>
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -67,9 +68,6 @@
                         <a href="http://native-land.ca/ca/about.html">About</a>
                     </li>
                     <li>
-                        <a href="mailto:tempranova@gmail.com">Email Contact</a>
-                    </li>
-                    <li>
                         <a href="https://twitter.com/nativelandnet"><img src="../images/twitter.png" style="width:17px;display:inline;padding:0;"></a>
                     </li>
                     <li>
@@ -95,57 +93,54 @@
                     <div class="list-group-item">
                         <div id="results" class="results">
                             <div style="text-align:center;width:100%;">
-                                <h4 style="margin-top:20px;">Please type your address or city into the search box and select from the menu of addresses that appear.</h4>
                                 <h5 style="margin-top:20px;">Your search results will appear here.</h5>
                             </div>
                         </div>
                     </div>
                 </div>
-                <p>or, load individual polygons below.</p>
-                <small>Languages</small>
-                <select id="languageSelect" class="form-control"><option value="">Select a language</option></select>
-                <small>Territories</small>
-                <select id="territorySelect" class="form-control"></select>
-                <small>Treaties</small>
-                <select id="treatySelect" class="form-control"><option value="">Select a treaty</option></select>
-                <button id="reset_map" class="btn btn-default" style="margin-top:15px;">Reset map</button>
             </div>
 
             <div class="col-md-9">
-                <div class="well">This project displays a collection of traced maps of Indigenous territories, languages, and treaties. Related websites and links to language resources are included. <a href="http://native-land.ca/ca/resources.html">To see resources used, click here.</a></div>
-                <div id="map-canvas" style="width:100%;height:500px;"></div>
+                <div class="well">
+                    <p style="color:#9e0b12;text-align:center;">These maps are not definitive OR complete. They are a work in progress.</p>
+                    <h2 style="margin-top:0px;margin-bottom:0px;text-align:center;">
+                        <a href="#" data-toggle="modal" data-target="#commentModal">Submit correction or comment</a>
+                    </h2>
+                </div>
+                <div id="map-canvas" style="width:100%;height:500px;">
+                    <div style="margin:0 auto;margin-top:100px;font-size:20px;">Loading Map ...</div>
+                </div>
                 <div id="legend" style="width:200px;margin-left:30px;padding:10px;background:white;">
                     <p><strong style="font-size:17px;">Map Legend</strong></p>
                     <div id="currentFN">
                          <p>Load polygons and mouse over them or click to see more.</p>
                     </div>
                 </div>
-                <table style="width:60%;text-align:center;margin:10px auto;">
-                    <tr>
-                        <form>
-                        <td style="padding:0 5px;">
-                              <input id="territories" type="checkbox" name="territories"> Territories
-                        </td>
-                        <td style="padding:0 5px;">
-                          <div class="checkbox">
-                            <label>
-                              <input id="languages" type="checkbox" name="languages"> Languages
-                            </label>
-                          </div>
-                        </td>
-                        <td style="padding:0 5px;">
-                          <div class="checkbox">
-                            <label>
-                              <input id="treaties" type="checkbox" name="treaties"> Treaties
-                            </label>
-                          </div>
-                        </td>
-                        </form>
-                    </tr>
-                    <tr>
-                        <td colspan="3"><small>Use the switches to add polygons to the map. Click on individual shapes for more information (on the left). <strong>Please note all colours are randomly generated.</strong></strong></small></td>
-                    </tr>
-                </table>
+                <div class="row" >
+                    <div class="col-sm-6" style="margin-top:10px;" >
+                          <input id="territories" type="checkbox" name="territories">&nbsp;&nbsp;&nbsp;All territories<br/><br/>
+                          <input id="languages" type="checkbox" name="languages">&nbsp;&nbsp;&nbsp;All languages<br/><br/>
+                          <input id="treaties" type="checkbox" name="treaties">&nbsp;&nbsp;&nbsp;All treaties
+                    </div>
+                    <div class="col-sm-6" style="margin-top:10px;" >
+                            <small>Languages</small>
+                            <select id="languageSelect" class="form-control"><option value="">Select a language</option></select>
+                            <small>Territories</small>
+                                <select id="territorySelect" class="form-control"><option value="">Select a territory</option></select>
+                            <small>Treaties</small>
+                            <select id="treatySelect" class="form-control"><option value="">Select a treaty</option></select>
+                    </div>
+                    <div class="col-sm-12" style="margin-top:10px;">
+                        <button id="reset_map" class="btn btn-default" style="width:100%">Reset map</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12" style="text-align:center;">
+                        <h4>Instructions</h4>
+                        <small>Use the switches to add polygons to the map. Clicking on individual shapes will show more information.</strong>
+                        </small>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -168,21 +163,105 @@
         </footer>
 
     </div>
+    <!-- Modal -->
+    <div class="modal fade" id="commentModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Submit correction or comment</h4>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+                <div class="col-sm-12">
+                    <button class="btn btn-info" id="makeComment">Comment</button>
+                    <button class="btn btn-info" id="makeCorrection">Map correction</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12" style="display:none;" id="commentForm">
+                    <hr />
+                    <small>Your Email</small>
+                    <input id="userEmail" type="email" class="form-control" placeholder="Your email address" />
+                    <small>Your Comment</small>
+                    <textarea id="userComment" class="form-control" placeholder="What do you think? Do you have any suggestions?"></textarea>
+                </div>
+                <div class="col-sm-12" style="display:none;" id="correctionForm">
+                    <hr />
+                    <small>Your Email</small>
+                    <input id="userEmail2" type="email" class="form-control" placeholder="Your email address" />
+                    <small>Please tell me some details about the fix.</small>
+                    <textarea id="userComment2" class="form-control" placeholder="What needs to be fixed?"></textarea>
+                    <small>Link to map or other source, if possible!</small>
+                    <input id="userSource" type="text" class="form-control" placeholder="Source for fix" />
+                </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <p id="postMessage" class="pull-left"></p>
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <button type="button" id="sendEmail" class="btn btn-primary">Send</button>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- /.container -->
     <script src="https://maps.googleapis.com/maps/api/js?libraries=geometry,places,drawing"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="../js/fromgeojson.js"></script>
     <script src="../js/underscore-min.js"></script>
-    <script src="../coordinates/indigenousLanguages.js"></script>
-    <script src="../coordinates/indigenousTerritories.js"></script>
-    <script src="../coordinates/indigenousTreaties.js"></script>
+    <script src="../js/select2.js"></script>
     <script src="../bootstrap/bootstrap.min.js"></script>
     <script src="../bootstrap/bootstrap-switch.min.js"></script>
     <script>
     var homeTrue = true;
-    $("[name='languages']").bootstrapSwitch();
-    $("[name='treaties']").bootstrapSwitch();
-    $("[name='territories']").bootstrapSwitch();
+    $(document).ready(function() {
+        $("[name='languages']").bootstrapSwitch();
+        $("[name='treaties']").bootstrapSwitch();
+        $("[name='territories']").bootstrapSwitch();
+        $("#languageSelect").select2();
+        $("#territorySelect").select2();
+        $("#treatySelect").select2();
+        
+        $('#makeCorrection').click(function() {
+            $('#commentForm').hide();
+            $('#correctionForm').show();
+        });
+        
+        $('#makeComment').click(function() {
+            $('#correctionForm').hide();
+            $('#commentForm').show();
+        });
+        
+        $('#sendEmail').click(function() {
+            if($('#commentForm').is(':visible')) {
+                if($('#userEmail').val()!==''&&$('#userComment').val()!=='') {
+                    $.ajax({
+                        url: "../ca/sendEmail.php?user_email="+$('#userEmail').val()+"&user_comment="+$('#userComment').val(),
+                        method: "POST"
+                    }).done(function(response) {
+                        $('#postMessage').html('Your message was sent! Thanks!');
+                        $('#sendEmail').hide();
+                    });
+                } else {
+                    $('#postMessage').html('Please make sure you have filled in all the fields.');
+                }
+            } else if($('#correctionForm').is(':visible')) {
+                if($('#userEmail2').val()!==''&&$('#userComment2').val()!=='') {
+                    $.ajax({
+                        url: "../ca/sendEmail.php?user_email="+$('#userEmail2').val()+"&user_comment="+$('#userComment2').val()+"&user_source="+$('#userSource').val(),
+                        method: "POST"
+                    }).done(function(response) {
+                        $('#postMessage').html('Your message was sent! Thanks!');
+                        $('#sendEmail').hide();
+                    });
+                } else {
+                    $('#postMessage').html('Please make sure you have filled in all the fields.');
+                }
+            }
+        });
+        
+    });
     </script>
     <script src="../js/nativeland.js"></script>
 </body>
