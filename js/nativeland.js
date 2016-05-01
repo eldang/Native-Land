@@ -23,13 +23,13 @@
 
     // Encode stuff loaded in coordinates files
     var indigenousLanguagesGeoJSON, indigenousTerritoriesGeoJSON, indigenousTreatiesGeoJSON;
-    $.getJSON("/coordinates/indigenousLanguages.json", function(data){
+    $.getJSON("../coordinates/indigenousLanguages.json", function(data){
         var indigenousLanguages = data;
         indigenousLanguagesGeoJSON = new GeoJSON(indigenousLanguages);
-        $.getJSON("/coordinates/indigenousTerritories.json", function(data){
+        $.getJSON("../coordinates/indigenousTerritories.json", function(data){
             var indigenousTerritories = data;
             indigenousTerritoriesGeoJSON = new GeoJSON(indigenousTerritories);
-            $.getJSON("/coordinates/indigenousTreaties.json", function(data){
+            $.getJSON("../coordinates/indigenousTreaties.json", function(data){
                 var indigenousTreaties = data;
                 indigenousTreatiesGeoJSON = new GeoJSON(indigenousTreaties);
                 initialize();
@@ -435,9 +435,12 @@
             $('.nl-results').show();
         });
         var jsonToCheck = '';
-        if(type==='languages') { jsonToCheck = indigenousLanguagesGeoJSON;
-        } else if(type==='territories') { jsonToCheck = indigenousTerritoriesGeoJSON;
-        } else if(type==='treaties') { jsonToCheck = indigenousTreatiesGeoJSON;
+        if(type==='languages') { 
+            jsonToCheck = indigenousLanguagesGeoJSON;
+        } else if(type==='territories') { 
+            jsonToCheck = indigenousTerritoriesGeoJSON;
+        } else if(type==='treaties') { 
+            jsonToCheck = indigenousTreatiesGeoJSON;
         }
         google.maps.event.addListener(element, 'mousemove', function(event) {
             var mouseLocation = event.latLng;

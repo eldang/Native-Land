@@ -4,7 +4,7 @@ Native Land ([http://native-land.ca/][1]) is a web app with Google Maps API for 
 
 ###Data
 
-* Data sources are listed on the resources page (http://native-land.ca/ca/resources.html)
+* Data sources are listed on the [resources page][3]
 * Are a vast array of different maps and resources cobbled together and open to revisions
 * Stored in geoJSONs in the `coordinates/` directory
 
@@ -21,3 +21,4 @@ Please send me a note anytime at tempranova@gmail.com if you have a question.
 
 [1]:http://native-land.ca
 [2]:http://native-land.ca/api/index.html
+[3]:http://native-land.ca/ca/resources.html
