@@ -12,7 +12,8 @@
       "properties": {
         "Name": "Den k’e",
         "description": "http://www.firstvoices.com/scripts/WebObjects.exe/FirstVoices.woa/wa/enterLanguageArchive?archive=a70336ed8fff4d0c",
-        "Slug": "den-ke"
+        "Slug": "den-ke",
+        "FrenchName": "Den k’e"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -549,7 +550,8 @@
       "properties": {
         "Name": "Kaska",
         "description": "http://www.firstvoices.com/en/Liard-Kaska",
-        "Slug": "kaska"
+        "Slug": "kaska",
+        "FrenchName": "Kaska"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -1346,7 +1348,8 @@
       "properties": {
         "Name": "Tse’khene",
         "description": "http://www.firstvoices.com/en/TseKhene",
-        "Slug": "tsekhene"
+        "Slug": "tsekhene",
+        "FrenchName": "Tse’khene"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -2628,7 +2631,8 @@
       "properties": {
         "Name": "Tāłtān",
         "description": "http://maps.fphlcc.ca/node/280/resources",
-        "Slug": "ttn"
+        "Slug": "ttn",
+        "FrenchName": "Tāłtān"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -3830,7 +3834,8 @@
       "properties": {
         "Name": "Tsilhqot'in",
         "description": "http://maps.fphlcc.ca/node/76/resources,http://www.firstvoices.com/en/Tsilhqotin-Xeni-Gwetin",
-        "Slug": "tsilhqotin"
+        "Slug": "tsilhqotin",
+        "FrenchName": "Tsilhqot'in"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -5187,7 +5192,8 @@
       "properties": {
         "Name": "enaksialak̓ala / a'’islak̓ala",
         "description": "http://maps.fphlcc.ca/node/169/resources",
-        "Slug": "enaksialakala--aislakala"
+        "Slug": "enaksialakala--aislakala",
+        "FrenchName": "enaksialak̓ala / a'’islak̓ala"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -5734,7 +5740,8 @@
       "properties": {
         "Name": "Éy7á7juuthem",
         "description": "http://maps.fphlcc.ca/node/13/resources",
-        "Slug": "y77juuthem"
+        "Slug": "y77juuthem",
+        "FrenchName": "Éy7á7juuthem"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -6556,7 +6563,8 @@
       "properties": {
         "Name": "Hul’q’umi’num’ / Halq'eméylem / hən̓q̓əmin̓əm̓",
         "description": "http://www.native-languages.org/halkomelem.htm#language,http://www.firstvoices.com/en/Halqemeylem/welcome",
-        "Slug": "hulquminum--halqemylem--hnqminm"
+        "Slug": "hulquminum--halqemylem--hnqminm",
+        "FrenchName": "Hul’q’umi’num’ / halq'eméylem / hən̓q̓əmin̓əm̓"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -7618,7 +7626,8 @@
       "properties": {
         "Name": "She shashishalhem",
         "description": "http://maps.fphlcc.ca/node/255/resources,http://www.firstvoices.com/en/she-shashishalhem",
-        "Slug": "she-shashishalhem"
+        "Slug": "she-shashishalhem",
+        "FrenchName": "She shashishalhem"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -8015,7 +8024,8 @@
       "properties": {
         "Name": "Sḵwx̱wú7mesh sníchim",
         "description": "http://maps.fphlcc.ca/node/256/resources",
-        "Slug": "swxw7mesh-snchim"
+        "Slug": "swxw7mesh-snchim",
+        "FrenchName": "Sḵwx̱wú7mesh sníchim"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -8632,7 +8642,8 @@
       "properties": {
         "Name": "St̓át̓imcets",
         "description": "http://maps.fphlcc.ca/node/270/resources",
-        "Slug": "sttimcets"
+        "Slug": "sttimcets",
+        "FrenchName": "St̓át̓imcets"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -9589,7 +9600,8 @@
       "properties": {
         "Name": "SENĆOŦEN / Malchosen / Lkwungen / Semiahmoo / T’Sou-ke",
         "description": "http://maps.fphlcc.ca/node/2/resources,http://www.firstvoices.com/en/SENCOTEN",
-        "Slug": "senoen--malchosen--lkwungen--semiahmoo--tsou-ke"
+        "Slug": "senoen--malchosen--lkwungen--semiahmoo--tsou-ke",
+        "FrenchName": "SENĆOŦEN / malchosen / lkwungen / semiahmoo / t’sou-ke"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -10011,7 +10023,8 @@
       "properties": {
         "Name": "Witsuwit'en",
         "description": "http://maps.fphlcc.ca/node/274/resources,http://www.firstvoices.com/en/Wetsuweten",
-        "Slug": "witsuwiten"
+        "Slug": "witsuwiten",
+        "FrenchName": "Witsuwit'en"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -11758,7 +11771,8 @@
       "properties": {
         "Name": "Inland Łingít",
         "description": "http://maps.fphlcc.ca/node/248/resources",
-        "Slug": "inland-ingt"
+        "Slug": "inland-ingt",
+        "FrenchName": "Łingít de l’intérieur"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -12740,7 +12754,8 @@
       "properties": {
         "Name": "Danezāgé’",
         "description": "http://maps.fphlcc.ca/node/279/resources",
-        "Slug": "danezg"
+        "Slug": "danezg",
+        "FrenchName": "Danezāgé’"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -14252,7 +14267,8 @@
       "properties": {
         "Name": "Dakelh (ᑕᗸᒡ)",
         "description": "http://maps.fphlcc.ca/node/99/resources",
-        "Slug": "dakelh"
+        "Slug": "dakelh",
+        "FrenchName": "Dakelh (ᑕᗸᒡ)"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -16369,7 +16385,8 @@
       "properties": {
         "Name": "Dene K'e",
         "description": "http://www.firstvoices.com/scripts/WebObjects.exe/FirstVoices.woa/wa/enterLanguageArchive?archive=a70336ed8fff4d0c",
-        "Slug": "dene-ke"
+        "Slug": "dene-ke",
+        "FrenchName": "Dene k'e"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -16996,7 +17013,8 @@
       "properties": {
         "Name": "ᓀᐦᐃᔭᐍᐏᐣ (Nēhiyawēwin)",
         "description": "http://maps.fphlcc.ca/node/287/resources",
-        "Slug": "nhiyawwin"
+        "Slug": "nhiyawwin",
+        "FrenchName": "ᓀᐦᐃᔭᐍᐏᐣ (nēhiyawēwin)"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -18853,7 +18871,8 @@
       "properties": {
         "Name": "Dane-Zaa (ᑕᓀ ᖚ)",
         "description": "http://www.native-languages.org/slavey.htm,http://maps.fphlcc.ca/node/276/resources",
-        "Slug": "dane-zaa-"
+        "Slug": "dane-zaa-",
+        "FrenchName": "Dane-zaa (ᑕᓀ ᖚ)"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -19965,7 +19984,8 @@
       "properties": {
         "Name": "Łingít",
         "description": "http://maps.fphlcc.ca/node/248/resources",
-        "Slug": "ingt"
+        "Slug": "ingt",
+        "FrenchName": "Łingít - Link 1"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -21447,7 +21467,8 @@
       "properties": {
         "Name": "X̱aad Kil / X̱aaydaa Kil (Haida)",
         "description": "http://maps.fphlcc.ca/node/227/resources",
-        "Slug": "xaad-kil--xaaydaa-kil-haida"
+        "Slug": "xaad-kil--xaaydaa-kil-haida",
+        "FrenchName": "X̱aad kil / xaaydaa kil (haida)"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -22279,7 +22300,8 @@
       "properties": {
         "Name": "Nuučaan̓uɫ",
         "description": "http://maps.fphlcc.ca/node/40/resources",
-        "Slug": "nuuaanu"
+        "Slug": "nuuaanu",
+        "FrenchName": "Nuučaan̓uɫ"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -22721,7 +22743,8 @@
       "properties": {
         "Name": "Diitiidʔaatx̣",
         "description": "http://maps.fphlcc.ca/node/254/resources",
-        "Slug": "diitiidaatx"
+        "Slug": "diitiidaatx",
+        "FrenchName": "Diitiidʔaatx̣"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -22993,7 +23016,8 @@
       "properties": {
         "Name": "Oowekyala / ’Uik̓ala",
         "description": "http://maps.fphlcc.ca/node/253/resources",
-        "Slug": "oowekyala--uikala"
+        "Slug": "oowekyala--uikala",
+        "FrenchName": "Oowekyala / ’uik̓ala"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -23455,7 +23479,8 @@
       "properties": {
         "Name": "Kwak̓wala",
         "description": "http://maps.fphlcc.ca/node/224/resources",
-        "Slug": "kwakwala"
+        "Slug": "kwakwala",
+        "FrenchName": "Kwak̓wala"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -24327,7 +24352,8 @@
       "properties": {
         "Name": "Nedut’en",
         "description": "http://maps.fphlcc.ca/node/275/resources",
-        "Slug": "neduten"
+        "Slug": "neduten",
+        "FrenchName": "Nedut’en"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -25684,7 +25710,8 @@
       "properties": {
         "Name": "Gitsenimx̱",
         "description": "http://maps.fphlcc.ca/node/251/resources",
-        "Slug": "gitsenimx"
+        "Slug": "gitsenimx",
+        "FrenchName": "Gitsenimx̱"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -26196,7 +26223,8 @@
       "properties": {
         "Name": "Nisg̱a’a",
         "description": "http://maps.fphlcc.ca/node/59/resources",
-        "Slug": "nisgaa"
+        "Slug": "nisgaa",
+        "FrenchName": "Nisg̱a’a"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -27038,7 +27066,8 @@
       "properties": {
         "Name": "Secwepemcstin",
         "description": "http://www.firstvoices.com/en/Secwepemc,http://maps.fphlcc.ca/node/21/resources",
-        "Slug": "secwepemcstin"
+        "Slug": "secwepemcstin",
+        "FrenchName": "Secwepemcstin"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -28835,7 +28864,8 @@
       "properties": {
         "Name": "Sm̓algya̱x",
         "description": "http://maps.fphlcc.ca/node/249/resources",
-        "Slug": "smalgyax"
+        "Slug": "smalgyax",
+        "FrenchName": "Sm̓algya̱x"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -29257,7 +29287,8 @@
       "properties": {
         "Name": "Ktunaxa",
         "description": "http://maps.fphlcc.ca/node/290/resources",
-        "Slug": "ktunaxa"
+        "Slug": "ktunaxa",
+        "FrenchName": "Ktunaxa"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -29904,7 +29935,8 @@
       "properties": {
         "Name": "Nsyilxcən",
         "description": "http://maps.fphlcc.ca/node/265/resources,http://www.firstvoices.com/en/nsyilxcen,http://www.firstvoices.com/en/syilx",
-        "Slug": "nsyilxcn"
+        "Slug": "nsyilxcn",
+        "FrenchName": "Nsyilxcən"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -36711,7 +36743,8 @@
       "properties": {
         "Name": "Nəxʷsƛ̕ay̓əmúcən",
         "description": "http://maps.fphlcc.ca/node/259/resources",
-        "Slug": "nxsaymcn"
+        "Slug": "nxsaymcn",
+        "FrenchName": "Nəxʷsƛ̕ay̓əmúcən"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -37118,7 +37151,8 @@
       "properties": {
         "Name": "Nłeʔkepmxcín",
         "description": "http://maps.fphlcc.ca/node/156/resources",
-        "Slug": "nekepmxcn"
+        "Slug": "nekepmxcn",
+        "FrenchName": "Nłeʔkepmxcín"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -38385,7 +38419,8 @@
       "properties": {
         "Name": "Nuxalk",
         "description": "http://maps.fphlcc.ca/node/52/resources",
-        "Slug": "nuxalk"
+        "Slug": "nuxalk",
+        "FrenchName": "Nuxalk"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -38962,7 +38997,8 @@
       "properties": {
         "Name": "Hailhzaqvla",
         "description": "http://maps.fphlcc.ca/node/252/resources",
-        "Slug": "hailhzaqvla"
+        "Slug": "hailhzaqvla",
+        "FrenchName": "Hailhzaqvla"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -40094,7 +40130,8 @@
       "properties": {
         "Name": "Rocky Cree",
         "description": "http://www.native-languages.org/cree.htm,https://en.wikipedia.org/wiki/Cree_language#External_links",
-        "Slug": "rocky-cree"
+        "Slug": "rocky-cree",
+        "FrenchName": "Cri des Rocheuses"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -40351,7 +40388,8 @@
       "properties": {
         "Name": "Blackfoot",
         "description": "http://usaylearn.com/,http://people.uleth.ca/~frantz/blkft.html,http://www.native-languages.org/blackfoot.htm",
-        "Slug": "blackfoot"
+        "Slug": "blackfoot",
+        "FrenchName": "Pied-noir"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -40473,7 +40511,8 @@
       "properties": {
         "Name": "Nakota",
         "description": "http://www.rockymountainnakoda.com/language-introduction,http://www.languagegeek.com/siouan/nakoda_stoney.html",
-        "Slug": "nakota"
+        "Slug": "nakota",
+        "FrenchName": "Nakota"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -40665,7 +40704,8 @@
       "properties": {
         "Name": "Sarcee",
         "description": "http://www.native-languages.org/sarcee.htm",
-        "Slug": "sarcee"
+        "Slug": "sarcee",
+        "FrenchName": "Sarsi"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -40722,7 +40762,8 @@
       "properties": {
         "Name": "Plains Cree",
         "description": "http://www.native-languages.org/cree.htm,https://en.wikipedia.org/wiki/Cree_language#External_links,http://www.firstvoices.com/en/Cree-Saulteau,http://www.firstvoices.com/en/Maskwacis-Cree/welcome",
-        "Slug": "plains-cree"
+        "Slug": "plains-cree",
+        "FrenchName": "Cri des plaines"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -41729,7 +41770,8 @@
       "properties": {
         "Name": "Lakota",
         "description": "http://www.lakotadictionary.org/nldo.php",
-        "Slug": "lakota"
+        "Slug": "lakota",
+        "FrenchName": "Lakota"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -41846,7 +41888,8 @@
       "properties": {
         "Name": "Dakota",
         "description": "http://www.nativeshop.org/learn-dakota/lesson-one.html",
-        "Slug": "dakota"
+        "Slug": "dakota",
+        "FrenchName": "Dakota"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -42063,7 +42106,8 @@
       "properties": {
         "Name": "Western Ojibway",
         "description": "http://www.native-languages.org/ojibwe.htm,http://www.nativetech.org/shinob/ojibwelanguage.html,http://ojibwe.lib.umn.edu/",
-        "Slug": "western-ojibway"
+        "Slug": "western-ojibway",
+        "FrenchName": "Ojibwé de l’ouest"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -42645,7 +42689,8 @@
       "properties": {
         "Name": "Woods and Rocky Cree",
         "description": "http://www.native-languages.org/cree.htm",
-        "Slug": "woods-and-rocky-cree"
+        "Slug": "woods-and-rocky-cree",
+        "FrenchName": "Cri des régions boisées et des Rocheuses"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -42987,7 +43032,8 @@
       "properties": {
         "Name": "Chipeway",
         "description": "http://www.native-languages.org/chipewyin.htm",
-        "Slug": "chipeway"
+        "Slug": "chipeway",
+        "FrenchName": "Chippewyan"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -43354,7 +43400,8 @@
       "properties": {
         "Name": "Severn Ojibwa Oji-Cree",
         "description": "http://www.native-languages.org/ojibwe.htm",
-        "Slug": "severn-ojibwa-oji-cree"
+        "Slug": "severn-ojibwa-oji-cree",
+        "FrenchName": "Ojibwa de la rivière Severn/ oji-cri"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -43501,7 +43548,8 @@
       "properties": {
         "Name": "Northwestern Ojibwa",
         "description": "http://www.native-languages.org/ojibwe.htm",
-        "Slug": "northwestern-ojibwa"
+        "Slug": "northwestern-ojibwa",
+        "FrenchName": "Ojibwa du Nord-Ouest"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -43768,7 +43816,8 @@
       "properties": {
         "Name": "Eastern Swampy Cree",
         "description": "http://www.native-languages.org/cree.htm",
-        "Slug": "eastern-swampy-cree"
+        "Slug": "eastern-swampy-cree",
+        "FrenchName": "Maskegon de l’Est"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -44065,7 +44114,8 @@
       "properties": {
         "Name": "Central Ojibwa",
         "description": "http://www.native-languages.org/ojibwe.htm",
-        "Slug": "central-ojibwa"
+        "Slug": "central-ojibwa",
+        "FrenchName": "Ojibwa central"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -44277,7 +44327,8 @@
       "properties": {
         "Name": "Ojibwa",
         "description": "http://www.native-languages.org/ojibwe.htm",
-        "Slug": "ojibwa"
+        "Slug": "ojibwa",
+        "FrenchName": "Ojibwa"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -44434,7 +44485,8 @@
       "properties": {
         "Name": "Mississauga/Eastern Ojibwa",
         "description": "http://www.native-languages.org/ojibwe.htm",
-        "Slug": "mississaugaeastern-ojibwa"
+        "Slug": "mississaugaeastern-ojibwa",
+        "FrenchName": "Mississauga/ojibwa de l’Est"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -44581,7 +44633,8 @@
       "properties": {
         "Name": "Moose Cree",
         "description": "http://www.native-languages.org/cree.htm",
-        "Slug": "moose-cree"
+        "Slug": "moose-cree",
+        "FrenchName": "Cri de la Moose"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -44658,7 +44711,8 @@
       "properties": {
         "Name": "Southern East Cree",
         "description": "http://www.native-languages.org/cree.htm",
-        "Slug": "southern-east-cree"
+        "Slug": "southern-east-cree",
+        "FrenchName": "Cri du Sud-Est"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -44730,7 +44784,8 @@
       "properties": {
         "Name": "Western Algonquin",
         "description": "http://www.native-languages.org/algonquin_culture.htm",
-        "Slug": "western-algonquin"
+        "Slug": "western-algonquin",
+        "FrenchName": "Algonquin de l’Est"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -44807,7 +44862,8 @@
       "properties": {
         "Name": "Algonquin",
         "description": "http://www.native-languages.org/algonquin_culture.htm",
-        "Slug": "algonquin"
+        "Slug": "algonquin",
+        "FrenchName": "Algonquin"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -44914,7 +44970,8 @@
       "properties": {
         "Name": "Nipissing-Algonquin",
         "description": "http://www.native-languages.org/algonquin_culture.htm",
-        "Slug": "nipissing-algonquin"
+        "Slug": "nipissing-algonquin",
+        "FrenchName": "Nipissing-algonquin"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -45011,7 +45068,8 @@
       "properties": {
         "Name": "Mohawk",
         "description": "http://www.native-languages.org/mohawk.htm",
-        "Slug": "mohawk"
+        "Slug": "mohawk",
+        "FrenchName": "Mohawk"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -45158,7 +45216,8 @@
       "properties": {
         "Name": "Northern east Cree",
         "description": "http://www.native-languages.org/cree.htm",
-        "Slug": "northern-east-cree"
+        "Slug": "northern-east-cree",
+        "FrenchName": "Cri du Nord-Est"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -45250,7 +45309,8 @@
       "properties": {
         "Name": "Cri-Attikamek",
         "description": "http://www.native-languages.org/atikamekw.htm",
-        "Slug": "cri-attikamek"
+        "Slug": "cri-attikamek",
+        "FrenchName": "Cri-attikamek"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -45352,7 +45412,8 @@
       "properties": {
         "Name": "Maliseet-Potawatomi",
         "description": "http://www.native-languages.org/mali.htm#language",
-        "Slug": "maliseet-potawatomi"
+        "Slug": "maliseet-potawatomi",
+        "FrenchName": "Malecite-potawatomi"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -45514,7 +45575,8 @@
       "properties": {
         "Name": "Mi'kmaw",
         "description": "http://www.mikmaqonline.org/,http://www.native-languages.org/mikmaq.htm",
-        "Slug": "mikmaw"
+        "Slug": "mikmaw",
+        "FrenchName": "Micmac"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -45711,7 +45773,8 @@
       "properties": {
         "Name": "Innu Montagnais de l'Est",
         "description": "http://www.native-languages.org/montagnais.htm",
-        "Slug": "innu-montagnais-de-lest"
+        "Slug": "innu-montagnais-de-lest",
+        "FrenchName": "Innu montagnais de l'Est"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -45873,7 +45936,8 @@
       "properties": {
         "Name": "Innu-Montagnais Central",
         "description": "http://www.native-languages.org/montagnais.htm",
-        "Slug": "innu-montagnais-central"
+        "Slug": "innu-montagnais-central",
+        "FrenchName": "Innu montagnais central"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -46050,7 +46114,8 @@
       "properties": {
         "Name": "Inland East Cree",
         "description": "http://www.native-languages.org/cree.htm",
-        "Slug": "inland-east-cree"
+        "Slug": "inland-east-cree",
+        "FrenchName": "Cri de l’Est intérieur"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -46152,7 +46217,8 @@
       "properties": {
         "Name": "Naskapi",
         "description": "http://www.native-languages.org/naskapi.htm",
-        "Slug": "naskapi"
+        "Slug": "naskapi",
+        "FrenchName": "Naskapi"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -46244,7 +46310,8 @@
       "properties": {
         "Name": "Nunavimmiutitut",
         "description": "https://et.wikipedia.org/wiki/Nunavimmiutitut",
-        "Slug": "nunavimmiutitut"
+        "Slug": "nunavimmiutitut",
+        "FrenchName": "Nunavimmiutitut"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -46446,7 +46513,8 @@
       "properties": {
         "Name": "Nunatslavummiutut",
         "description": "http://www.torngasok.ca/home/nunatsiavut_language_strategy.htm",
-        "Slug": "nunatslavummiutut"
+        "Slug": "nunatslavummiutut",
+        "FrenchName": "Nunatslavummiutut"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -46583,7 +46651,8 @@
       "properties": {
         "Name": "South Baffin Qikiqtaatuk nigiani",
         "description": "http://icor.ottawainuitchildrens.com/node/15",
-        "Slug": "south-baffin-qikiqtaatuk-nigiani"
+        "Slug": "south-baffin-qikiqtaatuk-nigiani",
+        "FrenchName": "Qikiqtaatuk nigiani du sud de l’île de Baffin"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -46705,7 +46774,8 @@
       "properties": {
         "Name": "North Baffin Qikiqtaatuk uannangani",
         "description": "http://icor.ottawainuitchildrens.com/node/15",
-        "Slug": "north-baffin-qikiqtaatuk-uannangani"
+        "Slug": "north-baffin-qikiqtaatuk-uannangani",
+        "FrenchName": "Qikiqtaatuk uannangani du nord de l’île de Baffin"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -46892,7 +46962,8 @@
       "properties": {
         "Name": "Gwich'in",
         "description": "http://www.native-languages.org/gwichin.htm#language,http://www.oldcrow.ca/language.htm",
-        "Slug": "gwichin"
+        "Slug": "gwichin",
+        "FrenchName": "Gwich'in"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -47049,7 +47120,8 @@
       "properties": {
         "Name": "Dené Tha",
         "description": "http://www.native-languages.org/slavey.htm,http://maps.fphlcc.ca/node/276/resources",
-        "Slug": "den-tha"
+        "Slug": "den-tha",
+        "FrenchName": "Dené Tha"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -47141,7 +47213,8 @@
       "properties": {
         "Name": "Han",
         "description": "http://www.firstvoices.com/en/Han,http://www.ynlc.ca/languages/hn/hn.html",
-        "Slug": "han"
+        "Slug": "han",
+        "FrenchName": "Han"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -47213,7 +47286,8 @@
       "properties": {
         "Name": "Northern Tutchone",
         "description": "http://www.ynlc.ca/languages/nt/nt.html",
-        "Slug": "northern-tutchone"
+        "Slug": "northern-tutchone",
+        "FrenchName": "Tutchone du Nord"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -47290,7 +47364,8 @@
       "properties": {
         "Name": "Southern Tutchone",
         "description": "http://www.firstvoices.com/en/Southern-Tutchone/welcome,http://www.ynlc.ca/languages/st/st.html",
-        "Slug": "southern-tutchone"
+        "Slug": "southern-tutchone",
+        "FrenchName": "Tutchone du Sud"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -47382,7 +47457,8 @@
       "properties": {
         "Name": "Upper Tanana",
         "description": "http://www.native-languages.org/tanana.htm",
-        "Slug": "upper-tanana"
+        "Slug": "upper-tanana",
+        "FrenchName": "Haut-tanana"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -47454,7 +47530,8 @@
       "properties": {
         "Name": "Tłı̨chǫ",
         "description": "http://www.native-languages.org/dogrib.htm",
-        "Slug": "tch"
+        "Slug": "tch",
+        "FrenchName": "Tłı̨chǫ"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -47536,7 +47613,8 @@
       "properties": {
         "Name": "Swampy Cree",
         "description": "http://www.native-languages.org/cree.htm",
-        "Slug": "swampy-cree"
+        "Slug": "swampy-cree",
+        "FrenchName": "Maskegon"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -47734,7 +47812,8 @@
         "Name": "Makah",
         "Family": "Wakashan",
         "description": "http://www.native-languages.org/makah.htm,https://content.lib.washington.edu/cmpweb/exhibits/makah/language.html",
-        "Slug": "makah"
+        "Slug": "makah",
+        "FrenchName": "Makah"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -47792,7 +47871,8 @@
         "Name": "Quileute",
         "Family": "Chimakuan",
         "description": "http://www.native-languages.org/quileute.htm,http://www.quileutenation.org/quileute-language",
-        "Slug": "quileute"
+        "Slug": "quileute",
+        "FrenchName": "Quileute"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -47885,7 +47965,8 @@
         "Name": "Quinault",
         "Family": "Salish",
         "description": "http://www.native-languages.org/quinault.htm",
-        "Slug": "quinault"
+        "Slug": "quinault",
+        "FrenchName": "Quinault"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -47978,7 +48059,8 @@
         "Name": "Klallam",
         "Family": "Salish",
         "description": "http://www.native-languages.org/klallam.htm,http://www.elwha.org/cultureandhistory/klallamlanguage.html",
-        "Slug": "klallam"
+        "Slug": "klallam",
+        "FrenchName": "Klallam"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -48071,7 +48153,8 @@
         "Name": "Chehalis",
         "Family": "Salish",
         "description": "http://www.native-languages.org/chehalis.htm",
-        "Slug": "chehalis"
+        "Slug": "chehalis",
+        "FrenchName": "Chehalis"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -48169,7 +48252,8 @@
         "Name": "Chemakum",
         "Family": "Chimakuan",
         "description": "https://en.wikipedia.org/wiki/Chemakum_language",
-        "Slug": "chemakum"
+        "Slug": "chemakum",
+        "FrenchName": "Chemakum"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -48232,7 +48316,8 @@
         "Name": "Twana",
         "Family": "Salish",
         "description": "http://www.native-languages.org/twana.htm",
-        "Slug": "twana"
+        "Slug": "twana",
+        "FrenchName": "Twana"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -48310,7 +48395,8 @@
         "Name": "Nisqually",
         "Family": "Salish",
         "description": "http://www.native-languages.org/nisqually.htm,http://www.nisqually-nsn.gov/index.php/heritage/language/",
-        "Slug": "nisqually"
+        "Slug": "nisqually",
+        "FrenchName": "Nisqually"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -48398,7 +48484,8 @@
         "Name": "Puyallop",
         "Family": "Salish",
         "description": "https://www.youtube.com/channel/UCyUeHBIZRg1GuhQfbA1n9JA,http://www.puyalluptriballanguage.org/",
-        "Slug": "puyallop"
+        "Slug": "puyallop",
+        "FrenchName": "Puyallop"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -48481,7 +48568,8 @@
         "Name": "Snuqualmi, Duwamish, Skykomish",
         "Family": "Salish",
         "description": "http://www.native-languages.org/snoqualmie.htm,http://www.snoqualmietribe.us/Language",
-        "Slug": "snuqualmi-duwamish-skykomish"
+        "Slug": "snuqualmi-duwamish-skykomish",
+        "FrenchName": "Snuqualmi, duwamish, skykomish"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -48559,7 +48647,8 @@
         "Name": "Skagit",
         "Family": "Salish",
         "description": "http://www.native-languages.org/skagit.htm",
-        "Slug": "skagit"
+        "Slug": "skagit",
+        "FrenchName": "Skagit"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -48627,7 +48716,8 @@
         "Name": "Lummi",
         "Family": "Salish",
         "description": "http://www.native-languages.org/saanich.htm,http://www.lummi-nsn.org/website/dept_pages/culture/Language.shtml",
-        "Slug": "lummi"
+        "Slug": "lummi",
+        "FrenchName": "Lummi"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -48685,7 +48775,8 @@
         "Name": "Nooksak",
         "Family": "Salish",
         "description": "http://www.ubcpress.ca/books/pdf/chapters/2011/NooksackPlaceNames.pdf,http://www.native-languages.org/nooksack.htm",
-        "Slug": "nooksak"
+        "Slug": "nooksak",
+        "FrenchName": "Nooksak"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -48738,7 +48829,8 @@
         "Name": "Thompson",
         "Family": "Salish",
         "description": "http://www.native-languages.org/thompson.htm,http://maps.fphlcc.ca/node/156/resources",
-        "Slug": "thompson"
+        "Slug": "thompson",
+        "FrenchName": "Thompson"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -48801,7 +48893,8 @@
         "Name": "Wenatch",
         "Family": "Salish",
         "description": "http://www.native-languages.org/columbian.htm",
-        "Slug": "wenatch"
+        "Slug": "wenatch",
+        "FrenchName": "Wenatch"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -48969,7 +49062,8 @@
         "Name": "Kittitas",
         "Family": "Salish",
         "description": "http://www.native-languages.org/yakama.htm",
-        "Slug": "kittitas"
+        "Slug": "kittitas",
+        "FrenchName": "Kittitas"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -49022,7 +49116,8 @@
         "Name": "Columbia",
         "Family": "Salish",
         "description": "http://www.native-languages.org/columbian.htm",
-        "Slug": "columbia"
+        "Slug": "columbia",
+        "FrenchName": "Columbia"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -49135,7 +49230,8 @@
         "Name": "Nespelem-Sanpoil",
         "Family": "Salish",
         "description": "http://www.native-languages.org/nespelem.htm,http://www.native-languages.org/sanpoil.htm",
-        "Slug": "nespelem-sanpoil"
+        "Slug": "nespelem-sanpoil",
+        "FrenchName": "Nespelem-sanpoil"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -49228,7 +49324,8 @@
         "Name": "Spokane",
         "Family": "Salish",
         "description": "http://spokanelanguage.com/,http://www.native-languages.org/salish.htm",
-        "Slug": "spokane"
+        "Slug": "spokane",
+        "FrenchName": "Spokane"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -49331,7 +49428,8 @@
         "Name": "Kalispel",
         "Family": "Salish",
         "description": "http://www.native-languages.org/salish.htm,http://kalispeltribe.com/our-tribe/language",
-        "Slug": "kalispel"
+        "Slug": "kalispel",
+        "FrenchName": "Kalispel"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -49454,7 +49552,8 @@
         "Name": "Coeur d'Alene",
         "Family": "Salish",
         "description": "http://www.native-languages.org/coeur.htm,http://www.cdatribe-nsn.gov/langsite/language.aspx",
-        "Slug": "coeur-dalene"
+        "Slug": "coeur-dalene",
+        "FrenchName": "Cœur d'alène"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -49562,7 +49661,8 @@
         "Name": "Flathead",
         "Family": "Salish",
         "description": "http://www.native-languages.org/salish.htm",
-        "Slug": "flathead"
+        "Slug": "flathead",
+        "FrenchName": "Flathead"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -49730,7 +49830,8 @@
         "Name": "Lower Chinook",
         "Family": "Penutian",
         "description": "http://www.native-languages.org/chinook.htm,https://en.wikipedia.org/wiki/Lower_Chinook",
-        "Slug": "lower-chinook"
+        "Slug": "lower-chinook",
+        "FrenchName": "Bas-chinook"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -49873,7 +49974,8 @@
         "Name": "Kwalhiokwa",
         "Family": "Na-Dene",
         "description": "https://en.wikipedia.org/wiki/Cowlitz_people",
-        "Slug": "kwalhiokwa"
+        "Slug": "kwalhiokwa",
+        "FrenchName": "Kwalhiokwa"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -49941,7 +50043,8 @@
         "Name": "Clatskanie",
         "Family": "Na-Dene",
         "description": "http://www.native-languages.org/clatskanie.htm",
-        "Slug": "clatskanie"
+        "Slug": "clatskanie",
+        "FrenchName": "Clatskanie"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -50014,7 +50117,8 @@
         "Name": "Tillamook",
         "Family": "Salish",
         "description": "http://talkingdictionary.swarthmore.edu/tillamook/,http://www.native-languages.org/tillamook.htm",
-        "Slug": "tillamook"
+        "Slug": "tillamook",
+        "FrenchName": "Tillamook"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -50097,7 +50201,8 @@
         "Name": "Siletz",
         "Family": "Salish",
         "description": "http://www.siletzlanguage.org/",
-        "Slug": "siletz"
+        "Slug": "siletz",
+        "FrenchName": "Siletz"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -50155,7 +50260,8 @@
         "Name": "Yaquina Alsea",
         "Family": "Penutian",
         "description": "http://www.native-languages.org/alsea.htm,http://www.ling.upenn.edu/~gene/alsea.html",
-        "Slug": "yaquina-alsea"
+        "Slug": "yaquina-alsea",
+        "FrenchName": "Yaquina alsea"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -50218,7 +50324,8 @@
         "Name": "Siuslaw",
         "Family": "Penutian",
         "description": "http://www.native-languages.org/siuslaw.htm",
-        "Slug": "siuslaw"
+        "Slug": "siuslaw",
+        "FrenchName": "Siuslaw"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -50306,7 +50413,8 @@
         "Name": "Coos",
         "Family": "Penutian",
         "description": "http://www.native-languages.org/coos.htm",
-        "Slug": "coos"
+        "Slug": "coos",
+        "FrenchName": "Coos"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -50384,7 +50492,8 @@
         "Name": "Kalapuya",
         "Family": "Penutian",
         "description": "http://www.native-languages.org/kalapuya.htm",
-        "Slug": "kalapuya"
+        "Slug": "kalapuya",
+        "FrenchName": "Kalapuya"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -50532,7 +50641,8 @@
         "Name": "Molala",
         "Family": "Penutian",
         "description": "http://www.native-languages.org/molale.htm",
-        "Slug": "molala"
+        "Slug": "molala",
+        "FrenchName": "Molala"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -50680,7 +50790,8 @@
         "Name": "Upper Chinook",
         "Family": "Penutian",
         "description": "http://www.native-languages.org/chinook.htm",
-        "Slug": "upper-chinook"
+        "Slug": "upper-chinook",
+        "FrenchName": "Haut-chinook"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -50793,7 +50904,8 @@
         "Name": "Cowlitz",
         "Family": "Penutian",
         "description": "https://en.wikipedia.org/wiki/Cowlitz_people",
-        "Slug": "cowlitz"
+        "Slug": "cowlitz",
+        "FrenchName": "Cowlitz"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -50871,7 +50983,8 @@
         "Name": "Lower Rogue River",
         "Family": "Na-Dene",
         "description": "http://www.native-languages.org/tututni.htm",
-        "Slug": "lower-rogue-river"
+        "Slug": "lower-rogue-river",
+        "FrenchName": "Lower Rogue River"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -50969,7 +51082,8 @@
         "Name": "Upper Umpqua",
         "Family": "Na-Dene",
         "description": "http://www.native-languages.org/umpqua.htm",
-        "Slug": "upper-umpqua"
+        "Slug": "upper-umpqua",
+        "FrenchName": "Haut-umpqua"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -51072,7 +51186,8 @@
         "Name": "Upper Rogue River",
         "Family": "Na-Dene",
         "description": "http://www.native-languages.org/tututni.htm",
-        "Slug": "upper-rogue-river"
+        "Slug": "upper-rogue-river",
+        "FrenchName": "Upper Rogue River"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -51140,7 +51255,8 @@
         "Name": "Chetco, Tolowa",
         "Family": "Na-Dene",
         "description": "http://www.native-languages.org/chetco.htm,http://www.native-languages.org/tolowa.htm",
-        "Slug": "chetco-tolowa"
+        "Slug": "chetco-tolowa",
+        "FrenchName": "Chetco, tolowa"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -51228,7 +51344,8 @@
         "Name": "Takelma",
         "Family": "Penutian",
         "description": "http://www.native-languages.org/takelma.htm",
-        "Slug": "takelma"
+        "Slug": "takelma",
+        "FrenchName": "Takelma"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -51321,7 +51438,8 @@
         "Name": "Klamath",
         "Family": "Penutian",
         "description": "http://www.native-languages.org/klamath-modoc.htm,http://klamathtribes.org/language/",
-        "Slug": "klamath"
+        "Slug": "klamath",
+        "FrenchName": "Klamath"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -51429,7 +51547,8 @@
         "Name": "Modoc",
         "Family": "Penutian",
         "description": "http://www.native-languages.org/klamath-modoc.htm",
-        "Slug": "modoc"
+        "Slug": "modoc",
+        "FrenchName": "Modoc"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -51512,7 +51631,8 @@
         "Name": "Klikitat",
         "Family": "Penutian",
         "description": "http://www.native-languages.org/klickitat.htm",
-        "Slug": "klikitat"
+        "Slug": "klikitat",
+        "FrenchName": "Klikitat"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -51615,7 +51735,8 @@
         "Name": "Yakima",
         "Family": "Penutian",
         "description": "http://www.native-languages.org/yakama.htm",
-        "Slug": "yakima"
+        "Slug": "yakima",
+        "FrenchName": "Yakima"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -51683,7 +51804,8 @@
         "Name": "Tenino",
         "Family": "Penutian",
         "description": "http://www.native-languages.org/umatilla.htm",
-        "Slug": "tenino"
+        "Slug": "tenino",
+        "FrenchName": "Tenino"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -51776,7 +51898,8 @@
         "Name": "Umatilla",
         "Family": "Penutian",
         "description": "http://trailtribes.org/umatilla/language.htm,http://www.native-languages.org/umatilla.htm",
-        "Slug": "umatilla"
+        "Slug": "umatilla",
+        "FrenchName": "Umatilla"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -51854,7 +51977,8 @@
         "Name": "Palus",
         "Family": "Penutian",
         "description": "https://en.wikipedia.org/wiki/Palus_people",
-        "Slug": "palus"
+        "Slug": "palus",
+        "FrenchName": "Palus"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -51947,7 +52071,8 @@
         "Name": "Cayuse",
         "Family": "Penutian",
         "description": "http://trailtribes.org/umatilla/language.htm,http://www.native-languages.org/cayuse.htm",
-        "Slug": "cayuse"
+        "Slug": "cayuse",
+        "FrenchName": "Cayuse"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -52055,7 +52180,8 @@
         "Name": "Nez Perce",
         "Family": "Penutian",
         "description": "http://www.nezperce.com/npedu13-2a.html,http://www.native-languages.org/nez.htm",
-        "Slug": "nez-perce"
+        "Slug": "nez-perce",
+        "FrenchName": "Nez-percé"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -52178,7 +52304,8 @@
         "Name": "Northern Paiute",
         "Family": "Aztec-Tanoan",
         "description": "http://linguistics.berkeley.edu/~survey/languages/northern-paiute.php,http://www.native-languages.org/paiute.htm",
-        "Slug": "northern-paiute"
+        "Slug": "northern-paiute",
+        "FrenchName": "Paiute du Nord"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -52381,7 +52508,8 @@
         "Name": "Shoshoni",
         "Family": "Aztec-Tanoan",
         "description": "http://shoshoniproject.utah.edu/,http://www.native-languages.org/shoshone.htm",
-        "Slug": "shoshoni"
+        "Slug": "shoshoni",
+        "FrenchName": "Shoshoni"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -52629,7 +52757,8 @@
         "Name": "Southern Paiute",
         "Family": "Aztec-Tanoan",
         "description": "http://www.native-languages.org/ute.htm",
-        "Slug": "southern-paiute"
+        "Slug": "southern-paiute",
+        "FrenchName": "Paiute du Sud"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -52782,7 +52911,8 @@
         "Name": "Chemeheuvi",
         "Family": "Aztec-Tanoan",
         "description": "http://www.native-languages.org/chemehuevi.htm",
-        "Slug": "chemeheuvi"
+        "Slug": "chemeheuvi",
+        "FrenchName": "Chemeheuvi"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -52915,7 +53045,8 @@
         "Name": "Mojave",
         "Family": "Hokan-Coahuiltecan",
         "description": "http://www.native-languages.org/mojave.htm",
-        "Slug": "mojave"
+        "Slug": "mojave",
+        "FrenchName": "Mojave"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -52993,7 +53124,8 @@
         "Name": "Walapai",
         "Family": "Hokan-Coahuiltecan",
         "description": "http://www.native-languages.org/pai.htm",
-        "Slug": "walapai"
+        "Slug": "walapai",
+        "FrenchName": "Walapai"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -53081,7 +53213,8 @@
         "Name": "Havasupa",
         "Family": "Hokan-Coahuiltecan",
         "description": "http://www.native-languages.org/pai.htm",
-        "Slug": "havasupa"
+        "Slug": "havasupa",
+        "FrenchName": "Havasupa"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -53159,7 +53292,8 @@
         "Name": "Yavapai",
         "Family": "Hokan-Coahuiltecan",
         "description": "http://www.native-languages.org/pai.htm",
-        "Slug": "yavapai"
+        "Slug": "yavapai",
+        "FrenchName": "Yavapai"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -53302,7 +53436,8 @@
         "Name": "Halchiohoma",
         "Family": "Hokan-Coahuiltecan",
         "description": "http://www.native-languages.org/halchidhoma.htm",
-        "Slug": "halchiohoma"
+        "Slug": "halchiohoma",
+        "FrenchName": "Halchiohoma"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -53375,7 +53510,8 @@
         "Name": "Yuma",
         "Family": "Hokan-Coahuiltecan",
         "description": "http://www.native-languages.org/quechan.htm",
-        "Slug": "yuma"
+        "Slug": "yuma",
+        "FrenchName": "Yuma"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -53453,7 +53589,8 @@
         "Name": "Kaveltcadom",
         "Family": "Hokan-Coahuiltecan",
         "description": "http://memim.com/maricopa-people.html",
-        "Slug": "kaveltcadom"
+        "Slug": "kaveltcadom",
+        "FrenchName": "Kaveltcadom"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -53516,7 +53653,8 @@
         "Name": "Maricopa",
         "Family": "Hokan-Coahuiltecan",
         "description": "http://www.native-languages.org/maricopa.htm",
-        "Slug": "maricopa"
+        "Slug": "maricopa",
+        "FrenchName": "Maricopa"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -53579,7 +53717,8 @@
         "Name": "O'odham",
         "Family": "Aztec-Tanoan",
         "description": "http://www.native-languages.org/papago.htm,http://www.omniglot.com/writing/oodham.htm",
-        "Slug": "oodham"
+        "Slug": "oodham",
+        "FrenchName": "O'odham"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -53672,7 +53811,8 @@
         "Name": "Pima",
         "Family": "Aztec-Tanoan",
         "description": "http://www.native-languages.org/papago.htm",
-        "Slug": "pima"
+        "Slug": "pima",
+        "FrenchName": "Pima"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -53775,7 +53915,8 @@
         "Name": "San Carlos",
         "Family": "Na-Dene",
         "description": "http://www.native-languages.org/apache.htm",
-        "Slug": "san-carlos"
+        "Slug": "san-carlos",
+        "FrenchName": "San Carlos"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -53858,7 +53999,8 @@
         "Name": "North Tonto",
         "Family": "Na-Dene",
         "description": "http://www.native-languages.org/apache.htm",
-        "Slug": "north-tonto"
+        "Slug": "north-tonto",
+        "FrenchName": "Tonto du Nord"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -53916,7 +54058,8 @@
         "Name": "South Tonto",
         "Family": "Na-Dene",
         "description": "http://www.native-languages.org/apache.htm",
-        "Slug": "south-tonto"
+        "Slug": "south-tonto",
+        "FrenchName": "Tonto du Sud"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -53974,7 +54117,8 @@
         "Name": "Cibecue",
         "Family": "Na-Dene",
         "description": "http://www.native-languages.org/definitions/cibecue.htm",
-        "Slug": "cibecue"
+        "Slug": "cibecue",
+        "FrenchName": "Cibecue"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -54027,7 +54171,8 @@
         "Name": "Hopi",
         "Family": "Aztec-Tanoan",
         "description": "http://www.native-languages.org/hopi.htm,https://www.youtube.com/watch?v=K2aikgtskX0",
-        "Slug": "hopi"
+        "Slug": "hopi",
+        "FrenchName": "Hopi"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -54085,7 +54230,8 @@
         "Name": "Navajo",
         "Family": "Na-Dene",
         "description": "http://navajopeople.org/navajo-language.htm,http://www.native-languages.org/navajo.htm",
-        "Slug": "navajo"
+        "Slug": "navajo",
+        "FrenchName": "Navajo"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -54233,7 +54379,8 @@
         "Name": "White Mountain",
         "Family": "Na-Dene",
         "description": "http://www.native-languages.org/apache.htm",
-        "Slug": "white-mountain"
+        "Slug": "white-mountain",
+        "FrenchName": "White Mountain"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -54291,7 +54438,8 @@
         "Name": "Chiricahua",
         "Family": "Na-Dene",
         "description": "http://www.native-languages.org/apache.htm",
-        "Slug": "chiricahua"
+        "Slug": "chiricahua",
+        "FrenchName": "Chiricahua"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -54409,7 +54557,8 @@
         "Name": "Zuni",
         "Family": "Penutian",
         "description": "http://www.native-languages.org/zuni.htm,http://www.ashiwi.org/language.aspx",
-        "Slug": "zuni"
+        "Slug": "zuni",
+        "FrenchName": "Zuni"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -54467,7 +54616,8 @@
         "Name": "Western Keres",
         "Family": "Keres",
         "description": "http://www.native-languages.org/keres.htm",
-        "Slug": "western-keres"
+        "Slug": "western-keres",
+        "FrenchName": "Keres de l’Ouest"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -54530,7 +54680,8 @@
         "Name": "Eastern Keres",
         "Family": "Keres",
         "description": "http://www.native-languages.org/keres.htm",
-        "Slug": "eastern-keres"
+        "Slug": "eastern-keres",
+        "FrenchName": "Keres de l’Est"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -54593,7 +54744,8 @@
         "Name": "Chiricahua",
         "Family": "Na-Dene",
         "description": "http://www.native-languages.org/apache.htm",
-        "Slug": "chiricahua"
+        "Slug": "chiricahua",
+        "FrenchName": "Chiricahua"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -54711,7 +54863,8 @@
         "Name": "Tano",
         "Family": "Aztec-Tanoan",
         "description": "http://www.native-languages.org/tewa.htm",
-        "Slug": "tano"
+        "Slug": "tano",
+        "FrenchName": "Tano"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -54784,7 +54937,8 @@
         "Name": "Tewa",
         "Family": "Aztec-Tanoan",
         "description": "http://www.native-languages.org/tewa.htm",
-        "Slug": "tewa"
+        "Slug": "tewa",
+        "FrenchName": "Tewa"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -54847,7 +55001,8 @@
         "Name": "North Tiwa",
         "Family": "Aztec-Tanoan",
         "description": "http://www.native-languages.org/tewa.htm",
-        "Slug": "north-tiwa"
+        "Slug": "north-tiwa",
+        "FrenchName": "Tiwa du Nord"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -54895,7 +55050,8 @@
         "Name": "South Tiwa",
         "Family": "Aztec-Tanoan",
         "description": "http://www.native-languages.org/tewa.htm",
-        "Slug": "south-tiwa"
+        "Slug": "south-tiwa",
+        "FrenchName": "Tiwa du Sud"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -54948,7 +55104,8 @@
         "Name": "Riro",
         "Family": "Aztec-Tanoan",
         "description": "",
-        "Slug": "riro"
+        "Slug": "riro",
+        "FrenchName": "Riro"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -55011,7 +55168,8 @@
         "Name": "Ute",
         "Family": "Aztec-Tanoan",
         "description": "http://www.native-languages.org/ute.htm,http://www.uteed.net/utelang.htm",
-        "Slug": "ute"
+        "Slug": "ute",
+        "FrenchName": "Ute"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -55144,7 +55302,8 @@
         "Name": "Gros Ventre",
         "Family": "Algonkian",
         "description": "http://www.native-languages.org/gros.htm",
-        "Slug": "gros-ventre"
+        "Slug": "gros-ventre",
+        "FrenchName": "Gros-ventre"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -55232,7 +55391,8 @@
         "Name": "Crow",
         "Family": "Siouan-Yuchi",
         "description": "http://www.native-languages.org/crow.htm,http://ourmothertongues.org/language/Crow/3",
-        "Slug": "crow"
+        "Slug": "crow",
+        "FrenchName": "Crow"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -55375,7 +55535,8 @@
         "Name": "Cheyenne",
         "Family": "Algonkian",
         "description": "http://www.cheyennelanguage.org/,http://wleman.tripod.com/sounds/soundfiles.htm,http://www.native-languages.org/cheyenne.htm",
-        "Slug": "cheyenne"
+        "Slug": "cheyenne",
+        "FrenchName": "Cheyenne"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -55453,7 +55614,8 @@
         "Name": "Arapaho",
         "Family": "Algonkian",
         "description": "http://www.colorado.edu/csilw/arapahoproject/language/dictionary/dic_frame2.html,http://www.native-languages.org/arapaho.htm",
-        "Slug": "arapaho"
+        "Slug": "arapaho",
+        "FrenchName": "Arapaho"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -55606,7 +55768,8 @@
         "Name": "Jicarilla",
         "Family": "Na-Dene",
         "description": "http://www.native-languages.org/apache.htm",
-        "Slug": "jicarilla"
+        "Slug": "jicarilla",
+        "FrenchName": "Jicarilla"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -55669,7 +55832,8 @@
         "Name": "Mescalero",
         "Family": "Na-Dene",
         "description": "http://www.native-languages.org/apache.htm",
-        "Slug": "mescalero"
+        "Slug": "mescalero",
+        "FrenchName": "Mescalero"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -55807,7 +55971,8 @@
         "Name": "Comanche",
         "Family": "Aztec-Tanoan",
         "description": "http://www.comanchelanguage.org/,http://www.native-languages.org/comanche.htm",
-        "Slug": "comanche"
+        "Slug": "comanche",
+        "FrenchName": "Comanche"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -55950,7 +56115,8 @@
         "Name": "Lipan",
         "Family": "Na-Dene",
         "description": "http://lipanapachelanguage.bravesites.com/,http://www.native-languages.org/apache.htm",
-        "Slug": "lipan"
+        "Slug": "lipan",
+        "FrenchName": "Lipan"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -56028,7 +56194,8 @@
         "Name": "Kiowa",
         "Family": "Aztec-Tanoan",
         "description": "https://www.facebook.com/KiowaLanguage,http://www.native-languages.org/kiowa.htm",
-        "Slug": "kiowa"
+        "Slug": "kiowa",
+        "FrenchName": "Kiowa"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -56186,7 +56353,8 @@
         "Name": "Kiowa Apache",
         "Family": "Na-Dene",
         "description": "http://www.native-languages.org/apache.htm",
-        "Slug": "kiowa-apache"
+        "Slug": "kiowa-apache",
+        "FrenchName": "Kiowa-apache"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -56239,7 +56407,8 @@
         "Name": "Pawnee",
         "Family": "Caddoan",
         "description": "http://www.native-languages.org/pawnee.htm",
-        "Slug": "pawnee"
+        "Slug": "pawnee",
+        "FrenchName": "Pawnee"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -56357,7 +56526,8 @@
         "Name": "Teton",
         "Family": "Siouan-Yuchi",
         "description": "http://lakhota.org/,http://www.native-languages.org/dakota.htm",
-        "Slug": "teton"
+        "Slug": "teton",
+        "FrenchName": "Teton"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -56535,7 +56705,8 @@
         "Name": "Assiniboin",
         "Family": "Siouan-Yuchi",
         "description": "http://www.native-languages.org/assiniboine.htm,http://www.languagegeek.com/siouan/nakoda_assiniboine.html",
-        "Slug": "assiniboin"
+        "Slug": "assiniboin",
+        "FrenchName": "Assiniboine"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -56628,7 +56799,8 @@
         "Name": "Hidatsa",
         "Family": "Siouan-Yuchi",
         "description": "http://www.native-languages.org/hidatsa.htm",
-        "Slug": "hidatsa"
+        "Slug": "hidatsa",
+        "FrenchName": "Hidatsa"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -56691,7 +56863,8 @@
         "Name": "Mandan",
         "Family": "Siouan-Yuchi",
         "description": "http://www.native-languages.org/mandan.htm,http://www.languagegeek.com/siouan/mandan_is_not_welsh.html",
-        "Slug": "mandan"
+        "Slug": "mandan",
+        "FrenchName": "Mandan"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -56749,7 +56922,8 @@
         "Name": "Arikara",
         "Family": "Caddoan",
         "description": "http://www.native-languages.org/arikara.htm",
-        "Slug": "arikara"
+        "Slug": "arikara",
+        "FrenchName": "Arikara"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -56822,7 +56996,8 @@
         "Name": "Ponca",
         "Family": "Siouan-Yuchi",
         "description": "http://www.native-languages.org/omaha-ponca.htm,http://omahaponca.unl.edu/",
-        "Slug": "ponca"
+        "Slug": "ponca",
+        "FrenchName": "Ponca"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -56910,7 +57085,8 @@
         "Name": "Yanktonai",
         "Family": "Siouan-Yuchi",
         "description": "http://www.native-languages.org/dakota.htm",
-        "Slug": "yanktonai"
+        "Slug": "yanktonai",
+        "FrenchName": "Yanktonai"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -57003,7 +57179,8 @@
         "Name": "Yankton",
         "Family": "Siouan-Yuchi",
         "description": "http://www.native-languages.org/dakota.htm",
-        "Slug": "yankton"
+        "Slug": "yankton",
+        "FrenchName": "Yankton"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -57136,7 +57313,8 @@
         "Name": "Omaha",
         "Family": "Siouan-Yuchi",
         "description": "http://www.native-languages.org/omaha-ponca.htm,http://omahaponca.unl.edu/",
-        "Slug": "omaha"
+        "Slug": "omaha",
+        "FrenchName": "Omaha"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -57234,7 +57412,8 @@
         "Name": "Iowa",
         "Family": "Siouan-Yuchi",
         "description": "https://en.wikipedia.org/wiki/Chiwere_language",
-        "Slug": "iowa"
+        "Slug": "iowa",
+        "FrenchName": "Iowa"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -57352,7 +57531,8 @@
         "Name": "Osage",
         "Family": "Siouan-Yuchi",
         "description": "http://www.native-languages.org/osage.htm,https://www.osagenation-nsn.gov/who-we-are/language-department",
-        "Slug": "osage"
+        "Slug": "osage",
+        "FrenchName": "Osage"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -57485,7 +57665,8 @@
         "Name": "Wichita",
         "Family": "Caddoan",
         "description": "http://www.wichitatribe.com/dictionary,http://www.native-languages.org/wichita.htm",
-        "Slug": "wichita"
+        "Slug": "wichita",
+        "FrenchName": "Wichita"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -57603,7 +57784,8 @@
         "Name": "Tonkawa",
         "Family": "Tonkawa",
         "description": "http://www.native-languages.org/tonkawa.htm",
-        "Slug": "tonkawa"
+        "Slug": "tonkawa",
+        "FrenchName": "Tonkawa"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -57741,7 +57923,8 @@
         "Name": "Oto and Kansa",
         "Family": "Siouan-Yuchi",
         "description": "https://en.wikipedia.org/wiki/Chiwere_language",
-        "Slug": "oto-and-kansa"
+        "Slug": "oto-and-kansa",
+        "FrenchName": "Oto et kansa"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -57859,7 +58042,8 @@
         "Name": "Missouri",
         "Family": "Siouan-Yuchi",
         "description": "https://en.wikipedia.org/wiki/Chiwere_language",
-        "Slug": "missouri"
+        "Slug": "missouri",
+        "FrenchName": "Missouri"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -57957,7 +58141,8 @@
         "Name": "Karankawa",
         "Family": "Karankawa",
         "description": "http://www.native-languages.org/karankawa.htm",
-        "Slug": "karankawa"
+        "Slug": "karankawa",
+        "FrenchName": "Karankawa"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -58040,7 +58225,8 @@
         "Name": "Atakapa",
         "Family": "Gulf",
         "description": "http://www.native-languages.org/atakapa.htm",
-        "Slug": "atakapa"
+        "Slug": "atakapa",
+        "FrenchName": "Atakapa"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -58148,7 +58334,8 @@
         "Name": "Caddo",
         "Family": "Caddoan",
         "description": "http://www.native-languages.org/caddo.htm",
-        "Slug": "caddo"
+        "Slug": "caddo",
+        "FrenchName": "Caddo"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -58316,7 +58503,8 @@
         "Name": "Santee",
         "Family": "Siouan-Yuchi",
         "description": "http://www.native-languages.org/santee.htm",
-        "Slug": "santee"
+        "Slug": "santee",
+        "FrenchName": "Santee"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -58429,7 +58617,8 @@
         "Name": "Southern Ojibwa",
         "Family": "Algonkian",
         "description": "http://www.native-languages.org/ojibwe.htm,http://ojibwe.lib.umn.edu/",
-        "Slug": "southern-ojibwa"
+        "Slug": "southern-ojibwa",
+        "FrenchName": "Ojibwa du Sud"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -58622,7 +58811,8 @@
         "Name": "Sauk",
         "Family": "Algonkian",
         "description": "http://www.native-languages.org/meskwaki-sauk.htm,http://sacandfoxnation-nsn.gov/departments/language/,http://talksauk.com/#/",
-        "Slug": "sauk"
+        "Slug": "sauk",
+        "FrenchName": "Sauk"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -58690,7 +58880,8 @@
         "Name": "Fox",
         "Family": "Algonkian",
         "description": "http://sacandfoxnation-nsn.gov/departments/language/",
-        "Slug": "fox"
+        "Slug": "fox",
+        "FrenchName": "Renard"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -58763,7 +58954,8 @@
         "Name": "Kickapoo",
         "Family": "Algonkian",
         "description": "http://www.native-languages.org/kickapoo.htm",
-        "Slug": "kickapoo"
+        "Slug": "kickapoo",
+        "FrenchName": "Kickapoo"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -58846,7 +59038,8 @@
         "Name": "Illinois",
         "Family": "Algonkian",
         "description": "http://www.native-languages.org/miami-illinois.htm",
-        "Slug": "illinois"
+        "Slug": "illinois",
+        "FrenchName": "Illinois"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -59064,7 +59257,8 @@
         "Name": "Quapaw",
         "Family": "Siouan-Yuchi",
         "description": "https://www.quapawtribe.com/index.aspx?nid=89,http://www.native-languages.org/quapaw.htm",
-        "Slug": "quapaw"
+        "Slug": "quapaw",
+        "FrenchName": "Quapaw"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -59137,7 +59331,8 @@
         "Name": "Chickasaw",
         "Family": "Gulf",
         "description": "https://www.chickasaw.net/our-nation/culture/language.aspx,http://www.chickasaw.net/anompa/index.html,http://www.native-languages.org/chickasaw.htm",
-        "Slug": "chickasaw"
+        "Slug": "chickasaw",
+        "FrenchName": "Chickasaw"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -59275,7 +59470,8 @@
         "Name": "Chakchiuma",
         "Family": "Gulf",
         "description": "http://www.native-languages.org/chakchiuma.htm",
-        "Slug": "chakchiuma"
+        "Slug": "chakchiuma",
+        "FrenchName": "Chakchiuma"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -59333,7 +59529,8 @@
         "Name": "Tunica",
         "Family": "Gulf",
         "description": "http://www.native-languages.org/tunica.htm",
-        "Slug": "tunica"
+        "Slug": "tunica",
+        "FrenchName": "Tunica"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -59411,7 +59608,8 @@
         "Name": "Natchez",
         "Family": "Gulf",
         "description": "http://www.natcheznation.com/Language.html,http://www.native-languages.org/natchez.htm",
-        "Slug": "natchez"
+        "Slug": "natchez",
+        "FrenchName": "Natchez"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -59504,7 +59702,8 @@
         "Name": "Houma",
         "Family": "Gulf",
         "description": "http://www.hali.to/world/2014/,http://www.native-languages.org/houma.htm",
-        "Slug": "houma"
+        "Slug": "houma",
+        "FrenchName": "Houma"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -59572,7 +59771,8 @@
         "Name": "Choctaw",
         "Family": "Gulf",
         "description": "http://www.choctawschool.com/,http://www.native-languages.org/choctaw.htm",
-        "Slug": "choctaw"
+        "Slug": "choctaw",
+        "FrenchName": "Choctaw"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -59750,7 +59950,8 @@
         "Name": "Chitimacha",
         "Family": "Gulf",
         "description": "http://chitimacha.gov/history-culture/language,http://www.native-languages.org/chitimacha.htm",
-        "Slug": "chitimacha"
+        "Slug": "chitimacha",
+        "FrenchName": "Chitimacha"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -59828,7 +60029,8 @@
         "Name": "Ofo",
         "Family": "Siouan-Yuchi",
         "description": "http://www.native-languages.org/ofo.htm",
-        "Slug": "ofo"
+        "Slug": "ofo",
+        "FrenchName": "Ofo"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -59881,7 +60083,8 @@
         "Name": "Biloxi",
         "Family": "Siouan-Yuchi",
         "description": "http://www.native-languages.org/biloxi.htm",
-        "Slug": "biloxi"
+        "Slug": "biloxi",
+        "FrenchName": "Biloxi"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -59949,7 +60152,8 @@
         "Name": "Pensacola",
         "Family": "Gulf",
         "description": "http://www.native-languages.org/pensacola.htm",
-        "Slug": "pensacola"
+        "Slug": "pensacola",
+        "FrenchName": "Pensacola"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -60032,7 +60236,8 @@
         "Name": "Chatot",
         "Family": "Gulf",
         "description": "http://www.native-languages.org/chatot.htm",
-        "Slug": "chatot"
+        "Slug": "chatot",
+        "FrenchName": "Chatot"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -60150,7 +60355,8 @@
         "Name": "Alabama",
         "Family": "Gulf",
         "description": "http://www.native-languages.org/alabamas.htm",
-        "Slug": "alabama"
+        "Slug": "alabama",
+        "FrenchName": "Alabama"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -60243,7 +60449,8 @@
         "Name": "Koasati",
         "Family": "Gulf",
         "description": "http://www.koasatiheritage.org/pages/about/,http://koasati.wm.edu/,http://www.native-languages.org/koasati.htm",
-        "Slug": "koasati"
+        "Slug": "koasati",
+        "FrenchName": "Koasati"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -60371,7 +60578,8 @@
         "Name": "Shawnee",
         "Family": "Algonkian",
         "description": "https://www.estoo-nsn.gov/culture/shawnee-language/,http://learnshawnee.com/,http://www.native-languages.org/shawnee.htm",
-        "Slug": "shawnee"
+        "Slug": "shawnee",
+        "FrenchName": "Shawnee"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -60469,7 +60677,8 @@
         "Name": "Powatomi",
         "Family": "Algonkian",
         "description": "https://www.potawatomi.org/lang,http://www.native-languages.org/potawatomi.htm",
-        "Slug": "powatomi"
+        "Slug": "powatomi",
+        "FrenchName": "Powatomi"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -60562,7 +60771,8 @@
         "Name": "Menomini",
         "Family": "Algonkian",
         "description": "http://theways.org/story/living-language,http://www.native-languages.org/menominee.htm",
-        "Slug": "menomini"
+        "Slug": "menomini",
+        "FrenchName": "Menomini"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -60670,7 +60880,8 @@
         "Name": "Miami",
         "Family": "Algonkian",
         "description": "http://www.native-languages.org/miami-illinois.htm",
-        "Slug": "miami"
+        "Slug": "miami",
+        "FrenchName": "Miami"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -60768,7 +60979,8 @@
         "Name": "Erie",
         "Family": "Iroquioan",
         "description": "http://www.eriemoundbuilders.com/language/,http://www.native-languages.org/erie.htm",
-        "Slug": "erie"
+        "Slug": "erie",
+        "FrenchName": "Érié"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -60906,7 +61118,8 @@
         "Name": "Yuchi",
         "Family": "Siouan-Yuchi",
         "description": "http://ourmothertongues.org/language/euchee/5,http://www.yuchilanguage.org/,http://www.native-languages.org/yuchi.htm",
-        "Slug": "yuchi"
+        "Slug": "yuchi",
+        "FrenchName": "Yuchi"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -60969,7 +61182,8 @@
         "Name": "Cherokee",
         "Family": "Iroquoian",
         "description": "http://www.cherokee.org/AboutTheNation/Language.aspx,http://www.manataka.org/page122.html,http://www.native-languages.org/cherokee.htm",
-        "Slug": "cherokee"
+        "Slug": "cherokee",
+        "FrenchName": "Cherokee"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -61057,7 +61271,8 @@
         "Name": "Muskogee",
         "Family": "Gulf",
         "description": "http://www.muscogeenation-nsn.gov/Pages/Language/language.html,http://lingspace.wm.edu/lingspace/creek/,http://www.native-languages.org/muskogee.htm",
-        "Slug": "muskogee"
+        "Slug": "muskogee",
+        "FrenchName": "Muscogee"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -61250,7 +61465,8 @@
         "Name": "Hitchiti",
         "Family": "Gulf",
         "description": "http://www.native-languages.org/hitchiti.htm",
-        "Slug": "hitchiti"
+        "Slug": "hitchiti",
+        "FrenchName": "Hitchiti"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -61333,7 +61549,8 @@
         "Name": "Apalachee",
         "Family": "Gulf",
         "description": "http://www.native-languages.org/apalachee.htm",
-        "Slug": "apalachee"
+        "Slug": "apalachee",
+        "FrenchName": "Apalachee"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -61386,7 +61603,8 @@
         "Name": "Timicua",
         "Family": "Timicua",
         "description": "http://www.native-languages.org/timicua.htm",
-        "Slug": "timicua"
+        "Slug": "timicua",
+        "FrenchName": "Timicua"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -61464,7 +61682,8 @@
         "Name": "Tocabaga",
         "Family": "Unknown",
         "description": "https://en.wikipedia.org/wiki/Tocobaga",
-        "Slug": "tocabaga"
+        "Slug": "tocabaga",
+        "FrenchName": "Tocabaga"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -61517,7 +61736,8 @@
         "Name": "Ais",
         "Family": "Unknown",
         "description": "https://en.wikipedia.org/wiki/Ais_people",
-        "Slug": "ais"
+        "Slug": "ais",
+        "FrenchName": "Ais"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -61585,7 +61805,8 @@
         "Name": "Calusa",
         "Family": "Unknown",
         "description": "http://www.native-languages.org/calusa.htm",
-        "Slug": "calusa"
+        "Slug": "calusa",
+        "FrenchName": "Calusa"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -61648,7 +61869,8 @@
         "Name": "Joba",
         "Family": "Unknown",
         "description": "",
-        "Slug": "joba"
+        "Slug": "joba",
+        "FrenchName": "Joba"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -61711,7 +61933,8 @@
         "Name": "Tekesta",
         "Family": "Unknown",
         "description": "http://www.native-languages.org/tequesta.htm",
-        "Slug": "tekesta"
+        "Slug": "tekesta",
+        "FrenchName": "Tekesta"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -61769,7 +61992,8 @@
         "Name": "Keys",
         "Family": "Unknown",
         "description": "",
-        "Slug": "keys"
+        "Slug": "keys",
+        "FrenchName": "Keys"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -61822,7 +62046,8 @@
         "Name": "Guale",
         "Family": "Unknown",
         "description": "http://www.sageandsweetgrass.com/dictionaryguale.aspx,http://www.native-languages.org/guale.htm",
-        "Slug": "guale"
+        "Slug": "guale",
+        "FrenchName": "Guale"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -61875,7 +62100,8 @@
         "Name": "Cusabo",
         "Family": "Unknown",
         "description": "http://www.native-languages.org/cusabo.htm",
-        "Slug": "cusabo"
+        "Slug": "cusabo",
+        "FrenchName": "Cusabo"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -61933,7 +62159,8 @@
         "Name": "Catawba",
         "Family": "Unknown",
         "description": "http://www.angelfire.com/az2/catawba/,http://www.native-languages.org/catawba.htm",
-        "Slug": "catawba"
+        "Slug": "catawba",
+        "FrenchName": "Catawba"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -62056,7 +62283,8 @@
         "Name": "Neusiok",
         "Family": "Unknown",
         "description": "http://www.firstnationsseeker.ca/Neusiok.html",
-        "Slug": "neusiok"
+        "Slug": "neusiok",
+        "FrenchName": "Neusiok"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -62114,7 +62342,8 @@
         "Name": "Panuco",
         "Family": "Algonkian",
         "description": "http://www.native-languages.org/famalg.htm",
-        "Slug": "panuco"
+        "Slug": "panuco",
+        "FrenchName": "Panuco"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -62187,7 +62416,8 @@
         "Name": "Tuscarora",
         "Family": "Iroquoian",
         "description": "http://www.tuscaroras.com/index.php/the-tuscarora-language,http://www.native-languages.org/tuskarora.htm",
-        "Slug": "tuscarora"
+        "Slug": "tuscarora",
+        "FrenchName": "Tuscarora"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -62255,7 +62485,8 @@
         "Name": "Meherrin",
         "Family": "Unknown",
         "description": "http://www.native-languages.org/meherrin.htm",
-        "Slug": "meherrin"
+        "Slug": "meherrin",
+        "FrenchName": "Meherrin"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -62308,7 +62539,8 @@
         "Name": "Nottoway",
         "Family": "Iroquoian",
         "description": "http://www.native-languages.org/nottoway.htm",
-        "Slug": "nottoway"
+        "Slug": "nottoway",
+        "FrenchName": "Nottoway"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -62366,7 +62598,8 @@
         "Name": "Tutelo",
         "Family": "Unknown",
         "description": "http://www.native-languages.org/tutelo.htm",
-        "Slug": "tutelo"
+        "Slug": "tutelo",
+        "FrenchName": "Tutelo"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -62469,7 +62702,8 @@
         "Name": "Chawanoc",
         "Family": "Algonkian",
         "description": "https://en.wikipedia.org/wiki/Chowanoke",
-        "Slug": "chawanoc"
+        "Slug": "chawanoc",
+        "FrenchName": "Chawanoc"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -62517,7 +62751,8 @@
         "Name": "Chesapeake",
         "Family": "Algonkian",
         "description": "https://en.wikipedia.org/wiki/Chesapeake_people",
-        "Slug": "chesapeake"
+        "Slug": "chesapeake",
+        "FrenchName": "Chesapeake"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -62565,7 +62800,8 @@
         "Name": "Nansemond",
         "Family": "Algonkian",
         "description": "http://www.native-languages.org/virginia.htm",
-        "Slug": "nansemond"
+        "Slug": "nansemond",
+        "FrenchName": "Nansemond"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -62618,7 +62854,8 @@
         "Name": "Powhatan",
         "Family": "Algonkian",
         "description": "https://www.youtube.com/watch?v=vfOprao0g54,http://www.native-languages.org/powhatan_words.htm",
-        "Slug": "powhatan"
+        "Slug": "powhatan",
+        "FrenchName": "Powhatan"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -62706,7 +62943,8 @@
         "Name": "Conoy",
         "Family": "Algonkian",
         "description": "http://www.native-languages.org/piscataway.htm",
-        "Slug": "conoy"
+        "Slug": "conoy",
+        "FrenchName": "Conoy"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -62784,7 +63022,8 @@
         "Name": "Nanticok",
         "Family": "Algonkian",
         "description": "http://www.native-languages.org/nanticoke.htm",
-        "Slug": "nanticok"
+        "Slug": "nanticok",
+        "FrenchName": "Nanticok"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -62857,7 +63096,8 @@
         "Name": "Delaware",
         "Family": "Algonkian",
         "description": "http://www.talk-lenape.org/,http://www.native-languages.org/lenape.htm",
-        "Slug": "delaware"
+        "Slug": "delaware",
+        "FrenchName": "Delaware"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -62960,7 +63200,8 @@
         "Name": "Montauk",
         "Family": "Algonkian",
         "description": "http://www.native-languages.org/mohegan.htm",
-        "Slug": "montauk"
+        "Slug": "montauk",
+        "FrenchName": "Montauk"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -63023,7 +63264,8 @@
         "Name": "Susquehanna",
         "Family": "Iroquoian",
         "description": "http://www.native-languages.org/susquehannock.htm",
-        "Slug": "susquehanna"
+        "Slug": "susquehanna",
+        "FrenchName": "Susquehanna"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -63106,7 +63348,8 @@
         "Name": "Oneida",
         "Family": "Iroquoian",
         "description": "http://oneidalanguage.ca/,https://www.uwgb.edu/oneida/,http://www.native-languages.org/oneida.htm",
-        "Slug": "oneida"
+        "Slug": "oneida",
+        "FrenchName": "Oneida"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -63189,7 +63432,8 @@
         "Name": "Wenro",
         "Family": "Iroquoian",
         "description": "https://en.wikipedia.org/wiki/Wenrohronon",
-        "Slug": "wenro"
+        "Slug": "wenro",
+        "FrenchName": "Wenro"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -63252,7 +63496,8 @@
         "Name": "Seneca",
         "Family": "Iroquoian",
         "description": "http://www.native-languages.org/seneca.htm",
-        "Slug": "seneca"
+        "Slug": "seneca",
+        "FrenchName": "Seneca"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -63305,7 +63550,8 @@
         "Name": "Cayuga",
         "Family": "Iroquoian",
         "description": "http://cayugalanguage.ca/,http://www.ohwejagehka.com/cayuga/,http://www.native-languages.org/cayuga.htm",
-        "Slug": "cayuga"
+        "Slug": "cayuga",
+        "FrenchName": "Cayuga"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -63358,7 +63604,8 @@
         "Name": "Onondaga",
         "Family": "Iroquoian",
         "description": "http://www.onondaganation.org/culture/language/,http://www.native-languages.org/onondaga.htm",
-        "Slug": "onondaga"
+        "Slug": "onondaga",
+        "FrenchName": "Onondaga"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -63421,7 +63668,8 @@
         "Name": "Mohawk",
         "Family": "Iroquoian",
         "description": "http://www.native-languages.org/mohawk.htm,http://www.firstvoices.com/en/Kanienkeha-Mohawk-EN",
-        "Slug": "mohawk"
+        "Slug": "mohawk",
+        "FrenchName": "Mohawk"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -63494,7 +63742,8 @@
         "Name": "Wappinger",
         "Family": "Algonkian",
         "description": "http://www.native-languages.org/mohican.htm",
-        "Slug": "wappinger"
+        "Slug": "wappinger",
+        "FrenchName": "Wappinger"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -63552,7 +63801,8 @@
         "Name": "Mahican",
         "Family": "Algonkian",
         "description": "http://www.native-languages.org/mohican.htm",
-        "Slug": "mahican"
+        "Slug": "mahican",
+        "FrenchName": "Mahican"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -63640,7 +63890,8 @@
         "Name": "Pocumtuk",
         "Family": "Algonkian",
         "description": "http://www.native-languages.org/mohican.htm",
-        "Slug": "pocumtuk"
+        "Slug": "pocumtuk",
+        "FrenchName": "Pocumtuk"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -63708,7 +63959,8 @@
         "Name": "Pennacook",
         "Family": "Algonkian",
         "description": "http://www.cowasuck.org/language.cfm,http://www.native-languages.org/abenaki.htm",
-        "Slug": "pennacook"
+        "Slug": "pennacook",
+        "FrenchName": "Pennacook"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -63786,7 +64038,8 @@
         "Name": "Laurentian",
         "Family": "Algonkian",
         "description": "http://www.native-languages.org/laurentian.htm",
-        "Slug": "laurentian"
+        "Slug": "laurentian",
+        "FrenchName": "Laurentien"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -63839,7 +64092,8 @@
         "Name": "Mohegan",
         "Family": "Algonkian",
         "description": "http://www.native-languages.org/mohican.htm",
-        "Slug": "mohegan"
+        "Slug": "mohegan",
+        "FrenchName": "Mohegan"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -63892,7 +64146,8 @@
         "Name": "Nipmuc",
         "Family": "Algonkian",
         "description": "http://www.pbs.org/wgbh/amex/weshallremain/native_now/language_nipmuc,http://www.native-languages.org/narragansett.htm",
-        "Slug": "nipmuc"
+        "Slug": "nipmuc",
+        "FrenchName": "Nipmuc"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -63945,7 +64200,8 @@
         "Name": "Massachuset",
         "Family": "Algonkian",
         "description": "http://www.native-languages.org/wampanoag.htm,http://www.bigorrin.org/waabu1.htm",
-        "Slug": "massachuset"
+        "Slug": "massachuset",
+        "FrenchName": "Massachuset"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -64003,7 +64259,8 @@
         "Name": "Nehantic",
         "Family": "Algonkian",
         "description": "http://www.native-languages.org/mohegan.htm",
-        "Slug": "nehantic"
+        "Slug": "nehantic",
+        "FrenchName": "Nehantic"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -64051,7 +64308,8 @@
         "Name": "Wampanoag",
         "Family": "Algonkian",
         "description": "http://www.wlrp.org/,http://www.native-languages.org/wampanoag.htm",
-        "Slug": "wampanoag"
+        "Slug": "wampanoag",
+        "FrenchName": "Wampanoag"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -64104,7 +64362,8 @@
         "Name": "Nauset",
         "Family": "Algonkian",
         "description": "http://www.native-languages.org/mohegan.htm",
-        "Slug": "nauset"
+        "Slug": "nauset",
+        "FrenchName": "Nauset"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -64157,7 +64416,8 @@
         "Name": "Abenaki",
         "Family": "Algonkian",
         "description": "http://www.native-languages.org/abna.htm",
-        "Slug": "abenaki"
+        "Slug": "abenaki",
+        "FrenchName": "Abenaki"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -64295,7 +64555,8 @@
         "Name": "Passamaquoddy",
         "Family": "Algonkian",
         "description": "http://pmportal.org/splash,http://www.native-languages.org/mali.htm",
-        "Slug": "passamaquoddy"
+        "Slug": "passamaquoddy",
+        "FrenchName": "Passamaquoddy"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -64383,7 +64644,8 @@
         "Name": "Mutsun",
         "Family": "Not added yet",
         "description": "http://linguistics.berkeley.edu/~survey/languages/california-languages.php",
-        "Slug": "mutsun"
+        "Slug": "mutsun",
+        "FrenchName": "Mutsun"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -64526,7 +64788,8 @@
         "Name": "Yokuts",
         "Family": "Not added yet",
         "description": "http://linguistics.berkeley.edu/~survey/languages/california-languages.php",
-        "Slug": "yokuts"
+        "Slug": "yokuts",
+        "FrenchName": "Yokuts"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -64914,7 +65177,8 @@
         "Name": "Southern Sierra Miwok",
         "Family": "Not added yet",
         "description": "http://linguistics.berkeley.edu/~survey/languages/california-languages.php",
-        "Slug": "southern-sierra-miwok"
+        "Slug": "southern-sierra-miwok",
+        "FrenchName": "Miwok de la Sierra du Sud"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -65042,7 +65306,8 @@
         "Name": "Central Sierra Miwok",
         "Family": "Not added yet",
         "description": "http://linguistics.berkeley.edu/~survey/languages/california-languages.php",
-        "Slug": "central-sierra-miwok"
+        "Slug": "central-sierra-miwok",
+        "FrenchName": "Miwok de la Sierra centrale"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -65200,7 +65465,8 @@
         "Name": "Northern Sierra Miwok",
         "Family": "Not added yet",
         "description": "http://linguistics.berkeley.edu/~survey/languages/california-languages.php",
-        "Slug": "northern-sierra-miwok"
+        "Slug": "northern-sierra-miwok",
+        "FrenchName": "Miwok de la Sierra du Nord"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -65298,7 +65564,8 @@
         "Name": "Plains Miwok",
         "Family": "Not added yet",
         "description": "http://linguistics.berkeley.edu/~survey/languages/california-languages.php",
-        "Slug": "plains-miwok"
+        "Slug": "plains-miwok",
+        "FrenchName": "Miwok des plaines"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -65436,7 +65703,8 @@
         "Name": "Tongva",
         "Family": "Not added yet",
         "description": "http://linguistics.berkeley.edu/~survey/languages/california-languages.php",
-        "Slug": "tongva"
+        "Slug": "tongva",
+        "FrenchName": "Tongva"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -65604,7 +65872,8 @@
         "Name": "Cahuilla",
         "Family": "Not added yet",
         "description": "http://linguistics.berkeley.edu/~survey/languages/california-languages.php",
-        "Slug": "cahuilla"
+        "Slug": "cahuilla",
+        "FrenchName": "Cahuilla"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -65993,7 +66262,8 @@
         "Name": "Ineseño",
         "Family": "Not added yet",
         "description": "http://linguistics.berkeley.edu/~survey/languages/california-languages.php",
-        "Slug": "ineseo"
+        "Slug": "ineseo",
+        "FrenchName": "Ineseño"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -66081,7 +66351,8 @@
         "Name": "Barbareño",
         "Family": "Not added yet",
         "description": "http://linguistics.berkeley.edu/~survey/languages/california-languages.php",
-        "Slug": "barbareo"
+        "Slug": "barbareo",
+        "FrenchName": "Barbareño"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -66249,7 +66520,8 @@
         "Name": "Island Chumash",
         "Family": "Not added yet",
         "description": "http://linguistics.berkeley.edu/~survey/languages/california-languages.php",
-        "Slug": "island-chumash"
+        "Slug": "island-chumash",
+        "FrenchName": "Island Chumash"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -66312,7 +66584,8 @@
         "Name": "Purisemeño",
         "Family": "Not added yet",
         "description": "http://linguistics.berkeley.edu/~survey/languages/california-languages.php",
-        "Slug": "purisemeo"
+        "Slug": "purisemeo",
+        "FrenchName": "Purisemeño"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -66370,7 +66643,8 @@
         "Name": "Obispeño",
         "Family": "Not added yet",
         "description": "http://linguistics.berkeley.edu/~survey/languages/california-languages.php",
-        "Slug": "obispeo"
+        "Slug": "obispeo",
+        "FrenchName": "Obispeño"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -66428,7 +66702,8 @@
         "Name": "Salinan",
         "Family": "Not added yet",
         "description": "http://linguistics.berkeley.edu/~survey/languages/california-languages.php",
-        "Slug": "salinan"
+        "Slug": "salinan",
+        "FrenchName": "Salinan"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -66581,7 +66856,8 @@
         "Name": "Chalon",
         "Family": "Not added yet",
         "description": "http://linguistics.berkeley.edu/~survey/languages/california-languages.php",
-        "Slug": "chalon"
+        "Slug": "chalon",
+        "FrenchName": "Chalon"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -66689,7 +66965,8 @@
         "Name": "Esselen",
         "Family": "Not added yet",
         "description": "http://linguistics.berkeley.edu/~survey/languages/california-languages.php",
-        "Slug": "esselen"
+        "Slug": "esselen",
+        "FrenchName": "Esselen"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -66767,7 +67044,8 @@
         "Name": "Rumsen",
         "Family": "Not added yet",
         "description": "http://linguistics.berkeley.edu/~survey/languages/california-languages.php",
-        "Slug": "rumsen"
+        "Slug": "rumsen",
+        "FrenchName": "Rumsen"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -66855,7 +67133,8 @@
         "Name": "Tamyen",
         "Family": "Not added yet",
         "description": "http://linguistics.berkeley.edu/~survey/languages/california-languages.php",
-        "Slug": "tamyen"
+        "Slug": "tamyen",
+        "FrenchName": "Tamyen"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -66938,7 +67217,8 @@
         "Name": "Awaswas",
         "Family": "Not added yet",
         "description": "http://linguistics.berkeley.edu/~survey/languages/california-languages.php",
-        "Slug": "awaswas"
+        "Slug": "awaswas",
+        "FrenchName": "Awaswas"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -67006,7 +67286,8 @@
         "Name": "Ramaytush",
         "Family": "Not added yet",
         "description": "http://linguistics.berkeley.edu/~survey/languages/california-languages.php",
-        "Slug": "ramaytush"
+        "Slug": "ramaytush",
+        "FrenchName": "Ramaytush"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -67079,7 +67360,8 @@
         "Name": "Chochenyo",
         "Family": "Not added yet",
         "description": "http://linguistics.berkeley.edu/~survey/languages/california-languages.php",
-        "Slug": "chochenyo"
+        "Slug": "chochenyo",
+        "FrenchName": "Chochenyo"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -67162,7 +67444,8 @@
         "Name": "Coast Miwok",
         "Family": "Not added yet",
         "description": "http://linguistics.berkeley.edu/~survey/languages/california-languages.php",
-        "Slug": "coast-miwok"
+        "Slug": "coast-miwok",
+        "FrenchName": "Miwok de la côte"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -67265,7 +67548,8 @@
         "Name": "Wappo",
         "Family": "Not added yet",
         "description": "http://linguistics.berkeley.edu/~survey/languages/california-languages.php",
-        "Slug": "wappo"
+        "Slug": "wappo",
+        "FrenchName": "Wappo"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -67403,7 +67687,8 @@
         "Name": "Lake Miwok",
         "Family": "Not added yet",
         "description": "http://linguistics.berkeley.edu/~survey/languages/california-languages.php",
-        "Slug": "lake-miwok"
+        "Slug": "lake-miwok",
+        "FrenchName": "Miwok du lac"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -67476,7 +67761,8 @@
         "Name": "Southeastern Pomo",
         "Family": "Not added yet",
         "description": "http://linguistics.berkeley.edu/~survey/languages/california-languages.php",
-        "Slug": "southeastern-pomo"
+        "Slug": "southeastern-pomo",
+        "FrenchName": "Pomo du Sud-Est"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -67544,7 +67830,8 @@
         "Name": "Eastern Pomo",
         "Family": "Not added yet",
         "description": "http://linguistics.berkeley.edu/~survey/languages/california-languages.php",
-        "Slug": "eastern-pomo"
+        "Slug": "eastern-pomo",
+        "FrenchName": "Pomo de l’Est"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -67647,7 +67934,8 @@
         "Name": "Northern Pomo",
         "Family": "Not added yet",
         "description": "http://linguistics.berkeley.edu/~survey/languages/california-languages.php",
-        "Slug": "northern-pomo"
+        "Slug": "northern-pomo",
+        "FrenchName": "Pomo du Nord"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -67795,7 +68083,8 @@
         "Name": "Central Pomo",
         "Family": "Not added yet",
         "description": "http://linguistics.berkeley.edu/~survey/languages/california-languages.php",
-        "Slug": "central-pomo"
+        "Slug": "central-pomo",
+        "FrenchName": "Pomo central"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -67948,7 +68237,8 @@
         "Name": "Southern Pomo",
         "Family": "Not added yet",
         "description": "http://linguistics.berkeley.edu/~survey/languages/california-languages.php",
-        "Slug": "southern-pomo"
+        "Slug": "southern-pomo",
+        "FrenchName": "Pomo du Sud"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -68086,7 +68376,8 @@
         "Name": "Kashaya",
         "Family": "Not added yet",
         "description": "http://linguistics.berkeley.edu/~survey/languages/california-languages.php",
-        "Slug": "kashaya"
+        "Slug": "kashaya",
+        "FrenchName": "Kashaya"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -68189,7 +68480,8 @@
         "Name": "Northeastern Pomo",
         "Family": "Not added yet",
         "description": "http://linguistics.berkeley.edu/~survey/languages/california-languages.php",
-        "Slug": "northeastern-pomo"
+        "Slug": "northeastern-pomo",
+        "FrenchName": "Pomo du Nord-Est"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -68257,7 +68549,8 @@
         "Name": "Northern Yukian",
         "Family": "Not added yet",
         "description": "http://linguistics.berkeley.edu/~survey/languages/california-languages.php",
-        "Slug": "northern-yukian"
+        "Slug": "northern-yukian",
+        "FrenchName": "Yukian du Nord"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -68460,7 +68753,8 @@
         "Name": "Coast Yuki",
         "Family": "Not added yet",
         "description": "http://linguistics.berkeley.edu/~survey/languages/california-languages.php",
-        "Slug": "coast-yuki"
+        "Slug": "coast-yuki",
+        "FrenchName": "Yuki de la côte"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -68518,7 +68812,8 @@
         "Name": "Cahto",
         "Family": "Not added yet",
         "description": "http://linguistics.berkeley.edu/~survey/languages/california-languages.php",
-        "Slug": "cahto"
+        "Slug": "cahto",
+        "FrenchName": "Cahto"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -68601,7 +68896,8 @@
         "Name": "Sinkyone",
         "Family": "Not added yet",
         "description": "http://linguistics.berkeley.edu/~survey/languages/california-languages.php",
-        "Slug": "sinkyone"
+        "Slug": "sinkyone",
+        "FrenchName": "Sinkyone"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -68714,7 +69010,8 @@
         "Name": "Lassik",
         "Family": "Not added yet",
         "description": "http://linguistics.berkeley.edu/~survey/languages/california-languages.php",
-        "Slug": "lassik"
+        "Slug": "lassik",
+        "FrenchName": "Lassik"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -68802,7 +69099,8 @@
         "Name": "Wailaki",
         "Family": "Not added yet",
         "description": "http://linguistics.berkeley.edu/~survey/languages/california-languages.php",
-        "Slug": "wailaki"
+        "Slug": "wailaki",
+        "FrenchName": "Wailaki"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -68895,7 +69193,8 @@
         "Name": "Nongatl",
         "Family": "Not added yet",
         "description": "http://linguistics.berkeley.edu/~survey/languages/california-languages.php",
-        "Slug": "nongatl"
+        "Slug": "nongatl",
+        "FrenchName": "Nongatl"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -69018,7 +69317,8 @@
         "Name": "Whilkut",
         "Family": "Not added yet",
         "description": "http://linguistics.berkeley.edu/~survey/languages/california-languages.php",
-        "Slug": "whilkut"
+        "Slug": "whilkut",
+        "FrenchName": "Whilkut"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -69091,7 +69391,8 @@
         "Name": "Hoopa",
         "Family": "Not added yet",
         "description": "http://linguistics.berkeley.edu/~survey/languages/california-languages.php",
-        "Slug": "hoopa"
+        "Slug": "hoopa",
+        "FrenchName": "Hoopa"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -69194,7 +69495,8 @@
         "Name": "Chilula",
         "Family": "Not added yet",
         "description": "http://linguistics.berkeley.edu/~survey/languages/california-languages.php",
-        "Slug": "chilula"
+        "Slug": "chilula",
+        "FrenchName": "Chilula"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -69267,7 +69569,8 @@
         "Name": "Yurok",
         "Family": "Not added yet",
         "description": "http://linguistics.berkeley.edu/~survey/languages/california-languages.php",
-        "Slug": "yurok"
+        "Slug": "yurok",
+        "FrenchName": "Yurok"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -69410,7 +69713,8 @@
         "Name": "New River Shasta",
         "Family": "Not added yet",
         "description": "http://linguistics.berkeley.edu/~survey/languages/california-languages.php",
-        "Slug": "new-river-shasta"
+        "Slug": "new-river-shasta",
+        "FrenchName": "Shasta de la New River"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -69538,7 +69842,8 @@
         "Name": "Chimariko",
         "Family": "Not added yet",
         "description": "http://linguistics.berkeley.edu/~survey/languages/california-languages.php",
-        "Slug": "chimariko"
+        "Slug": "chimariko",
+        "FrenchName": "Chimariko"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -69626,7 +69931,8 @@
         "Name": "Konomihu",
         "Family": "Not added yet",
         "description": "http://linguistics.berkeley.edu/~survey/languages/california-languages.php",
-        "Slug": "konomihu"
+        "Slug": "konomihu",
+        "FrenchName": "Konomihu"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -69694,7 +70000,8 @@
         "Name": "Winnemem Wintu",
         "Family": "Not added yet",
         "description": "http://linguistics.berkeley.edu/~survey/languages/california-languages.php",
-        "Slug": "winnemem-wintu"
+        "Slug": "winnemem-wintu",
+        "FrenchName": "Winnemem wintu"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -69922,7 +70229,8 @@
         "Name": "Okwanuchu",
         "Family": "Not added yet",
         "description": "http://linguistics.berkeley.edu/~survey/languages/california-languages.php",
-        "Slug": "okwanuchu"
+        "Slug": "okwanuchu",
+        "FrenchName": "Okwanuchu"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -70005,7 +70313,8 @@
         "Name": "Achumawi",
         "Family": "Not added yet",
         "description": "http://linguistics.berkeley.edu/~survey/languages/california-languages.php",
-        "Slug": "achumawi"
+        "Slug": "achumawi",
+        "FrenchName": "Achumawi"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -70173,7 +70482,8 @@
         "Name": "Atsugewi",
         "Family": "Not added yet",
         "description": "http://linguistics.berkeley.edu/~survey/languages/california-languages.php",
-        "Slug": "atsugewi"
+        "Slug": "atsugewi",
+        "FrenchName": "Atsugewi"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -70306,7 +70616,8 @@
         "Name": "Yana",
         "Family": "Not added yet",
         "description": "http://linguistics.berkeley.edu/~survey/languages/california-languages.php",
-        "Slug": "yana"
+        "Slug": "yana",
+        "FrenchName": "Yana"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -70489,7 +70800,8 @@
         "Name": "Nomlaki",
         "Family": "Not added yet",
         "description": "http://linguistics.berkeley.edu/~survey/languages/california-languages.php",
-        "Slug": "nomlaki"
+        "Slug": "nomlaki",
+        "FrenchName": "Nomlaki"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -70672,7 +70984,8 @@
         "Name": "Patwin",
         "Family": "Not added yet",
         "description": "http://linguistics.berkeley.edu/~survey/languages/california-languages.php",
-        "Slug": "patwin"
+        "Slug": "patwin",
+        "FrenchName": "Patwin"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -70880,7 +71193,8 @@
         "Name": "Karkin",
         "Family": "Not added yet",
         "description": "http://linguistics.berkeley.edu/~survey/languages/california-languages.php",
-        "Slug": "karkin"
+        "Slug": "karkin",
+        "FrenchName": "Karkin"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -70943,7 +71257,8 @@
         "Name": "Bay Miwok",
         "Family": "Not added yet",
         "description": "http://linguistics.berkeley.edu/~survey/languages/california-languages.php",
-        "Slug": "bay-miwok"
+        "Slug": "bay-miwok",
+        "FrenchName": "Miwok de la baie"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -71031,7 +71346,8 @@
         "Name": "Tübatulabal",
         "Family": "Not added yet",
         "description": "http://linguistics.berkeley.edu/~survey/languages/california-languages.php",
-        "Slug": "tbatulabal"
+        "Slug": "tbatulabal",
+        "FrenchName": "Tübatulabal"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -71209,7 +71525,8 @@
         "Name": "Kitanemuk",
         "Family": "Not added yet",
         "description": "http://linguistics.berkeley.edu/~survey/languages/california-languages.php",
-        "Slug": "kitanemuk"
+        "Slug": "kitanemuk",
+        "FrenchName": "Kitanemuk"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -71327,7 +71644,8 @@
         "Name": "Serrano",
         "Family": "Not added yet",
         "description": "http://linguistics.berkeley.edu/~survey/languages/california-languages.php",
-        "Slug": "serrano"
+        "Slug": "serrano",
+        "FrenchName": "Serrano"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -71570,7 +71888,8 @@
         "Name": "Kawaiisu",
         "Family": "Not added yet",
         "description": "http://linguistics.berkeley.edu/~survey/languages/california-languages.php",
-        "Slug": "kawaiisu"
+        "Slug": "kawaiisu",
+        "FrenchName": "Kawaiisu"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -71803,7 +72122,8 @@
         "Name": "Coquille, Umpqua, Chetco, Tolowa, Tututni",
         "Family": "Not added yet",
         "description": "http://linguistics.berkeley.edu/~survey/languages/california-languages.php",
-        "Slug": "coquille-umpqua-chetco-tolowa-tututni"
+        "Slug": "coquille-umpqua-chetco-tolowa-tututni",
+        "FrenchName": "Coquille, umpqua, chetco, tolowa, tututni"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -71981,7 +72301,8 @@
         "Name": "Siuslaw",
         "Family": "Not added yet",
         "description": "http://linguistics.berkeley.edu/~survey/languages/california-languages.php",
-        "Slug": "siuslaw"
+        "Slug": "siuslaw",
+        "FrenchName": "Siuslaw"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -72074,7 +72395,8 @@
         "Name": "Alsea",
         "Family": "Not added yet",
         "description": "http://linguistics.berkeley.edu/~survey/languages/california-languages.php",
-        "Slug": "alsea"
+        "Slug": "alsea",
+        "FrenchName": "Alsea"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -72147,7 +72469,8 @@
         "Name": "Tillamook and Siletz",
         "Family": "Not added yet",
         "description": "http://linguistics.berkeley.edu/~survey/languages/california-languages.php",
-        "Slug": "tillamook-and-siletz"
+        "Slug": "tillamook-and-siletz",
+        "FrenchName": "Tillamook et siletz"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -72225,7 +72548,8 @@
         "Name": "Clatskanie",
         "Family": "Not added yet",
         "description": "http://linguistics.berkeley.edu/~survey/languages/california-languages.php",
-        "Slug": "clatskanie"
+        "Slug": "clatskanie",
+        "FrenchName": "Clatskanie"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -72293,7 +72617,8 @@
         "Name": "Kalapuya",
         "Family": "Not added yet",
         "description": "http://linguistics.berkeley.edu/~survey/languages/california-languages.php",
-        "Slug": "kalapuya"
+        "Slug": "kalapuya",
+        "FrenchName": "Kalapuya"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -72441,7 +72766,8 @@
         "Name": "Molalla",
         "Family": "Not added yet",
         "description": "http://linguistics.berkeley.edu/~survey/languages/california-languages.php",
-        "Slug": "molalla"
+        "Slug": "molalla",
+        "FrenchName": "Molalla"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -72564,7 +72890,8 @@
         "Name": "Karuk",
         "Family": "Not added yet",
         "description": "http://linguistics.berkeley.edu/~survey/languages/california-languages.php",
-        "Slug": "karuk"
+        "Slug": "karuk",
+        "FrenchName": "Karuk"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -73007,7 +73334,8 @@
         "Name": "Shasta",
         "Family": "Not added yet",
         "description": "http://linguistics.berkeley.edu/~survey/languages/california-languages.php",
-        "Slug": "shasta"
+        "Slug": "shasta",
+        "FrenchName": "Shasta"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -73195,7 +73523,8 @@
         "Name": "Klamath",
         "Family": "Not added yet",
         "description": "http://linguistics.berkeley.edu/~survey/languages/california-languages.php",
-        "Slug": "klamath"
+        "Slug": "klamath",
+        "FrenchName": "Klamath"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -73308,7 +73637,8 @@
         "Name": "Modoc",
         "Family": "Not added yet",
         "description": "http://linguistics.berkeley.edu/~survey/languages/california-languages.php",
-        "Slug": "modoc"
+        "Slug": "modoc",
+        "FrenchName": "Modoc"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -73426,7 +73756,8 @@
         "Name": "Konkow Maidu",
         "Family": "Not added yet",
         "description": "http://linguistics.berkeley.edu/~survey/languages/california-languages.php",
-        "Slug": "konkow-maidu"
+        "Slug": "konkow-maidu",
+        "FrenchName": "Konkow maidu"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -73589,7 +73920,8 @@
         "Name": "Mountain Maidu",
         "Family": "Not added yet",
         "description": "http://linguistics.berkeley.edu/~survey/languages/california-languages.php",
-        "Slug": "mountain-maidu"
+        "Slug": "mountain-maidu",
+        "FrenchName": "Mountain maidu"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -73772,7 +74104,8 @@
         "Name": "Nisenan",
         "Family": "Not added yet",
         "description": "http://linguistics.berkeley.edu/~survey/languages/california-languages.php",
-        "Slug": "nisenan"
+        "Slug": "nisenan",
+        "FrenchName": "Nisenan"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -74015,7 +74348,8 @@
         "Name": "Wiyot",
         "Family": "Not added yet",
         "description": "http://linguistics.berkeley.edu/~survey/languages/california-languages.php",
-        "Slug": "wiyot"
+        "Slug": "wiyot",
+        "FrenchName": "Wiyot"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -74203,7 +74537,8 @@
         "Name": "Kumeyaay",
         "Family": "Not added yet",
         "description": "http://linguistics.berkeley.edu/~survey/languages/california-languages.php",
-        "Slug": "kumeyaay"
+        "Slug": "kumeyaay",
+        "FrenchName": "Kumeyaay"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -74501,7 +74836,8 @@
         "Name": "Luiseño",
         "Family": "Not added yet",
         "description": "http://linguistics.berkeley.edu/~survey/languages/california-languages.php",
-        "Slug": "luiseo"
+        "Slug": "luiseo",
+        "FrenchName": "Luiseño"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -74729,7 +75065,8 @@
         "Name": "Mattole",
         "Family": "Not added yet",
         "description": "http://linguistics.berkeley.edu/~survey/languages/california-languages.php",
-        "Slug": "mattole"
+        "Slug": "mattole",
+        "FrenchName": "Mattole"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -74912,7 +75249,8 @@
         "Name": "Chumash",
         "Family": "Not added yet",
         "description": "http://linguistics.berkeley.edu/~survey/languages/california-languages.php",
-        "Slug": "chumash"
+        "Slug": "chumash",
+        "FrenchName": "Chumash"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -75165,7 +75503,8 @@
         "Name": "Tataviam",
         "Family": "Not added yet",
         "description": "http://linguistics.berkeley.edu/~survey/languages/california-languages.php",
-        "Slug": "tataviam"
+        "Slug": "tataviam",
+        "FrenchName": "Tataviam"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -75253,7 +75592,8 @@
         "Name": "Washoe",
         "Family": "Not added yet",
         "description": "http://linguistics.berkeley.edu/~survey/languages/california-languages.php",
-        "Slug": "washoe"
+        "Slug": "washoe",
+        "FrenchName": "Washoe"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -75526,7 +75866,8 @@
         "Name": "Aleut",
         "Family": "Eskimo-Aleut",
         "description": "https://www.uaf.edu/anlc/languages/al/,http://www.native-languages.org/aleut.htm",
-        "Slug": "aleut"
+        "Slug": "aleut",
+        "FrenchName": "Aleut"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -75599,7 +75940,8 @@
         "Name": "Alutiiq (Sugpiaq)",
         "Family": "Not added yet",
         "description": "https://www.uaf.edu/anlc/languages/as/",
-        "Slug": "alutiiq-sugpiaq"
+        "Slug": "alutiiq-sugpiaq",
+        "FrenchName": "Alutiiq (sugpiaq)"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -75767,7 +76109,8 @@
         "Name": "Yupik",
         "Family": "Not added yet",
         "description": "https://www.uaf.edu/anlc/languages/cy/",
-        "Slug": "yupik"
+        "Slug": "yupik",
+        "FrenchName": "Yupik"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -75915,7 +76258,8 @@
         "Name": "Tanaina",
         "Family": "Not added yet",
         "description": "https://www.uaf.edu/anlc/languages/tn/",
-        "Slug": "tanaina"
+        "Slug": "tanaina",
+        "FrenchName": "Tanaina"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -76053,7 +76397,8 @@
         "Name": "Ahtna",
         "Family": "Athabaskan",
         "description": "https://www.uaf.edu/anlc/languages/aa/",
-        "Slug": "ahtna"
+        "Slug": "ahtna",
+        "FrenchName": "Ahtna"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -76186,7 +76531,8 @@
         "Name": "Deg Hit'an",
         "Family": "Not added yet",
         "description": "https://www.uaf.edu/anlc/languages/dx/",
-        "Slug": "deg-hitan"
+        "Slug": "deg-hitan",
+        "FrenchName": "Deg hit'an"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -76284,7 +76630,8 @@
         "Name": "Holikachuk",
         "Family": "Not added yet",
         "description": "https://www.uaf.edu/anlc/languages/hk/",
-        "Slug": "holikachuk"
+        "Slug": "holikachuk",
+        "FrenchName": "Holikachuk"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -76392,7 +76739,8 @@
         "Name": "Koyukon",
         "Family": "Not added yet",
         "description": "https://www.uaf.edu/anlc/languages/ka/",
-        "Slug": "koyukon"
+        "Slug": "koyukon",
+        "FrenchName": "Koyukon"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -76590,7 +76938,8 @@
         "Name": "Tanana",
         "Family": "Not added yet",
         "description": "https://www.uaf.edu/anlc/languages/ut/",
-        "Slug": "tanana"
+        "Slug": "tanana",
+        "FrenchName": "Tanana"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -76693,7 +77042,8 @@
         "Name": "Tanacross",
         "Family": "Not added yet",
         "description": "https://www.uaf.edu/anlc/languages/tc/",
-        "Slug": "tanacross"
+        "Slug": "tanacross",
+        "FrenchName": "Tanacross"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -76806,7 +77156,8 @@
         "Name": "Upper Kuskokwim",
         "Family": "Not added yet",
         "description": "https://www.uaf.edu/anlc/languages/uk/",
-        "Slug": "upper-kuskokwim"
+        "Slug": "upper-kuskokwim",
+        "FrenchName": "Haut-kuskokwim"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -76874,7 +77225,8 @@
         "Name": "Qawlaraq",
         "Family": "Not added yet",
         "description": "",
-        "Slug": "qawlaraq"
+        "Slug": "qawlaraq",
+        "FrenchName": "Qawlaraq"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -76967,7 +77319,8 @@
         "Name": "Inupiatun",
         "Family": "Not added yet",
         "description": "https://www.uaf.edu/anlc/languages/i/",
-        "Slug": "inupiatun"
+        "Slug": "inupiatun",
+        "FrenchName": "Inupiatun"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -77065,7 +77418,8 @@
         "Name": "Siglitun",
         "Family": "Not added yet",
         "description": "http://www.languagegeek.com/inu/inuvialuktun.html,https://en.wikipedia.org/wiki/Siglitun",
-        "Slug": "siglitun"
+        "Slug": "siglitun",
+        "FrenchName": "Siglitun"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -77173,7 +77527,8 @@
         "Name": "Inuinnaqtun",
         "Family": "Not added yet",
         "description": "http://www.languagegeek.com/inu/inuvialuktun.html",
-        "Slug": "inuinnaqtun"
+        "Slug": "inuinnaqtun",
+        "FrenchName": "Inuinnaqtun"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -77311,7 +77666,8 @@
         "Name": "Natsilingmiutut",
         "Family": "Not added yet",
         "description": "http://www.languagegeek.com/inu/inuvialuktun.html",
-        "Slug": "natsilingmiutut"
+        "Slug": "natsilingmiutut",
+        "FrenchName": "Natsilingmiutut"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -77424,7 +77780,8 @@
         "Name": "Kivallirmiutut",
         "Family": "Not added yet",
         "description": "https://en.wikipedia.org/wiki/Kivalliq_dialect,http://www.tusaalanga.ca/node/2504",
-        "Slug": "kivallirmiutut"
+        "Slug": "kivallirmiutut",
+        "FrenchName": "Kivallirmiutut"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -77502,7 +77859,8 @@
         "Name": "Aivilimmiutut",
         "Family": "Not added yet",
         "description": "http://icor.ottawainuitchildrens.com/node/15",
-        "Slug": "aivilimmiutut"
+        "Slug": "aivilimmiutut",
+        "FrenchName": "Aivilimmiutut"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -77600,7 +77958,8 @@
         "Name": "Avenersuaq",
         "Family": "Not added yet",
         "description": "http://icor.ottawainuitchildrens.com/node/15",
-        "Slug": "avenersuaq"
+        "Slug": "avenersuaq",
+        "FrenchName": "Avenersuaq"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -77648,7 +78007,8 @@
         "Name": "Kalaallisut",
         "Family": "Not added yet",
         "description": "http://icor.ottawainuitchildrens.com/node/15",
-        "Slug": "kalaallisut"
+        "Slug": "kalaallisut",
+        "FrenchName": "Kalaallisut"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -77746,7 +78106,8 @@
         "Name": "Tunumiit oraasiat",
         "Family": "Not added yet",
         "description": "http://icor.ottawainuitchildrens.com/node/15",
-        "Slug": "tunumiit-oraasiat"
+        "Slug": "tunumiit-oraasiat",
+        "FrenchName": "Tunumiit oraasiat"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -77847,6 +78208,7 @@
       "type": "Feature",
       "properties": {
         "Name": "Ho-Chunk",
+        "FrenchName": "Ho-Chunk",
         "Family": "Not added yet",
         "description": "https://itunes.apple.com/ca/app/ho-chunk-hoocak-native-american/id508324066?mt=8",
         "Slug": "ho-chunk"
@@ -77856,18 +78218,54 @@
         "coordinates": [
           [
             [
-                [-88.769531,43.897892], 
-                [-89.604492,44.213710], 
-                [-90.395508,44.245199], 
-                [-90.307617,43.707594], 
-                [-89.165039,42.682435], 
-                [-88.242188,42.747012], 
-                [-87.758789,43.229195], 
-                [-87.670898,44.087585], 
-                [-87.231445,44.653024], 
-                [-87.626953,44.840291], 
-                [-88.022461,44.402392], 
-                [-88.593750,44.024422]
+              [
+                -88.769531,
+                43.897892
+              ],
+              [
+                -89.604492,
+                44.21371
+              ],
+              [
+                -90.395508,
+                44.245199
+              ],
+              [
+                -90.307617,
+                43.707594
+              ],
+              [
+                -89.165039,
+                42.682435
+              ],
+              [
+                -88.242188,
+                42.747012
+              ],
+              [
+                -87.758789,
+                43.229195
+              ],
+              [
+                -87.670898,
+                44.087585
+              ],
+              [
+                -87.231445,
+                44.653024
+              ],
+              [
+                -87.626953,
+                44.840291
+              ],
+              [
+                -88.022461,
+                44.402392
+              ],
+              [
+                -88.59375,
+                44.024422
+              ]
             ]
           ]
         ]

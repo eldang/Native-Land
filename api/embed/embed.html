@@ -47,7 +47,7 @@
         data.forEach(function(element,index,array) {
             var thisGeoJson = L.geoJson(element,{
                 onEachFeature: function(feature, layer) {
-                    layer.bindPopup('<a href="'+feature.properties.description+'">'+feature.properties.Name+'</a>');
+                    layer.bindPopup('<a target="_blank" href="'+feature.properties.description+'">'+feature.properties.Name+'</a>');
                 },
                 style: function(feature) {
                     return {

@@ -14,6 +14,7 @@ header('Content-type:application/json;charset=utf-8');
 
 $mapsRequest = $_GET['maps'];
 $nameRequest = $_GET['name'];
+$langRequest = $_GET['lang'];
 $result = array();
 
 if($mapsRequest) {
@@ -25,17 +26,17 @@ if($mapsRequest) {
     
     foreach ($mapsRequestArray as $key => $value) {
         if($value=='languages') {
-            $languageResults = return_results('http://www.native-land.ca/coordinates/indigenousLanguages.json',$nameRequest);
+            $languageResults = return_results('http://www.native-land.ca/coordinates/indigenousLanguages.json',$nameRequest,$langRequest);
             $result = array_merge($result,$languageResults);
         }
         if($value=='territories') {
             // Get territories
-            $territoryResults = return_results('http://www.native-land.ca/coordinates/indigenousTerritories.json',$nameRequest);
+            $territoryResults = return_results('http://www.native-land.ca/coordinates/indigenousTerritories.json',$nameRequest,$langRequest);
             $result = array_merge($result,$territoryResults);
         }
         if($value=='treaties') {
             // Get treaties
-            $treatyResults = return_results('http://www.native-land.ca/coordinates/indigenousTreaties.json',$nameRequest);
+            $treatyResults = return_results('http://www.native-land.ca/coordinates/indigenousTreaties.json',$nameRequest,$langRequest);
             $result = array_merge($result,$treatyResults);
         }
     }
@@ -44,7 +45,7 @@ if($mapsRequest) {
 $resultJSON = json_encode((array)$result);
 echo $resultJSON;
 
-function return_results($fileURL,$nameRequest) {
+function return_results($fileURL,$nameRequest,$langRequest) {
     $thisFile = file_get_contents($fileURL);
     $thisJSON = json_decode($thisFile);
     $result = [];
@@ -54,6 +55,19 @@ function return_results($fileURL,$nameRequest) {
             foreach ($thisJSON->features as $arr) {
                 foreach ($arr as $obj) {
                     if($obj->Slug==$value2) {
+                        if($langRequest=='fr') {
+                            $obj->Name = $obj->FrenchName;
+                            unset($obj->FrenchName);
+                            if($fileURL=='http://www.native-land.ca/coordinates/indigenousTreaties.json') {
+                                $obj->description = $obj->FrenchDescription;
+                                unset($obj->FrenchDescription);
+                            }
+                        } else {
+                            unset($obj->FrenchName);
+                            if($fileURL=='http://www.native-land.ca/coordinates/indigenousTreaties.json') {
+                                unset($obj->FrenchDescription);
+                            }
+                        }
                         array_push($result,$arr);
                     }
                 }
@@ -61,7 +75,24 @@ function return_results($fileURL,$nameRequest) {
         }
     } else {
         foreach ($thisJSON->features as $arr) {
-            array_push($result,$arr);
+            foreach ($arr as $obj) {
+                if(isset($obj->Slug)) {
+                    if($langRequest=='fr') {
+                        $obj->Name = $obj->FrenchName;
+                        unset($obj->FrenchName);
+                        if($fileURL=='http://www.native-land.ca/coordinates/indigenousTreaties.json') {
+                            $obj->description = $obj->FrenchDescription;
+                            unset($obj->FrenchDescription);
+                        }
+                    } else {
+                        unset($obj->FrenchName);
+                        if($fileURL=='http://www.native-land.ca/coordinates/indigenousTreaties.json') {
+                            unset($obj->FrenchDescription);
+                        }
+                    }
+                    array_push($result,$arr);
+                }
+            }
         }
     }
     return $result;
