@@ -18,12 +18,12 @@
       <meta property="og:image" content="http://native-land.ca/images/incomplete-territories.png">
       <meta property="og:site_name" content="Native-land.ca - Our home on native land">
       <link rel="icon" href="/images/favicon.png" type="image/x-icon"/>
-      
+
     <link href="../bootstrap/bootstrap.min.css" rel="stylesheet">
     <link href="../bootstrap/bootstrap-switch.min.css" rel="stylesheet">
     <link href="../css/bootstrap-style.css" rel="stylesheet">
     <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.css" />
-    
+
     <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300' rel='stylesheet' type='text/css'>
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -36,8 +36,8 @@
 
     </script>
     <style>
-        .exampleMap { 
-            height: 280px; 
+        .exampleMap {
+            height: 280px;
             width: 100%;
         }
         iframe {
@@ -96,13 +96,13 @@
         <p>This allows you to do some calls that will return specific data on nations, languages, or treaties, that you can use
         in your programming.</p>
         <h2>Embed Code</h2>
-        <p>Create an iframe as follows:</p> 
+        <p>Create an iframe as follows:</p>
             <pre>&lt;iframe src="index.php?maps=languages&name=witsuwiten"&gt;&lt;/iframe&gt;</pre>
         <p>Further instructions
             for how to use the API (by entering different URLs) are below.</p>
         <iframe style="display:inline-block" src="http://native-land.ca/api/embed/embed.html?maps=languages&name=lower-chinook&lang=fr" width="300" height="300"></iframe>
         <iframe style="display:inline-block" src="http://native-land.ca/api/embed/embed.html?maps=territories,treaties&name=mtis,treaty8" width="300" height="300"></iframe>
-        <iframe style="display:inline-block" src="http://native-land.ca/api/embed/embed.html?maps=treaties&lang=fr" width="300" height="300"></iframe>
+        <iframe style="display:inline-block" src="http://native-land.ca/api/embed/embed.html?maps=treaties&lang=fr" width="300" height="200"></iframe>
         <h2>AJAX Requests</h2>
         <p>You can choose a language. By default it is English. Add "&lang=fr" to get French results instead.</p>
         <p>You must supply one or more <strong>type</strong>. There are 3 types:</p>
@@ -118,7 +118,7 @@
         <p>Do a GET request to the following URL: <strong>http://native-land.ca/api/index.php</strong> in the following format:</p>
         <p><strong>General maps:</strong> http://native-land.ca/api/index.php?maps=territories,treaties,languages</p>
         <p><strong>Specific polygons:</strong> http://native-land.ca/api/index.php?maps=territories&name=nakota,lakota</p>
-        
+
         <h3>Examples</h3>
         <h4>Specific languages ( index.php?maps=languages&name=nakota,lakota )</h4>
         <div id="specificLanguagesMap" class="exampleMap"></div>
@@ -128,9 +128,9 @@
         <div id="oneLanguageMap" class="exampleMap"></div>
         <h4>All languages ( index.php?maps=languages )</h4>
         <div id="allLanguageMap" class="exampleMap"></div>
-        
+
         <a name="allSlugs"></a><h2>Slug references</h2></a>
-        <p>To property call the correct territories, treaties, or languages, you need to send the correct slug in the URL. 
+        <p>To property call the correct territories, treaties, or languages, you need to send the correct slug in the URL.
             These are not necessarily predictable, so you need to check the list below.</p>
         <ul>
             <li><a href="#territorySlugs">territories</a></li>
@@ -143,67 +143,22 @@
         <table id="language-slug-table" class="table"></table>
         <a name="treatySlugs"></a><h4>Treaties</h4>
         <table id="treaty-slug-table" class="table"></table>
-        
+
     </div>
 </body>
-    
+
 <script src="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script src="https://maps.googleapis.com/maps/api/js?libraries=geometry,places,drawing"></script>
 <script src="../js/fromgeojson.js"></script>
 <script>
-    $.get( "index.php?maps=languages&name=nakota,lakota", function( data ) {    
+    $.get( "index.php?maps=languages&name=nakota,lakota", function( data ) {
         var map = L.map('specificLanguagesMap').setView([51.505, -0.09], 13);
         L.tileLayer( 'http://{s}.mqcdn.com/tiles/1.0.0/map/{z}/{x}/{y}.png', {
             attribution: '&copy; <a href="http://osm.org/copyright" title="OpenStreetMap" target="_blank">OpenStreetMap</a> contributors | Tiles Courtesy of <a href="http://www.mapquest.com/" title="MapQuest" target="_blank">MapQuest</a> <img src="http://developer.mapquest.com/content/osm/mq_logo.png" width="16" height="16">',
             subdomains: ['otile1','otile2','otile3','otile4']
         }).addTo( map );
-        var allGeoJsons = []; 
-        data.forEach(function(element,index,array) {
-            var thisGeoJson = L.geoJson(element);
-            allGeoJsons.push(thisGeoJson);
-        });
-        var layerGeoJsons = L.featureGroup(allGeoJsons).addTo(map);
-        map.fitBounds(layerGeoJsons.getBounds());
-    });
-    
-    $.get( "index.php?maps=territories,treaties&name=mtis,treaty8", function( data ) {
-        var map = L.map('mixedLanguageTreatyMap').setView([51.505, -0.09], 13);
-        L.tileLayer( 'http://{s}.mqcdn.com/tiles/1.0.0/map/{z}/{x}/{y}.png', {
-            attribution: '&copy; <a href="http://osm.org/copyright" title="OpenStreetMap" target="_blank">OpenStreetMap</a> contributors | Tiles Courtesy of <a href="http://www.mapquest.com/" title="MapQuest" target="_blank">MapQuest</a> <img src="http://developer.mapquest.com/content/osm/mq_logo.png" width="16" height="16">',
-            subdomains: ['otile1','otile2','otile3','otile4']
-        }).addTo( map );
-        var allGeoJsons = []; 
-        data.forEach(function(element,index,array) {
-            var thisGeoJson = L.geoJson(element);
-            allGeoJsons.push(thisGeoJson);
-        });
-        var layerGeoJsons = L.featureGroup(allGeoJsons).addTo(map);
-        map.fitBounds(layerGeoJsons.getBounds());
-    });
-    
-    $.get( "index.php?maps=languages&name=witsuwiten", function( data ) {
-        var map = L.map('oneLanguageMap').setView([51.505, -0.09], 13);
-        L.tileLayer( 'http://{s}.mqcdn.com/tiles/1.0.0/map/{z}/{x}/{y}.png', {
-            attribution: '&copy; <a href="http://osm.org/copyright" title="OpenStreetMap" target="_blank">OpenStreetMap</a> contributors | Tiles Courtesy of <a href="http://www.mapquest.com/" title="MapQuest" target="_blank">MapQuest</a> <img src="http://developer.mapquest.com/content/osm/mq_logo.png" width="16" height="16">',
-            subdomains: ['otile1','otile2','otile3','otile4']
-        }).addTo( map );
-        var allGeoJsons = []; 
-        data.forEach(function(element,index,array) {
-            var thisGeoJson = L.geoJson(element);
-            allGeoJsons.push(thisGeoJson);
-        });
-        var layerGeoJsons = L.featureGroup(allGeoJsons).addTo(map);
-        map.fitBounds(layerGeoJsons.getBounds());
-    });
-    
-    $.get( "index.php?maps=languages", function( data ) {
-        var map = L.map('allLanguageMap').setView([51.505, -0.09], 13);
-        L.tileLayer( 'http://{s}.mqcdn.com/tiles/1.0.0/map/{z}/{x}/{y}.png', {
-            attribution: '&copy; <a href="http://osm.org/copyright" title="OpenStreetMap" target="_blank">OpenStreetMap</a> contributors | Tiles Courtesy of <a href="http://www.mapquest.com/" title="MapQuest" target="_blank">MapQuest</a> <img src="http://developer.mapquest.com/content/osm/mq_logo.png" width="16" height="16">',
-            subdomains: ['otile1','otile2','otile3','otile4']
-        }).addTo( map );
-        var allGeoJsons = []; 
+        var allGeoJsons = [];
         data.forEach(function(element,index,array) {
             var thisGeoJson = L.geoJson(element);
             allGeoJsons.push(thisGeoJson);
@@ -212,7 +167,52 @@
         map.fitBounds(layerGeoJsons.getBounds());
     });
 
-    
+    $.get( "index.php?maps=territories,treaties&name=mtis,treaty8", function( data ) {
+        var map = L.map('mixedLanguageTreatyMap').setView([51.505, -0.09], 13);
+        L.tileLayer( 'http://{s}.mqcdn.com/tiles/1.0.0/map/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="http://osm.org/copyright" title="OpenStreetMap" target="_blank">OpenStreetMap</a> contributors | Tiles Courtesy of <a href="http://www.mapquest.com/" title="MapQuest" target="_blank">MapQuest</a> <img src="http://developer.mapquest.com/content/osm/mq_logo.png" width="16" height="16">',
+            subdomains: ['otile1','otile2','otile3','otile4']
+        }).addTo( map );
+        var allGeoJsons = [];
+        data.forEach(function(element,index,array) {
+            var thisGeoJson = L.geoJson(element);
+            allGeoJsons.push(thisGeoJson);
+        });
+        var layerGeoJsons = L.featureGroup(allGeoJsons).addTo(map);
+        map.fitBounds(layerGeoJsons.getBounds());
+    });
+
+    $.get( "index.php?maps=languages&name=witsuwiten", function( data ) {
+        var map = L.map('oneLanguageMap').setView([51.505, -0.09], 13);
+        L.tileLayer( 'http://{s}.mqcdn.com/tiles/1.0.0/map/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="http://osm.org/copyright" title="OpenStreetMap" target="_blank">OpenStreetMap</a> contributors | Tiles Courtesy of <a href="http://www.mapquest.com/" title="MapQuest" target="_blank">MapQuest</a> <img src="http://developer.mapquest.com/content/osm/mq_logo.png" width="16" height="16">',
+            subdomains: ['otile1','otile2','otile3','otile4']
+        }).addTo( map );
+        var allGeoJsons = [];
+        data.forEach(function(element,index,array) {
+            var thisGeoJson = L.geoJson(element);
+            allGeoJsons.push(thisGeoJson);
+        });
+        var layerGeoJsons = L.featureGroup(allGeoJsons).addTo(map);
+        map.fitBounds(layerGeoJsons.getBounds());
+    });
+
+    $.get( "index.php?maps=languages", function( data ) {
+        var map = L.map('allLanguageMap').setView([51.505, -0.09], 13);
+        L.tileLayer( 'http://{s}.mqcdn.com/tiles/1.0.0/map/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="http://osm.org/copyright" title="OpenStreetMap" target="_blank">OpenStreetMap</a> contributors | Tiles Courtesy of <a href="http://www.mapquest.com/" title="MapQuest" target="_blank">MapQuest</a> <img src="http://developer.mapquest.com/content/osm/mq_logo.png" width="16" height="16">',
+            subdomains: ['otile1','otile2','otile3','otile4']
+        }).addTo( map );
+        var allGeoJsons = [];
+        data.forEach(function(element,index,array) {
+            var thisGeoJson = L.geoJson(element);
+            allGeoJsons.push(thisGeoJson);
+        });
+        var layerGeoJsons = L.featureGroup(allGeoJsons).addTo(map);
+        map.fitBounds(layerGeoJsons.getBounds());
+    });
+
+
     var indigenousLanguagesGeoJSON, indigenousTerritoriesGeoJSON, indigenousTreatiesGeoJSON;
     $.getJSON("../coordinates/indigenousLanguages.json", function(data){
         var indigenousLanguages = data;

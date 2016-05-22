@@ -8,7 +8,7 @@
       <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
       <link rel="icon" href="/images/favicon.png" type="image/x-icon"/>
     <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.css" />
-    
+
     <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300' rel='stylesheet' type='text/css'>
     <style>
         body, html {
@@ -35,36 +35,49 @@
 <script src="../../coordinates/indigenousTerritories.js"></script>
 <script src="../../coordinates/indigenousTreaties.js"></script>
 <script>
-    
-    var afterQuestionMark = window.location.href.substr(window.location.href.indexOf("?") + 1);
-    $.get( "../index.php?"+afterQuestionMark, function( data ) {
-        var map = L.map('nativeLandMap').setView([51.505, -0.09], 13);
-        L.tileLayer( 'http://{s}.mqcdn.com/tiles/1.0.0/map/{z}/{x}/{y}.png', {
-            attribution: '&copy; <a href="http://osm.org/copyright" title="OpenStreetMap" target="_blank">OpenStreetMap</a> contributors | Tiles Courtesy of <a href="http://www.mapquest.com/" title="MapQuest" target="_blank">MapQuest</a> <img src="http://developer.mapquest.com/content/osm/mq_logo.png" width="16" height="16">',
-            subdomains: ['otile1','otile2','otile3','otile4']
-        }).addTo( map );
-        var allGeoJsons = []; 
-        data.forEach(function(element,index,array) {
-            var thisGeoJson = L.geoJson(element,{
-                onEachFeature: function(feature, layer) {
-                    layer.bindPopup('<a target="_blank" href="'+feature.properties.description+'">'+feature.properties.Name+'</a>');
-                },
-                style: function(feature) {
-                    return {
-                        weight: 2,
-                        opacity: 1,
-                        color: 'white',
-                        dashArray: '3',
-                        fillOpacity: 0.7,
-                        fillColor: '#FFF'
-                    }
-                }
-            });
-            allGeoJsons.push(thisGeoJson);
-        });
-        var layerGeoJsons = L.featureGroup(allGeoJsons).addTo(map);
-        map.fitBounds(layerGeoJsons.getBounds());
-    });
+    $(document).ready(function() {
+      $('#nativeLandMap').height(window.innerHeight);
 
+      var afterQuestionMark = window.location.href.substr(window.location.href.indexOf("?") + 1);
+      $.get( "../index.php?"+afterQuestionMark, function( data ) {
+          var map = L.map('nativeLandMap').setView([51.505, -0.09], 13);
+          L.tileLayer( 'http://{s}.mqcdn.com/tiles/1.0.0/map/{z}/{x}/{y}.png', {
+              attribution: false,
+              subdomains: ['otile1','otile2','otile3','otile4']
+          }).addTo( map );
+          map.attributionControl.setPrefix('Improve this map! Visit <a target="_blank" href="http://native-land.ca">Native-Land.ca</a>')
+          var allGeoJsons = [];
+          data.forEach(function(element,index,array) {
+              var thisGeoJson = L.geoJson(element,{
+                  onEachFeature: function(feature, layer) {
+                      layer.bindPopup('<a target="_blank" href="'+feature.properties.description+'">'+feature.properties.Name+'</a>');
+                  },
+                  style: function(feature) {
+                      const color = getRandomColor();
+                      return {
+                          opacity: 0.8,
+                          color: '#333',
+                          weight : 0.1,
+                          fillOpacity: 0.35,
+                          fillColor: color
+                      }
+                  }
+              });
+              allGeoJsons.push(thisGeoJson);
+          });
+          var layerGeoJsons = L.featureGroup(allGeoJsons).addTo(map);
+          map.fitBounds(layerGeoJsons.getBounds());
+      });
+
+      // Get random color
+      function getRandomColor() {
+          var letters = '0123456789ABCDEF'.split('');
+          var color = '#';
+          for (var i = 0; i < 6; i++ ) {
+              color += letters[Math.floor(Math.random() * 16)];
+          }
+          return color;
+      }
+    });
 
 </script>

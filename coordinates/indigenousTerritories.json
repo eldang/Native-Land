@@ -333,7 +333,8 @@
         "Name": "Cree",
         "description": "http://www.thecanadianencyclopedia.ca/en/article/cree/",
         "Slug": "cree",
-        "FrenchName": "Cris"
+        "FrenchName": "Cris",
+        "FrenchDescription": "http://www.thecanadianencyclopedia.ca/fr/article/cree/"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -32214,7 +32215,8 @@
         "Name": "Tsawwassen",
         "description": "http://tsawwassenfirstnation.com",
         "Slug": "tsawwassen",
-        "FrenchName": "Tsawwassen"
+        "FrenchName": "Tsawwassen",
+        "FrenchDescription": "https://www.aadnc-aandc.gc.ca/fra/1100100022706/1100100022717"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -48659,7 +48661,8 @@
         "Name": "Tsoyaha (Yuchi)",
         "description": "https://en.wikipedia.org/wiki/Yuchi",
         "Slug": "tsoyaha-yuchi",
-        "FrenchName": "Tsoyaha (Yuchi)"
+        "FrenchName": "Tsoyaha (Yuchi)",
+        "FrenchDescription": "https://fr.wikipedia.org/wiki/Yuchis"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -59137,9 +59140,9 @@
     {
       "type": "Feature",
       "properties": {
-        "Name": "Sauk and Meskwakwi",
+        "Name": "Sauk and Meskwaki",
         "description": "https://oneida-nsn.gov/",
-        "Slug": "sauk-and-meskwakwi",
+        "Slug": "sauk-and-meskwaki",
         "FrenchName": "Sauks et Meskwakis"
       },
       "geometry": {
