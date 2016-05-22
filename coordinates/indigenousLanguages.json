@@ -40131,7 +40131,8 @@
         "Name": "Rocky Cree",
         "description": "http://www.native-languages.org/cree.htm,https://en.wikipedia.org/wiki/Cree_language#External_links",
         "Slug": "rocky-cree",
-        "FrenchName": "Cri des Rocheuses"
+        "FrenchName": "Cri des Rocheuses",
+        "FrenchDescription": "https://fr.wikipedia.org/wiki/Cri_(langue)"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -40763,7 +40764,8 @@
         "Name": "Plains Cree",
         "description": "http://www.native-languages.org/cree.htm,https://en.wikipedia.org/wiki/Cree_language#External_links,http://www.firstvoices.com/en/Cree-Saulteau,http://www.firstvoices.com/en/Maskwacis-Cree/welcome",
         "Slug": "plains-cree",
-        "FrenchName": "Cri des plaines"
+        "FrenchName": "Cri des plaines",
+        "FrenchDescription": "https://fr.wikipedia.org/wiki/Cri_(langue)"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -42104,10 +42106,10 @@
     {
       "type": "Feature",
       "properties": {
-        "Name": "Western Ojibway",
+        "Name": "Western Anishinaabe (Ojibwe)",
         "description": "http://www.native-languages.org/ojibwe.htm,http://www.nativetech.org/shinob/ojibwelanguage.html,http://ojibwe.lib.umn.edu/",
         "Slug": "western-ojibway",
-        "FrenchName": "Ojibwé de l’ouest"
+        "FrenchName": "Anishinaabe de l’ouest"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -43398,10 +43400,10 @@
     {
       "type": "Feature",
       "properties": {
-        "Name": "Severn Ojibwa Oji-Cree",
+        "Name": "Severn Anishinaabe Oji-Cree",
         "description": "http://www.native-languages.org/ojibwe.htm",
         "Slug": "severn-ojibwa-oji-cree",
-        "FrenchName": "Ojibwa de la rivière Severn/ oji-cri"
+        "FrenchName": "Anishinaabe de la rivière Severn/ oji-cri"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -43546,10 +43548,10 @@
     {
       "type": "Feature",
       "properties": {
-        "Name": "Northwestern Ojibwa",
+        "Name": "Northwestern Anishinaabe (Ojibwa)",
         "description": "http://www.native-languages.org/ojibwe.htm",
         "Slug": "northwestern-ojibwa",
-        "FrenchName": "Ojibwa du Nord-Ouest"
+        "FrenchName": "Anishinaabe du Nord-Ouest"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -44112,10 +44114,10 @@
     {
       "type": "Feature",
       "properties": {
-        "Name": "Central Ojibwa",
+        "Name": "Central Anishinaabe (Ojibwa)",
         "description": "http://www.native-languages.org/ojibwe.htm",
         "Slug": "central-ojibwa",
-        "FrenchName": "Ojibwa central"
+        "FrenchName": "Anishinaabe central"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -44325,10 +44327,10 @@
     {
       "type": "Feature",
       "properties": {
-        "Name": "Ojibwa",
+        "Name": "Anishinaabe",
         "description": "http://www.native-languages.org/ojibwe.htm",
         "Slug": "ojibwa",
-        "FrenchName": "Ojibwa"
+        "FrenchName": "Anishinaabe"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -44483,10 +44485,10 @@
     {
       "type": "Feature",
       "properties": {
-        "Name": "Mississauga/Eastern Ojibwa",
+        "Name": "Mississauga/Eastern Anishinaabe (Ojibwa)",
         "description": "http://www.native-languages.org/ojibwe.htm",
         "Slug": "mississaugaeastern-ojibwa",
-        "FrenchName": "Mississauga/ojibwa de l’Est"
+        "FrenchName": "Mississauga/Anishinaabe de l’Est"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -48253,7 +48255,8 @@
         "Family": "Chimakuan",
         "description": "https://en.wikipedia.org/wiki/Chemakum_language",
         "Slug": "chemakum",
-        "FrenchName": "Chemakum"
+        "FrenchName": "Chemakum",
+        "FrenchDescription": "https://fr.wikipedia.org/wiki/Chimakum"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -49975,7 +49978,8 @@
         "Family": "Na-Dene",
         "description": "https://en.wikipedia.org/wiki/Cowlitz_people",
         "Slug": "kwalhiokwa",
-        "FrenchName": "Kwalhiokwa"
+        "FrenchName": "Kwalhiokwa",
+        "FrenchDescription": "https://fr.wikipedia.org/wiki/Cowlitz_(peuple)"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -50905,7 +50909,8 @@
         "Family": "Penutian",
         "description": "https://en.wikipedia.org/wiki/Cowlitz_people",
         "Slug": "cowlitz",
-        "FrenchName": "Cowlitz"
+        "FrenchName": "Cowlitz",
+        "FrenchDescription": "https://fr.wikipedia.org/wiki/Cowlitz_(peuple)"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -51978,7 +51983,8 @@
         "Family": "Penutian",
         "description": "https://en.wikipedia.org/wiki/Palus_people",
         "Slug": "palus",
-        "FrenchName": "Palus"
+        "FrenchName": "Palus",
+        "FrenchDescription": "https://fr.wikipedia.org/wiki/Palouses"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -57413,7 +57419,8 @@
         "Family": "Siouan-Yuchi",
         "description": "https://en.wikipedia.org/wiki/Chiwere_language",
         "Slug": "iowa",
-        "FrenchName": "Iowa"
+        "FrenchName": "Iowa",
+        "FrenchDescription": "https://fr.wikipedia.org/wiki/Iowa-oto"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -57924,7 +57931,8 @@
         "Family": "Siouan-Yuchi",
         "description": "https://en.wikipedia.org/wiki/Chiwere_language",
         "Slug": "oto-and-kansa",
-        "FrenchName": "Oto et kansa"
+        "FrenchName": "Oto et kansa",
+        "FrenchDescription": "https://fr.wikipedia.org/wiki/Iowa-oto"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -58043,7 +58051,8 @@
         "Family": "Siouan-Yuchi",
         "description": "https://en.wikipedia.org/wiki/Chiwere_language",
         "Slug": "missouri",
-        "FrenchName": "Missouri"
+        "FrenchName": "Missouri",
+        "FrenchDescription": "https://fr.wikipedia.org/wiki/Iowa-oto"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -58614,11 +58623,11 @@
     {
       "type": "Feature",
       "properties": {
-        "Name": "Southern Ojibwa",
+        "Name": "Southern Anishinaabe (Ojibwa)",
         "Family": "Algonkian",
         "description": "http://www.native-languages.org/ojibwe.htm,http://ojibwe.lib.umn.edu/",
         "Slug": "southern-ojibwa",
-        "FrenchName": "Ojibwa du Sud"
+        "FrenchName": "Anishinaabe du Sud"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -61683,7 +61692,8 @@
         "Family": "Unknown",
         "description": "https://en.wikipedia.org/wiki/Tocobaga",
         "Slug": "tocabaga",
-        "FrenchName": "Tocabaga"
+        "FrenchName": "Tocabaga",
+        "FrenchDescription": "https://fr.wikipedia.org/wiki/Tocobaga"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -61737,7 +61747,8 @@
         "Family": "Unknown",
         "description": "https://en.wikipedia.org/wiki/Ais_people",
         "Slug": "ais",
-        "FrenchName": "Ais"
+        "FrenchName": "Ais",
+        "FrenchDescription": "https://fr.wikipedia.org/wiki/Ais_(tribu)"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -63433,7 +63444,8 @@
         "Family": "Iroquoian",
         "description": "https://en.wikipedia.org/wiki/Wenrohronon",
         "Slug": "wenro",
-        "FrenchName": "Wenro"
+        "FrenchName": "Wenro",
+        "FrenchDescription": "https://fr.wikipedia.org/wiki/Wenros"
       },
       "geometry": {
         "type": "MultiPolygon",
