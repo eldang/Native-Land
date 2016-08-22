@@ -97,7 +97,7 @@
         in your programming.</p>
         <h2>Embed Code</h2>
         <p>Create an iframe as follows:</p>
-            <pre>&lt;iframe src="index.php?maps=languages&name=witsuwiten"&gt;&lt;/iframe&gt;</pre>
+            <pre>&lt;iframe src="http://native-land.ca/embed/embed.html?maps=languages&name=witsuwiten"&gt;&lt;/iframe&gt;</pre>
         <p>Further instructions
             for how to use the API (by entering different URLs) are below.</p>
         <iframe style="display:inline-block" src="http://native-land.ca/api/embed/embed.html?maps=languages&name=lower-chinook&lang=fr" width="300" height="300"></iframe>
@@ -154,9 +154,8 @@
 <script>
     $.get( "index.php?maps=languages&name=nakota,lakota", function( data ) {
         var map = L.map('specificLanguagesMap').setView([51.505, -0.09], 13);
-        L.tileLayer( 'http://{s}.mqcdn.com/tiles/1.0.0/map/{z}/{x}/{y}.png', {
+        L.tileLayer( 'http://{s}.tile.thunderforest.com/landscape/{z}/{x}/{y}.png', {
             attribution: '&copy; <a href="http://osm.org/copyright" title="OpenStreetMap" target="_blank">OpenStreetMap</a> contributors | Tiles Courtesy of <a href="http://www.mapquest.com/" title="MapQuest" target="_blank">MapQuest</a> <img src="http://developer.mapquest.com/content/osm/mq_logo.png" width="16" height="16">',
-            subdomains: ['otile1','otile2','otile3','otile4']
         }).addTo( map );
         var allGeoJsons = [];
         data.forEach(function(element,index,array) {
@@ -169,9 +168,8 @@
 
     $.get( "index.php?maps=territories,treaties&name=mtis,treaty8", function( data ) {
         var map = L.map('mixedLanguageTreatyMap').setView([51.505, -0.09], 13);
-        L.tileLayer( 'http://{s}.mqcdn.com/tiles/1.0.0/map/{z}/{x}/{y}.png', {
+        L.tileLayer( 'http://{s}.tile.thunderforest.com/landscape/{z}/{x}/{y}.png', {
             attribution: '&copy; <a href="http://osm.org/copyright" title="OpenStreetMap" target="_blank">OpenStreetMap</a> contributors | Tiles Courtesy of <a href="http://www.mapquest.com/" title="MapQuest" target="_blank">MapQuest</a> <img src="http://developer.mapquest.com/content/osm/mq_logo.png" width="16" height="16">',
-            subdomains: ['otile1','otile2','otile3','otile4']
         }).addTo( map );
         var allGeoJsons = [];
         data.forEach(function(element,index,array) {
@@ -184,7 +182,7 @@
 
     $.get( "index.php?maps=languages&name=witsuwiten", function( data ) {
         var map = L.map('oneLanguageMap').setView([51.505, -0.09], 13);
-        L.tileLayer( 'http://{s}.mqcdn.com/tiles/1.0.0/map/{z}/{x}/{y}.png', {
+        L.tileLayer( 'http://{s}.tile.thunderforest.com/landscape/{z}/{x}/{y}.png', {
             attribution: '&copy; <a href="http://osm.org/copyright" title="OpenStreetMap" target="_blank">OpenStreetMap</a> contributors | Tiles Courtesy of <a href="http://www.mapquest.com/" title="MapQuest" target="_blank">MapQuest</a> <img src="http://developer.mapquest.com/content/osm/mq_logo.png" width="16" height="16">',
             subdomains: ['otile1','otile2','otile3','otile4']
         }).addTo( map );
@@ -199,9 +197,8 @@
 
     $.get( "index.php?maps=languages", function( data ) {
         var map = L.map('allLanguageMap').setView([51.505, -0.09], 13);
-        L.tileLayer( 'http://{s}.mqcdn.com/tiles/1.0.0/map/{z}/{x}/{y}.png', {
+        L.tileLayer( 'http://{s}.tile.thunderforest.com/landscape/{z}/{x}/{y}.png', {
             attribution: '&copy; <a href="http://osm.org/copyright" title="OpenStreetMap" target="_blank">OpenStreetMap</a> contributors | Tiles Courtesy of <a href="http://www.mapquest.com/" title="MapQuest" target="_blank">MapQuest</a> <img src="http://developer.mapquest.com/content/osm/mq_logo.png" width="16" height="16">',
-            subdomains: ['otile1','otile2','otile3','otile4']
         }).addTo( map );
         var allGeoJsons = [];
         data.forEach(function(element,index,array) {
