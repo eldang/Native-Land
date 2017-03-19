@@ -6,7 +6,7 @@
     google.maps.Polygon.prototype.getBounds = function() {
         var bounds = new google.maps.LatLngBounds();
         var paths = this.getPaths();
-        var path;        
+        var path;
         for (var i = 0; i < paths.getLength(); i++) {
             path = paths.getAt(i);
             for (var ii = 0; ii < path.getLength(); ii++) {
@@ -32,7 +32,8 @@
             $.getJSON("../coordinates/indigenousTreaties.json", function(data){
                 var indigenousTreaties = data;
                 indigenousTreatiesGeoJSON = new GeoJSON(indigenousTreaties);
-                initialize();
+                initialize_leaflet();
+//                initialize();
             });
         });
     });
@@ -40,6 +41,19 @@
 
     var map;
     var MY_MAPTYPE_ID = 'custom_style';
+
+    function initialize_leaflet() {
+			var indigenousMapArray = [indigenousLanguagesGeoJSON,indigenousTerritoriesGeoJSON,indigenousTreatiesGeoJSON];
+
+			map = L.map('map-canvas').setView([51.505, -100], 3);
+
+			L.tileLayer('http://{s}.grayscale.osm.maptiles.xyz/{z}/{x}/{y}.png', {
+				maxZoom: 13,
+				attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, ' +
+					'<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>'
+			}).addTo(map);
+    }
+
     function initialize() {
       var indigenousMapArray = [indigenousLanguagesGeoJSON,indigenousTerritoriesGeoJSON,indigenousTreatiesGeoJSON];
       // Removing national labels
@@ -80,21 +94,21 @@
         },
         mapTypeId: google.maps.MapTypeId.ROADMAP
       };
-        
+
       map = new google.maps.Map(document.getElementById('map-canvas'),
           mapOptions);
-        
+
       var styledMapOptions = {
         name: 'Remove borders'
       };
       var customMapType = new google.maps.StyledMapType(featureOpts, styledMapOptions);
-     
+
       map.mapTypes.set('custom_style', customMapType);
 
       map.controls[google.maps.ControlPosition.LEFT_BOTTOM].push(
         document.getElementById('legend')
       );
-        
+
 
         // Stuff for search section
         if(typeof homeTrue !=='undefined') {
@@ -103,7 +117,7 @@
             types: ['geocode']
           });
 
-            // Do the stuff after they enter a place        
+            // Do the stuff after they enter a place
             google.maps.event.addListener(autocomplete, 'place_changed', function() {
                 var place = autocomplete.getPlace();
                 $.ajax({
@@ -338,7 +352,7 @@
                 });
             }
         });
-        
+
         // Set up selected menus to load appropriate polygon
         for(i=0;i<indigenousMapArray.length;i++) {
             for(k=0;k<indigenousMapArray[i].length;k++) {
@@ -389,7 +403,7 @@
                 map.fitBounds(treatyPolygons[thisIndex].getBounds());
             }
         });
-        
+
         // Clear map polygons
         $('#reset_map').click(function() {
             for(i=0;i<polygonArray.length;i++) {
@@ -400,7 +414,7 @@
                 }
             }
         });
-        
+
         // Send out PDF
     }
 
@@ -416,7 +430,7 @@
         }
         return color;
     }
-        
+
     // Place all polygons
     function placePolygons(element,map,type) {
         element.setMap(map);
@@ -435,11 +449,11 @@
             $('.nl-results').show();
         });
         var jsonToCheck = '';
-        if(type==='languages') { 
+        if(type==='languages') {
             jsonToCheck = indigenousLanguagesGeoJSON;
-        } else if(type==='territories') { 
+        } else if(type==='territories') {
             jsonToCheck = indigenousTerritoriesGeoJSON;
-        } else if(type==='treaties') { 
+        } else if(type==='treaties') {
             jsonToCheck = indigenousTreatiesGeoJSON;
         }
         google.maps.event.addListener(element, 'mousemove', function(event) {
